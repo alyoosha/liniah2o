@@ -1,0 +1,442 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_product
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Кухни
+						li.list__item
+							a.link(href="javascript: void(0);") Угловые кухни
+						li.list__item
+							a.link.active(href="javascript: void(0);") Угловая кухня 1500-2700
+		.section__body.product-block
+			.product-block__main
+				.container
+					//-.row.no-gutters
+						.col-12
+							a.product-block__brand.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+								.brand-block__img(aria-hidden="true")
+									img(src="images/content/brands/brand-img-1.png" alt="Roca")
+								.brand-block__country Великобритания
+					.row
+						.col-12.col-lg-5
+							ul.list.list_unstyled.product-block__socials
+								li.list__item
+									button.btn.btn_to-favorite.js-to-favorite(type="button" aria-label="В избранное")
+										<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+										<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+								li.list__item.list__item_has-child.dropdown
+									button.btn.btn_share.js-share(type="button" aria-label="Поделиться" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+										<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-share"></use></svg>
+									ul.list.list_unstyled.dropdown-menu.bg_white(aria-label="Поделиться")
+										li.list__item
+											a.btn.btn_socials(href="javascript: void(0);" rel="noopener nofollow" aria-label="в Instagram")
+												<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-instagram"></use></svg>
+										li.list__item
+											a.btn.btn_socials(href="javascript: void(0);" rel="noopener nofollow" aria-label="в Facebook")
+												<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-facebook"></use></svg>
+							.product-block__slider
+								ul.list.list_unstyled.marks-list
+									li.list__item.bg_blue Новинка
+								.swiper-container.slider_main.js-product-slider-main
+									.swiper-wrapper
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-15.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+								.swiper-container.slider_thumbs.js-product-slider-thumbs
+									.swiper-wrapper
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+						.col-12.col-lg-7
+							.product-block__info
+								.product-block__title.section__title
+									h1 Угловая кухня 1500-2700
+								.product-block__price
+									span от 
+									span.cost 3 567
+									span.currency лей / шт
+								.product-block__form
+									.row
+										.col-12.col-sm-6.col-md-auto.col-lg-auto
+											.params-block
+												.params-block__title Размер
+												ul.list.list_unstyled.params-list
+													li.list__item.params-list__item
+														span.params-list__title Ширина: 
+														span.params-list__value 2100 мм
+													li.list__item.params-list__item
+														span.params-list__title Высота: 
+														span.params-list__value 1950 мм
+													li.list__item.params-list__item
+														span.params-list__title Глубина: 
+														span.params-list__value 560 мм
+										.col-12.col-sm-6.col-md-auto.col-lg-auto
+											.params-block
+												.params-block__title Характеристики
+												ul.list.list_unstyled.params-list
+													li.list__item.params-list__item
+														span.params-list__title Форма: 
+														span.params-list__value Прямая
+													li.list__item.params-list__item
+														span.params-list__title Ручки: 
+														span.params-list__value Есть
+													li.list__item.params-list__item
+														span.params-list__title Полки: 
+														span.params-list__value Есть
+									.product-block__specification
+										.section__title.product-block__subtitle Описание
+										.section__description
+											p Voluptate non irure aliqua nisi eu commodo irure eiusmod ea. Nulla laborum aliqua magna et ea est laborum amet non cillum officia.
+									//-.product-block__quantity
+										.section__title.product-block__subtitle Количество
+										.form-group.form-group_inline
+											button.btn.btn_minus.js-btn-minus(type="button" aria-label="Меньше")
+												<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-minimize"></use></svg>
+											label.form-label.form-label_hidden(for="product-count") Количество товара
+											input.form-control( type="number" id="product-count" name="product-count" min="1" step="1" value="1")
+											button.btn.btn_plus.js-btn-plus(type="button" aria-label="Больше")
+												<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-add"></use></svg>
+									.btn-group
+										.row
+											.col-12.col-sm-auto
+												a.btn.btn_default.btn_dark.btn_with-icon.js-scroll-link(href="#constructor")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-paint"></use></svg>
+													span.btn__text Выберите цвет
+											.col-12.col-sm-auto
+												button.btn.btn_default.btn_transparent.btn_flex(type="button" data-toggle="modal" data-target="#modal-consultation")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-call-center2"></use></svg>
+													span.btn__text Заказать консультацию
+			.product-block__constructor.constructor#constructor
+				.section__header
+					.container
+						.section__title.section__title_style7
+							h3 Выберите цвет кухни
+				.section__body
+					.container
+						.constructor__wrapper
+							// добавился блок
+							.constructor__header.d-block.d-lg-none
+								.product-block__title.section__title.constructor__title
+									h2 Угловая кухня 1500-2700
+								ul.list.list_unstyled.product-block__info-list.constructor__info-list.row.align-items-center
+									li.col-12.col-md-auto
+										.product-block__code Артикул: 90858
+								.controls__descr
+									span.controls__descr-icon(aria-hidden="true")
+										<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-doorhandle"></use></svg>
+									span.controls__descr-text Кухня с ручками
+							.constructor__model
+								.model
+									// добавился вложенный блок с картинкой 360 градусов
+									.model-prev
+							.constructor__info
+								//поменялись классы
+								.constructor__header.d-none.d-lg-block
+									.product-block__title.section__title.constructor__title
+										h2 Угловая кухня 1500-2700
+									ul.list.list_unstyled.product-block__info-list.constructor__info-list.row.align-items-center
+										li.col-12.col-md-auto
+											.product-block__code Артикул: 90858
+								.constructor__body
+									.constructor__controls.controls
+										//поменялись классы
+										.controls__header.d-none.d-lg-flex
+											.controls__title.section__title.section__title_style8 Выберите цвет
+											.controls__descr
+												span.controls__descr-icon(aria-hidden="true")
+													<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-doorhandle"></use></svg>
+												span.controls__descr-text Кухня с ручками
+										.controls__body
+											//поменялись классы
+											.controls__tabs.d-none.d-md-block
+												ul.list.list_unstyled.nav.nav-tabs.tab-list(role="tablist")
+													li.list__item
+														a.tab-link.active(id="controls-link-1" data-toggle="tab" href="#controls-tab-1" role="tab" aria-controls="controls-tab-1" aria-selected="true" aria-label="Тумба")
+															// если глянец, то tab-link__icon gloss
+															// если цвет белый и глянец, то tab-link__icon gloss gloss_dark
+															// если фрезеровка, то tab-link__icon milling
+															span.tab-link__icon(aria-hidden="true" style="background-color:#dddddd; background-image: url('images/content/materials/material-1.jpg');")
+															span.tab-link__content
+																span.tab-link__title Тумба
+																span.tab-link__color Серый
+													li.list__item
+														a.tab-link(id="controls-link-2" data-toggle="tab" href="#controls-tab-2" role="tab" aria-controls="controls-tab-2" aria-selected="false" aria-label="Столешница")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#6A6F7B; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Столешница
+																span.tab-link__color Гикори Рокфорд темный
+													li.list__item
+														a.tab-link(id="controls-link-3" data-toggle="tab" href="#controls-tab-3" role="tab" aria-controls="controls-tab-3" aria-selected="false" aria-label="Шкафы")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#9FA5B9; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Шкафы
+																span.tab-link__color Серый пепел
+													li.list__item
+														a.tab-link(id="controls-link-4" data-toggle="tab" href="#controls-tab-4" role="tab" aria-controls="controls-tab-4" aria-selected="false" aria-label="Корпус")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#001E33; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Корпус
+																span.tab-link__color Серый асфальт
+													li.list__item
+														a.tab-link(id="controls-link-5" data-toggle="tab" href="#controls-tab-5" role="tab" aria-controls="controls-tab-5" aria-selected="false" aria-label="Полки")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#001E33; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Полки
+																span.tab-link__color Серый асфальт
+											.controls__content.tab-content
+												form(name="form-constructor" method="post")
+													.tab-pane.fade.show.active(id="controls-tab-1" role="tabpanel" aria-labelledby="controls-link-1")
+														// добавилась кнопка и коллапс
+														button.tab-link.collapse-link(type="button" data-toggle="collapse" data-target="#controls-collapse-1" aria-controls="controls-collapse-1" aria-expanded="true" aria-label="Тумба")
+															// если глянец, то tab-link__icon gloss
+															// если цвет белый и глянец, то tab-link__icon gloss gloss_dark
+															// если фрезеровка, то tab-link__icon milling
+															span.tab-link__icon(aria-hidden="true" style="background-color:#dddddd; background-image: url('images/content/materials/material-1.jpg');")
+															span.tab-link__content
+																span.tab-link__title Тумба
+																span.tab-link__color Серый
+														.collapse.show(id="controls-collapse-1")
+															.tab-form
+																.row
+																	.col-6
+																		.controls__subtitle ЛДСП
+																		ul.list.list_unstyled.radio-list.radio-list_color.row
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-1" name="stand-color" value="Белый" data-style="background-color: #ffffff;")
+																					span.radio__custom(aria-label="Белый" style="background-color: #ffffff;")
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-2" name="stand-color" value="Светло-серый" data-style="background-color: #D9E1EA;")
+																					span.radio__custom(aria-label="Светло-серый" style="background-color: #D9E1EA")
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-3" name="stand-color" value="Серый" data-style="background-color:#dddddd; background-image: url('images/content/materials/material-1.jpg');" checked)
+																					span.radio__custom(aria-label="Серый" style="background-color:#dddddd; background-image: url('images/content/materials/material-1.jpg');")
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-4" name="stand-color" value="Темно-серый" data-style="background-color: #6D7281;")
+																					span.radio__custom(aria-label="Темно-серый" style="background-color: #6D7281;")
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-5" name="stand-color" value="Мокрый асфальт" data-style="background-color: #252A2E;")
+																					span.radio__custom(aria-label="Мокрый асфальт" style="background-color: #252A2E;")
+																			li.list__item.radio.radio_color.double-colors
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-6" name="stand-color" value="Серо-голубой" data-style="color: #D9E1EA; background-color: #9FA5B9;" data-double-colors="true")
+																					span.radio__custom(aria-label="Серо-голубой" style="color: #D9E1EA; background-color: #9FA5B9;")
+																						span.complementary-color(aria-hidden="true")
+																			li.list__item.radio.radio_color.gloss
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-7" name="stand-color" value="Голубой, глянец" data-style="background-color: #0085E5;" data-gloss="true")
+																					span.radio__custom(aria-label="Голубой, глянец" style="background-color: #0085E5;")
+																						span.complementary-color(aria-hidden="true")
+																	.col-6
+																		.controls__subtitle МДФ
+																		ul.list.list_unstyled.radio-list.radio-list_color.row
+																			li.list__item.radio.radio_color.gloss.gloss_dark
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-8" name="stand-color" value="Белый" data-style="background-color: #ffffff;" data-gloss-dark="true")
+																					span.radio__custom(aria-label="Белый, глянец" style="background-color: #ffffff;")
+																						span.complementary-color(aria-hidden="true")
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-9" name="stand-color" value="Светло-серый" data-style="background-color: #D9E1EA;")
+																					span.radio__custom(aria-label="Светло-серый" style="background-color: #D9E1EA;")
+																	.col-6
+																		.controls__subtitle Пленка ПВХ
+																		ul.list.list_unstyled.radio-list.radio-list_color.row
+																			li.list__item.radio.radio_color.milling
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-10" name="stand-color" value="Белый" data-style="color: rgba(0, 0, 0, 0.3); background-color: #ffffff;" data-milling="true")
+																					span.radio__custom(aria-label="Белый, фрезеровка" style="color: rgba(0, 0, 0, 0.3); background-color: #ffffff;")
+																						span.complementary-color(aria-hidden="true")
+																						span.milling-popover Данный цвет выполняется только с фрезеровкой
+																			li.list__item.radio.radio_color.milling
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-11" name="stand-color" value="Голубой, фрезеровка" data-style="color: rgba(255, 255, 255, 0.8); background-color: #0085E5;")
+																					span.radio__custom(aria-label="Светло-серый" style="color: rgba(255, 255, 255, 0.8); background-color: #0085E5;")
+																						span.complementary-color(aria-hidden="true")
+																						span.milling-popover Данный цвет выполняется только с фрезеровкой
+																			li.list__item.radio.radio_color.milling
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-12" name="stand-color" value="Серый, фрезеровка" data-style="color: rgba(0, 0, 0, 0.3); background-color:#dddddd; background-image: url('images/content/materials/material-1.jpg');")
+																					span.radio__custom(aria-label="Серый" style="background-color:#dddddd; background-image: url('images/content/materials/material-1.jpg');")
+																						span.complementary-color(aria-hidden="true")
+																						span.milling-popover Данный цвет выполняется только с фрезеровкой
+																	.col-6
+																		.controls__subtitle Краска МДФ
+																		ul.list.list_unstyled.radio-list.radio-list_color.row
+																			li.list__item.radio.radio_color.gloss.gloss_dark
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-13" name="stand-color" value="Белый" data-style="background-color: #ffffff;" data-gloss-dark="true")
+																					span.radio__custom(aria-label="Белый, глянец" style="background-color: #ffffff;")
+																						span.complementary-color(aria-hidden="true")
+																			li.list__item.radio.radio_color
+																				label.radio__label
+																					input.radio__hidden(type="radio" id="stand-color-14" name="stand-color" value="Мокрый асфальт" data-style="background-color: #252A2E;")
+																					span.radio__custom(aria-label="Мокрый асфальт" style="background-color: #252A2E;")
+													.tab-pane.fade(id="controls-tab-2" role="tabpanel" aria-labelledby="controls-link-2")
+														button.tab-link.collapse-link.collapsed(type="button" data-toggle="collapse" data-target="#controls-collapse-2" aria-controls="controls-collapse-2" aria-expanded="false" aria-label="Столешница")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#6A6F7B; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Столешница
+																span.tab-link__color Гикори Рокфорд темный
+														.collapse(id="controls-collapse-2")
+															.tab-form 2
+													.tab-pane.fade(id="controls-tab-3" role="tabpanel" aria-labelledby="controls-link-3")
+														button.tab-link.collapse-link.collapsed(type="button" data-toggle="collapse" data-target="#controls-collapse-3" aria-controls="controls-collapse-3" aria-expanded="false" aria-label="Шкафы")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#9FA5B9; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Шкафы
+																span.tab-link__color Серый пепел
+														.collapse(id="controls-collapse-3")
+															.tab-form 3
+													.tab-pane.fade(id="controls-tab-4" role="tabpanel" aria-labelledby="controls-link-4")
+														button.tab-link.collapse-link.collapsed(type="button" data-toggle="collapse" data-target="#controls-collapse-4" aria-controls="controls-collapse-4" aria-expanded="false" aria-label="Корпус")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#001E33; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Корпус
+																span.tab-link__color Серый асфальт
+														.collapse(id="controls-collapse-4")
+															.tab-form 4
+													.tab-pane.fade(id="controls-tab-5" role="tabpanel" aria-labelledby="controls-link-5")
+														button.tab-link.collapse-link.collapsed(type="button" data-toggle="collapse" data-target="#controls-collapse-5" aria-controls="controls-collapse-5" aria-expanded="false" aria-label="Полки")
+															span.tab-link__icon(aria-hidden="true" style="background-color:#001E33; background-image: none;")
+															span.tab-link__content
+																span.tab-link__title Полки
+																span.tab-link__color Серый асфальт
+														.collapse(id="controls-collapse-5")
+															.tab-form 5
+									.constructor__downloads
+										.row
+											.col-12.col-sm-6
+												a.link(href="javascript: void(0);" download aria-label="Скачать проект кухни PDF")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-documents"></use></svg>
+													span.link__text Скачать проект кухни PDF
+											.col-12.col-sm-6
+												a.link(href="javascript: void(0);" download aria-label="Сохранить изображение")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-save-photo"></use></svg>
+													span.link__text Сохранить изображение
+									.constructor__fittings
+										.fittings
+											span.fittings__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-measuring-tape"></use></svg>
+											span.fittings__text Фурнитура “Стандарт”
+											span.fittings__popover
+												button(type="button").btn.btn_popover(data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.")
+													<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-popover"></use></svg>
+								.constructor__footer
+									.product-block__price.constructor__price
+										span.cost 3 567
+										span.currency лей / шт
+									.product-block__form
+										.btn-group
+											.row
+												.col-12.col-sm-auto
+													button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+														span.btn__icon(aria-hidden="true")
+															<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+														span.btn__text В корзину
+												.col-12.col-sm-auto
+													button.btn.btn_default.btn_transparent.btn_flex(type="button" data-toggle="modal" data-target="#modal-consultation")
+														span.btn__icon(aria-hidden="true")
+															<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-call-center2"></use></svg>
+														span.btn__text Заказать консультацию
+			.product-block__elements
+				.section__header
+					.container
+						.section__title.section__title_style7
+							h3 Состав комплекта Угловая кухня 1500-2700
+						.section__controls
+							.section__controls-nav.swiper-nav
+								button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.section__body
+					.container
+						.swiper-container.js-elements-slider
+							.swiper-wrapper
+								.swiper-slide
+									.element-card
+										.element-card__img
+											img(src="images/content/kitchen-elements/element-img-1.jpg" alt="Изображение продукта")
+										.element-card__title Шкаф навесной с распашным фасадом 1
+										.element-card__params
+											ul.list.list_unstyled.params-list
+												li.list__item.params-list__item
+													span.params-list__title Количество: 
+													span.params-list__value 1 шт
+												li.list__item.params-list__item
+													span.params-list__title Размер: 
+													span.params-list__value 520 x 830 x 440 мм
+								.swiper-slide
+									.element-card
+										.element-card__img
+											img(src="images/content/kitchen-elements/element-img-2.jpg" alt="Изображение продукта")
+										.element-card__title Тумба с распашным фасадом 1-дверная 45
+										.element-card__params
+											ul.list.list_unstyled.params-list
+												li.list__item.params-list__item
+													span.params-list__title Количество: 
+													span.params-list__value 1 шт
+												li.list__item.params-list__item
+													span.params-list__title Размер: 
+													span.params-list__value 520 x 830 x 440 мм
+								.swiper-slide
+									.element-card
+										.element-card__img
+											img(src="images/content/kitchen-elements/element-img-3.jpg" alt="Изображение продукта")
+										.element-card__title Пенал с левым открыванием
+										.element-card__params
+											ul.list.list_unstyled.params-list
+												li.list__item.params-list__item
+													span.params-list__title Количество: 
+													span.params-list__value 3 шт
+												li.list__item.params-list__item
+													span.params-list__title Размер: 
+													span.params-list__value 520 x 830 x 440 мм
+								.swiper-slide
+									.element-card
+										.element-card__img
+											img(src="images/content/kitchen-elements/element-img-4.jpg" alt="Изображение продукта")
+										.element-card__title Шкаф навесной с распашным фасадом 1
+										.element-card__params
+											ul.list.list_unstyled.params-list
+												li.list__item.params-list__item
+													span.params-list__title Количество: 
+													span.params-list__value 1 шт
+												li.list__item.params-list__item
+													span.params-list__title Размер: 
+													span.params-list__value 520 x 830 x 440 мм
+								.swiper-slide
+									.element-card
+										.element-card__img
+											img(src="images/content/kitchen-elements/element-img-5.jpg" alt="Изображение продукта")
+										.element-card__title Тумба с распашным фасадом 1-дверная 45
+										.element-card__params
+											ul.list.list_unstyled.params-list
+												li.list__item.params-list__item
+													span.params-list__title Количество: 
+													span.params-list__value 2 шт
+												li.list__item.params-list__item
+													span.params-list__title Размер: 
+													span.params-list__value 520 x 830 x 440 мм
+	//-+odds
+	//-+odds
+	//-+slider-related
+	//-+sliders-in-tabs({"buy":"true"})
+	+sliders-in-tabs({"popular":"true"})

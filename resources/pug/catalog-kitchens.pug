@@ -1,0 +1,719 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Кухни
+						li.list__item
+							a.link.active(href="javascript: void(0);") Прямые кухни
+				.section__title.section__title_style1
+					h1 Кухни
+		.section__body.section__body_products
+			.container
+				.row
+					.col-12.aside-column
+						.filter-controls.d-block.d-lg-none
+							.row.justify-content-between
+								.col-auto
+									button.btn.btn_dark.btn_default.btn_filter.btn_with-icon.js-filter-panel-opener(type="button")
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="25" height="25"><use xlink:href="#svg-icon-settings"></use></svg>
+										span.btn__text Фильтр
+								.col-auto
+									button.btn.btn_gray.btn_icon.btn_menu.js-categories-panel-opener(type="button" aria-label="Меню" aria-controls="categories-menu")
+										<svg role="img" aria-hidden="true" width="25" height="25"><use xlink:href="#svg-icon-menu"></use></svg>
+									.categories-menu.collapse#categories-menu
+										button.btn.categories-menu__control.js-categories-panel-closer(type="button" aria-controls="categories-menu")
+											span.btn__text.section__title Категории
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+										.categories-block
+											a.categories-block__header(href="javascript: void(0);")
+												.categories-block__icon(aria-hidden="true")
+													<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+												.categories-block__title.section__title Все категории каталога
+											.categories-block__body
+												ul.list.list_unstyled.categories-block__list
+													li.list__item
+														// если находимся на соответствующей странице - ссылке добавляем класс active
+														a.link(href="javascript:void(0);") 2 100 мм
+													li.list__item
+														a.link(href="javascript:void(0);") 2 400 мм
+													li.list__item
+														a.link(href="javascript:void(0);") 2 700 мм
+													li.list__item
+														a.link(href="javascript:void(0);") 3 000 мм
+						aside.filter-panel
+							.filter-panel__header.d-block.d-lg-none
+								button.btn.btn_close.js-filter-panel-closer(type="button")
+									span.btn__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+									span.btn__text Закрыть фильтр
+							.filter-panel__content
+								.filter-panel__group.d-none.d-lg-block
+									.categories-block
+										a.categories-block__header(href="javascript: void(0);")
+											.categories-block__icon(aria-hidden="true")
+												<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+											.categories-block__title.section__title Все категории каталога
+										.categories-block__body
+											ul.list.list_unstyled.categories-block__list
+												li.list__item
+													// если находимся на соответствующей странице - ссылке добавляем класс active
+													a.link(href="javascript:void(0);") 2 100 мм
+												li.list__item
+													a.link(href="javascript:void(0);") 2 400 мм
+												li.list__item
+													a.link(href="javascript:void(0);") 2 700 мм
+												li.list__item
+													a.link(href="javascript:void(0);") 3 000 мм
+								.filter-panel__group
+									.filter-panel__title.section__title Цена
+									.row
+										.col-6
+											.form-group
+												label.form-label.form-label_hidden(for="filter-start-price") От
+												input.form-control(type="number" id="filter-start-price" name="filter-start-price" placeholder="От")
+										.col-6
+											.form-group
+												label.form-label.form-label_hidden(for="filter-end-price") До
+												input.form-control(type="number" id="filter-end-price" name="filter-end-price" placeholder="До")
+								.filter-panel__group
+									ul.list.list_unstyled.checkbox-list
+										li.list__item.checkbox
+											label.checkbox__label(for="filter-discounts")
+												input.checkbox__hidden(type="checkbox" id="filter-discounts" name="filter-discounts" value="Со скидкой")
+												span.checkbox__custom(aria-hidden="true")
+												span.checkbox__text Со скидкой
+										li.list__item.checkbox
+											label.checkbox__label(for="filter-sale")
+												input.checkbox__hidden(type="checkbox" id="filter-sale" name="filter-sale" value="Распродажа")
+												span.checkbox__custom(aria-hidden="true")
+												span.checkbox__text Распродажа
+										li.list__item.checkbox
+											label.checkbox__label(for="filter-new")
+												input.checkbox__hidden(type="checkbox" id="filter-new" name="filter-new" value="Новинки")
+												span.checkbox__custom(aria-hidden="true")
+												span.checkbox__text Новинки
+										li.list__item.checkbox
+											label.checkbox__label(for="filter-exclusive")
+												input.checkbox__hidden(type="checkbox" id="filter-exclusive" name="filter-exclusive" value="Online Exclusive")
+												span.checkbox__custom(aria-hidden="true")
+												span.checkbox__text Online Exclusive
+								.filter-panel__group.filter-panel__group_collapsed
+									button.filter-panel__control.collapsed.js-filter-panel-toggler(aria-label="Показать/скрыть раздел Основной цвет")
+										span.btn__text.filter-panel__title.section__title Основной цвет
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.filter-panel__collapse.collapse
+										ul.list.list_unstyled.checkbox-list
+											label.checkbox__label(for="filter-color-top-1")
+												input.checkbox__hidden(type="checkbox" id="filter-color-top-1" name="filter-color-top-1" value="Белый")
+												span.checkbox__custom(aria-hidden="true")
+												span.checkbox__text Белый <span class="color_gray counter">126</span>
+								.filter-panel__group.filter-panel__group_collapsed
+									button.filter-panel__control.collapsed.js-filter-panel-toggler(aria-label="Показать/скрыть раздел Материал")
+										span.btn__text.filter-panel__title.section__title Материал
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.filter-panel__collapse.collapse
+										ul.list.list_unstyled.checkbox-list
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-material-top-1")
+													input.checkbox__hidden(type="checkbox" id="filter-material-top-1" name="filter-material-top-1" value="Керамика")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Керамика <span class="color_gray counter">126</span>
+								.filter-panel__group.filter-panel__group_collapsed
+									button.filter-panel__control.collapsed.js-filter-panel-toggler(aria-label="Показать/скрыть раздел Ручки")
+										span.btn__text.filter-panel__title.section__title Ручки
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.filter-panel__collapse.collapse
+										ul.list.list_unstyled.checkbox-list
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-shape-top-1")
+													input.checkbox__hidden(type="checkbox" id="filter-shape-top-1" name="filter-shape-top-1" value="Ручка 1")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Ручка 1 <span class="color_gray counter">26</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-shape-top-2")
+													input.checkbox__hidden(type="checkbox" id="filter-shape-top-2" name="filter-shape-top-2" value="Ручка 2")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Ручка 2 <span class="color_gray counter">100</span>
+								.filter-panel__group.filter-panel__group_collapsed
+									button.filter-panel__control.collapsed.js-filter-panel-toggler(aria-label="Показать/скрыть раздел Поверхность")
+										span.btn__text.filter-panel__title.section__title Поверхность
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.filter-panel__collapse.collapse
+										ul.list.list_unstyled.checkbox-list
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-pov-top-1")
+													input.checkbox__hidden(type="checkbox" id="filter-pov-top-1" name="filter-pov-top-1" value="Гранит")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Гранит <span class="color_gray counter">26</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-pov-top-2")
+													input.checkbox__hidden(type="checkbox" id="filter-pov-top-2" name="filter-pov-top-2" value="Дерево")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Дерево <span class="color_gray counter">100</span>
+								.filter-panel__group.filter-panel__group_collapsed
+									button.filter-panel__control.collapsed.js-filter-panel-toggler(aria-label="Показать/скрыть раздел Фрезеровка")
+										span.btn__text.filter-panel__title.section__title Фрезеровка
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.filter-panel__collapse.collapse
+										ul.list.list_unstyled.checkbox-list
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-frez-top-1")
+													input.checkbox__hidden(type="checkbox" id="filter-frez-top-1" name="filter-frez-top-1" value="Есть")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Есть <span class="color_gray counter">26</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-frez-top-2")
+													input.checkbox__hidden(type="checkbox" id="filter-frez-top-2" name="filter-frez-top-2" value="Нет")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Нет <span class="color_gray counter">100</span>
+								.filter-panel__group.filter-panel__group_collapsed
+									button.filter-panel__control.collapsed.js-filter-panel-toggler(aria-label="Показать/скрыть раздел Бренд")
+										span.btn__text.filter-panel__title.section__title Бренд
+										span.btn__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.filter-panel__collapse.collapse
+										ul.list.list_unstyled.checkbox-list
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-brand-top-1")
+													input.checkbox__hidden(type="checkbox" id="filter-brand-top-1" name="filter-brand-top-1" value="Cersanit")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Cersanit <span class="color_gray counter">12</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-brand-top-2")
+													input.checkbox__hidden(type="checkbox" id="filter-brand-top-2" name="filter-brand-top-2" value="Artceram")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Artceram <span class="color_gray counter">3</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-brand-top-3")
+													input.checkbox__hidden(type="checkbox" id="filter-brand-top-3" name="filter-brand-top-3" value="AWD Interior")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text AWD Interior <span class="color_gray counter">9</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-brand-top-4")
+													input.checkbox__hidden(type="checkbox" id="filter-brand-top-4" name="filter-brand-top-4" value="SEREL")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text SEREL <span class="color_gray counter">23</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-brand-top-5")
+													input.checkbox__hidden(type="checkbox" id="filter-brand-top-5" name="filter-brand-top-5" value="Guralvit")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Guralvit <span class="color_gray counter">11</span>
+											li.list__item.checkbox
+												label.checkbox__label(for="filter-brand-top-6")
+													input.checkbox__hidden(type="checkbox" id="filter-brand-top-6" name="filter-brand-top-6" value="Ceramica Cas")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Ceramica Cas <span class="color_gray counter">1</span>
+										.btn-wrapper.dropdown.dropright
+											//чтобы показать прелоадер, нужно кнопке добавить класс btn_load
+											button.btn.btn_show-all.btn_loader.btn_full(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+												span.btn__text Все 12 вариантов
+												span.btn__icon
+													<svg class="default-icon" role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+													<svg class="loader-icon" role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-loader"></use></svg>
+											.dropdown-menu.bg_white
+												.dropdown-menu__content.scrollbar-inner
+													ul.list.list_unstyled.checkbox-list.checkbox-list_two-col
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-1")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-1" name="filter-brand-1" value="Cersanit")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Cersanit <span class="color_gray counter">12</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-2")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-2" name="filter-brand-2" value="Artceram")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Artceram <span class="color_gray counter">3</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-3")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-3" name="filter-brand-3" value="AWD Interior")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text AWD Interior <span class="color_gray counter">9</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-4")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-4" name="filter-brand-4" value="SEREL")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text SEREL <span class="color_gray counter">23</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-5")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-5" name="filter-brand-5" value="Guralvit")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Guralvit <span class="color_gray counter">11</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-6")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-6" name="filter-brand-6" value="Ceramica Cas")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Ceramica Cas <span class="color_gray counter">1</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-7")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-7" name="filter-brand-7" value="Cersanit")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Cersanit <span class="color_gray counter">12</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-8")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-8" name="filter-brand-8" value="Artceram")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Artceram <span class="color_gray counter">3</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-9")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-9" name="filter-brand-9" value="AWD Interior")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text AWD Interior <span class="color_gray counter">9</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-10")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-10" name="filter-brand-10" value="SEREL")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text SEREL <span class="color_gray counter">23</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-11")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-11" name="filter-brand-11" value="Guralvit")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Guralvit <span class="color_gray counter">11</span>
+														li.list__item.checkbox
+															label.checkbox__label(for="filter-brand-12")
+																input.checkbox__hidden(type="checkbox" id="filter-brand-12" name="filter-brand-12" value="Ceramica Cas")
+																span.checkbox__custom(aria-hidden="true")
+																span.checkbox__text Ceramica Cas <span class="color_gray counter">1</span>
+								.more-filters#more-filters.collapse
+									| тут будут еще фильтры
+								button.btn.more-filters-btn.collapsed(type="button" data-toggle="collapse" data-target="#more-filters" aria-expanded="false" aria-controls="more-filters")
+									span.btn__text.btn__text_closed Дополнительные параметры
+									span.btn__text.btn__text_opened Скрыть параметры
+							.filter-panel__footer
+								.btn-wrapper
+									span.section__title.btn-wrapper__title Найдено: 12345
+									button.btn.btn_icon.js-filter-clean-open(type="button" aria-label="Очистить фильтр")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+								button.btn.btn_clean.js-filter-clean(type="button")
+									span.btn__text Очистить фильтр
+					.col-12.content-column
+						.catalog-banners.catalog-banners_head
+							a.banner-block.color_white.bg_gray-dark(href="javascript: void(0);")
+								picture
+									<source srcset="images/content/banners/banner-img-3.png" media="(min-width: 768px)">
+									<source srcset="images/content/banners/banner-img-3_mobile.png" media="(min-width: 0)">
+									img(src="images/content/banners/banner-img-3.png" alt="Раскрась свою кухню! В карточке товара вы найдете конструктор кухни")
+						.catalog-controls
+							.row.align-items-end.justify-content-between
+								.col-12.col-lg-6
+									ul.list.list_unstyled.tag-list.row
+										li.col-auto.list__item
+											.tag-block
+												.tag-block__title.section__title Со скидкой
+												button.tag-block__remove(type="button" aria-label="Удалить критерий")
+													<svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-cancel"></use></svg>
+										li.col-auto.list__item
+											.tag-block
+												.tag-block__title.section__title Белый
+												button.tag-block__remove(type="button" aria-label="Удалить критерий")
+													<svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-cancel"></use></svg>
+								.col-12.col-lg-6
+									ul.list.list_unstyled.sort-list
+										li.list__item.dropdown
+											button.js-dropdown-btn.btn.btn_current(type="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false")
+												span.btn__text Сначала популярные
+												span.btn__icon(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											ul.list.list_unstyled.dropdown-menu.dropdown-menu-lg-right.dropdown-menu-left
+												li.list__item
+													a.link.active(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text По популярности
+												li.list__item
+													a.link(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text По возрастанию цены
+												li.list__item
+													a.link(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text По убыванию цены
+												li.list__item
+													a.link(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text По новинкам
+												li.list__item
+													a.link(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text По скидкам
+										li.list__item.dropdown
+											button.btn.btn_current(type="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false")
+												span.btn__text Показывать по 16
+												span.btn__icon(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											ul.list.list_unstyled.dropdown-menu.dropdown-menu-lg-right.dropdown-menu-left
+												li.list__item
+													a.link.active(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text 16
+												li.list__item
+													a.link(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text 30
+												li.list__item
+													a.link(href="javascript: void(0);")
+														span.link__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-verified2"></use></svg>
+														span.link__text 50
+						.catalog-products
+							.row.no-gutters
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+								.col-12.col-sm-6.col-xl-3
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 875
+													span.currency лей / шт
+											.product-card__footer.product-card__footer_kitchen
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__colors
+													.product-card__colors-mark 85 цветов
+												.product-card__controls
+													//-button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													a.btn.product-card__btn_mvp.product-card__btn.product-card__btn_constructor.js-to-constructor(href="javascript: void(0);" aria-label="Выбрать цвет")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-paint"></use></svg>
+														span.btn__text
+															span.line Выбрать 
+															span.line цвет
+							.catalog-products__footer.pagination-block
+								.row
+									.show-more
+										//все кнопки с классом btn_loader при добавлении класса .btn_loader_show меняют иконку на прелоадер
+										button.btn.btn_show-more.btn_bordered.btn_loader.js-show-more(type="button")
+											span.btn__text Показать еще
+											span.btn__icon(aria-hidden="true")
+												<svg class="default-icon" role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												<svg class="loader-icon" role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-loader"></use></svg>
+									.pagination
+										.pagination__current
+											button.btn.pagination__current-btn.btn_bordered.js-pagination-opener(type="button" aria-label="Сменить страницу")
+												span.btn__text 1
+												span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.pagination__block
+											.pagination__content
+												.scrollbar-inner
+													ul.list.list_unstyled.pagination__list
+														.list__item
+															a.link.btn.active.js-pagination-link(href="javascript: void(0);" aria-label="Страница 1") 1
+														.list__item
+															a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 2") 2
+														.list__item
+															a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 3") 3
+														.list__item
+															a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 4") 4
+														.list__item
+															a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 5") 5
+														.list__item
+															a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 6") 6
+														.list__item
+															a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 7") 7
+											.pagination__control
+												button.btn.pagination__control-btn.js-pagination-closer(type="button" aria-label="Закрыть")
+													span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

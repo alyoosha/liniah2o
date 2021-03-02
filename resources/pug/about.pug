@@ -1,0 +1,177 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_about.section_vacancy
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") О нас
+				.header-title-wrapper
+					.header-title
+						.header-title__main.section__title.section__title_style1
+							h1 О нас
+					//-.section_vertical-navigation.js-vertical-navigation
+						.scrollbar-inner
+							ul.list.list_unstyled.section__title_style8.row.no-gutters
+								li.list__item.col-auto.js-list-item.active-item
+									a.link.active(href="javascript: void(0);")
+										.link__text О нас
+								li.list__item.col-auto.js-list-item
+									a.link(href="javascript: void(0);")
+										.link__text Условия сотрудничества
+								li.list__item.col-auto.js-list-item
+									a.link(href="javascript: void(0);")
+										.link__text 3D моделирование
+								li.list__item.col-auto.js-list-item
+									a.link(href="javascript: void(0);")
+										.link__text Сервисный центр
+								li.list__item.col-auto.js-list-item
+									a.link(href="javascript: void(0);")
+										.link__text Вакансии
+		.section__body.about-block.color_white
+			.container
+				.row
+					.col-12.col-lg-5.col-xl-4
+						.about-block__img
+							.background-img(aria-hidden="true")
+								img(src="images/content/about/about-img-1.jpg" alt="Фото")
+					.col-12.col-lg-7.col-xl-8
+						.about-block__content
+							.section__title.section__title_style5.about-block__title
+								h2
+									span.line Лучшие решения 
+									span.line для вашей ванной комнаты
+							.about-block__descr.section__description
+								p Описание компании, ее лидерство на рынке, рост и развитие Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+								p Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Комплексный ассортимент товаров сантехнического назначения для вас у нас. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+								p Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	section.section.section_about-numeric
+		.container
+			.section__title.section__title_style1
+				h2 О LiniaH2O в цифрах
+			ul.list.list_unstyled.row.no-gutters.numeric-list
+				li.list__item
+					.numeric-block
+						.numeric-block__num <span class="count">20</span>+
+						.section__title.section__title_style8.numeric-block__title лет опыта предлагать нужное
+				li.list__item
+					.numeric-block
+						.numeric-block__num <span class="count">4</span>
+						.section__title.section__title_style8.numeric-block__title магазина оффлайн в Молдавии
+				li.list__item
+					.numeric-block
+						.numeric-block__num <span class="count">24</span>
+						.section__title.section__title_style8.numeric-block__title часа в сутки поддержка в онлайн
+				li.list__item
+					.numeric-block
+						.numeric-block__num <span class="count">250</span>
+						.section__title.section__title_style8.numeric-block__title сотрудников компании в общем
+				li.list__item
+					.numeric-block
+						.numeric-block__num <span class="count">100+</span>
+						.section__title.section__title_style8.numeric-block__title проверенных брендов
+			.section__img
+				.background-img(aria-hidden="true")
+					img(src="images/content/about/about-img-2.jpg" alt="Фото")
+			.row
+				.col-12.col-lg-7.col-xl-6
+					.section__title.section__title_style4
+						h3
+							span.line Качество превыше всего, 
+							span.line а совершенство — в деталях
+					.section__description
+						p Вся продукция удачно сочетает в себе пожелания потребителей и при этом остается эстетично. функциональной, экономичной, отличается исключительной надежностью, подтвержденной гарантиями и сертификатами качества.
+						p Одним из принципов нашей работы является индивидуальный подход к каждому клиенту. Профессиональные консультанты всегда будут рады помочь вам советами и рекомендациями.
+	section.section.section_about-mission
+		.container
+			.row
+				.col-12.col-lg-4
+					.section__img
+						.background-img(aria-hidden="true")
+							img(src="images/content/about/about-img-3.jpg" alt="Фото")
+				.col-12.col-lg-8
+					.section__content
+						.section__header.color_white.bg_gray-medium
+							.section__title.section__title_style1
+								h2 Наша миссия -
+							.section__title.section__title_style5
+								h2 поддержать Вас в трудном процессе ремонта!
+						.section__description
+							ol.list.list_unstyled.section__list
+								li.list__item
+									.list__text Мы поможем Вам воплотить Вашу мечту в неповторимый и индивидуальный дизайн ванной комнаты быстро, легко и доступно.
+								li.list__item
+									.list__text Вы увидите, что наша продукция может превратить ванную комнату в эргономичное, функциональное и очень привлекательное пространство для приятного времяпрепровождения.
+	section.section.section_about-offer
+		.section__img(aria-hidden="true")
+			.background-img
+				img(src="images/backgrounds/blog-bg.jpg" alt="Фоновое изображение")
+		.container
+			.row.align-items-end
+				.col-12.col-md-8.col-xl-9
+					.section__title.section__title_style1.color_white
+						h2 Для вас у нас
+					.section__description.color_white
+						p Керамическая плитка, мебель для ванных комнат и сантехническое оборудование доступны онлайн в любое время и в любом месте, а от желанной покупки вас отделяет всего один клик.
+				.col-12.col-md-4.col-xl-3
+					.section__controls
+						a(href="javascript: void(0);") В каталог
+			.section__body
+				.row.no-gutters
+					.col-12.col-md-6.col-xl-4
+						a.link.category-block.category-block_brown(href="javascript: void(0);" aria-label="Плитка")
+							.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-1.png');")
+							.link__content
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+								h2.link__text
+									span.line Плитка
+								span.link__control(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.col-12.col-md-6.col-xl-4
+						a.link.category-block.category-block_blue(href="javascript: void(0);" aria-label="Сантехника")
+							.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-2.png');")
+							.link__content
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tap"></use></svg>
+								h2.link__text
+									span.line Сантехника
+								span.link__control(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.col-12.col-md-6.col-xl-4
+						a.link.category-block.category-block_dark(href="javascript: void(0);" aria-label="Мебель для ванной комнаты")
+							.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-3.png');")
+							.link__content
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-nightstand"></use></svg>
+								h2.link__text
+									span.line Мебель для 
+									span.line ванной комнаты
+								span.link__control(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.col-12.col-md-6.col-xl-4
+						a.link.category-block.category-block_blue(href="javascript: void(0);" aria-label="Водоснабжение и отопление")
+							.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-4.png');")
+							.link__content
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+								h2.link__text
+									span.line Водоснабжение и
+									span.line отопление
+								span.link__control(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.col-12.col-md-6.col-xl-4
+						a.link.category-block.category-block_dark(href="javascript: void(0);" aria-label="Вода и водоочистка")
+							.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-12.png');")
+							.link__content
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop"></use></svg>
+								h2.link__text
+									span.line Вода 
+									span.line и водоочистка
+								span.link__control(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>

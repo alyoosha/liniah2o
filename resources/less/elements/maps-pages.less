@@ -1,0 +1,926 @@
+.section {
+    &_map-shops {
+
+		.section__header {
+
+			.section__breadcrumbs {
+				padding-bottom: 0;
+			}
+
+			.header-title {
+                display: flex;
+                align-items: flex-end;
+                padding: 50px 0;
+
+                &__main {
+                    margin-bottom: 30px;
+                }
+
+                &__add-text {
+                    font-size: 20px;
+                    line-height: 120%;
+                    padding-left: 20px;
+                    color: @color-gray_medium;
+                    
+                }
+
+                &__contacts {
+                    margin-left: auto;
+                    margin-bottom: 25px;
+
+                    .link {
+                        display: table;
+                        color: @color-gray_medium;
+
+                        &__icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                        }
+
+                        &__text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding-left: 15px;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: @color-black;
+                        }
+                    }
+                }
+			}
+        }
+        
+        .section__body {
+
+            .info-block {
+
+                .shop-info {
+                    padding: 30px 0;
+                    position: relative;
+
+                    .address {
+                        display: table;
+                        margin-bottom: 20px;
+
+                        &__icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                        }
+
+                        &__text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding-left: 15px;
+                            text-decoration: underline;
+                            color: @color-gray_medium;
+
+                            &:hover,
+                            &:focus {
+                                color: @color-black; 
+                            }
+                        }
+                    }
+
+                    .phone {
+                        display: flex;
+
+                        &__icon {
+                            margin-right: 15px;
+                        }
+
+                        &__text {
+                            color: @color-gray_medium;
+
+                            .line {
+                                display: block;
+                            }
+
+                            a.line {
+                                &:hover,
+                                &:focus {
+                                    color: @color-white_50;
+                                }
+                            }
+                        }
+                    }
+
+                    .throw-line {
+                        //position: absolute;
+                        //width: 300%;
+                        //height: 1px;
+                        //background-color: @color-gray_extralight;
+                        //border: 0;
+                        //left: -50%;
+                        //bottom: 0;
+                        //margin: 0;
+                        display: none;
+                    }
+                }
+
+                .shop-info + .shop-info {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -10000%;
+                        right: -200px;
+                        top: 0;
+                        height: 1px;
+                        background-color: @color-gray_extralight;
+                    }
+                }
+            }
+
+            .map-block {
+                border: 1px solid @color-gray_light;
+                border-radius: 3px 3px 3px 0px;
+                height: ~"calc(100% + 100px)";
+                margin: -50px 0;
+            }
+        }
+    }
+
+    &_map-shops-inner {
+
+        .section__header {
+
+			.section__breadcrumbs {
+				padding-bottom: 0;
+			}
+
+			.header-title {
+                display: flex;
+                align-items: flex-end;
+                padding: 50px 0;
+
+                &__main {
+                    margin-bottom: 30px;
+                }
+
+                &__add-text {
+                    font-size: 20px;
+                    line-height: 120%;
+                    padding-left: 20px;
+                    color: @color-gray_medium;
+                    
+                }
+
+                &__contacts {
+                    margin-left: auto;
+                    margin-bottom: 25px;
+
+                    .link {
+                        display: table;
+                        color: @color-gray_medium;
+
+                        &__icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                        }
+
+                        &__text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding-left: 15px;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: @color-black;
+                        }
+                    }
+                }
+			}
+        }
+
+        .section__body {
+
+            .shop-block {
+                padding-right: 15%;
+                color: @color-gray_medium;
+                padding: 50px 0;
+
+                &__slider {
+                    position: relative;
+                    z-index: 1;
+
+                    .slider_thumbs {
+                        position: relative;
+                        z-index: 1;
+        
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 5;
+                            height: 1px;
+                            background-color: @color-white_dark;
+                        }
+                    }
+                }
+
+                &__slide {
+                    position: relative;
+                    z-index: 0;
+                    display: block;
+                    height: 300px;
+                }
+
+                &__slide-thumbs {
+                    position: relative;
+                    z-index: 0;
+                    display: block;
+                    height: 95px;
+                }
+            }
+
+            .shop-reference-block {
+                position: relative;
+                height: ~"calc(100% + 100px)";
+                margin: -50px 0;
+                min-height: 500px;
+                border-radius: 3px 3px 3px 0px;
+                overflow: hidden;
+
+                &__wrapper {
+                    position: relative;
+                    color: @color-white;
+                    z-index: 2;
+
+                   .address-block {
+                       padding: 30px;
+
+                       &__title {
+                        font-size: 20px;
+                        line-height: 120%;
+                        margin-bottom: 20px;
+                       }
+
+                       &__address {
+                        display: table;
+                        margin-bottom: 20px;
+
+                        .icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                        }
+
+                        .text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding-left: 15px;
+                            text-decoration: underline;
+
+                            &:hover,
+                            &:focus {
+                                color: @color-white_50;
+                            }
+                        }
+                       }
+
+                       &__phone {
+                            display: flex;
+
+                            .icon {
+                                flex: 0 0 auto;
+                                max-width: 100%;
+                            }
+
+                            .text {
+                                flex: 0 0 auto;
+                                max-width: 100%;
+                                padding-left: 15px;
+                            }
+
+                            .line {
+                                display: block;
+                            }
+
+                            a.line {
+                                &:hover,
+                                &:focus {
+                                    color: @color-white_50;
+                                }
+                            }
+                       }
+                   }
+
+                   .schedule-block {
+                        border-left: 1px solid rgba(0, 0, 0, 0.15);
+                        padding: 30px;
+
+                        &__title {
+                            font-size: 20px;
+                            line-height: 120%;
+                            margin-bottom: 20px;
+                        }
+
+                        &__wrapper {
+                            display: flex;
+                        }
+
+                        &__icon {
+                            flex: 0 0 auto;
+                            max-width: 100%;
+                        }
+
+                        &__text {
+                            flex: 0 0 auto;
+                            max-width: 100%;
+                            padding-left: 15px;
+
+                            .line {
+                                margin-bottom: 10px;
+                            }
+                        }
+                   }
+                }
+
+                &__map {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    height: 100%;
+                    border: 1px solid @color-gray_light;
+                    background-color: @color-gray_light;
+                }
+            }
+        }
+    }
+
+    &_map-contacts {
+
+        .section__header {
+
+			.section__breadcrumbs {
+				padding-bottom: 0;
+			}
+
+			.header-title {
+                display: flex;
+                align-items: flex-end;
+                padding: 50px 0;
+
+                &__main {
+                    margin-bottom: 30px;
+                }
+
+                &__add-text {
+                    font-size: 20px;
+                    line-height: 120%;
+                    padding-left: 20px;
+                    color: @color-gray_medium;
+                    
+                }
+
+                &__shops {
+                    margin-left: auto;
+                    margin-bottom: 25px;
+
+                    .link {
+                        display: table;
+                        color: @color-gray_medium;
+
+                        &__icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                        }
+
+                        &__text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding-left: 15px;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: @color-black;
+                        }
+                    }
+                }
+			}
+        }
+
+        .section__body {
+
+            .info-block {
+                padding-bottom: 0;
+
+                .info-content {
+                    padding: 30px 0;
+                    position: relative;
+                }
+
+                .info-content + .info-content {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -10000%;
+                        right: -200px;
+                        top: 0;
+                        height: 1px;
+                        background-color: @color-gray_extralight;
+                    }
+                }
+
+                .title {
+                    font-size: 20px;
+                    line-height: 120%;
+                    margin-bottom: 30px;
+                }
+
+                .address-block,
+                .service-block {
+
+                    .address {
+                        display: table;
+                        margin-bottom: 20px;
+
+                        &__icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                        }
+
+                        &__text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding-left: 15px;
+                            text-decoration: underline;
+                            color: @color-gray_medium;
+
+                            &:hover,
+                            &:focus {
+                                color: @color-black; 
+                            }
+                        }
+                    }
+
+                    .phone-email-wrapper {
+                        display: flex;
+
+                        .phone {
+                            flex: 0 0 auto;
+                            max-width: 100%;
+                            display: flex;
+    
+                            &__icon {
+                                flex: 0 0 auto;
+                                max-width: 100%;
+                                margin-right: 15px;
+                            }
+    
+                            &__text {
+                                flex: 0 0 auto;
+                                max-width: 100%;
+                                color: @color-gray_medium;
+    
+                                .line {
+                                    display: block;
+                                }
+    
+                                a.line {    
+                                    &:hover,
+                                    &:focus {
+                                        color: @color-black; 
+                                    }
+                                }
+                            }
+                        }
+
+                        .email {
+                            flex: 0 0 auto;
+                            max-width: 100%;
+                            margin-left: 50px;
+
+                            &__icon {
+                                display: table-cell;
+                                vertical-align: middle;
+                                line-height: 0;
+                                padding-right: 11px;
+                            }
+
+                            &__text {
+                                display: table-cell;
+                                vertical-align: middle;
+                                color: @color-gray_medium;
+
+                                &:hover,
+                                &:focus {
+                                    color: @color-black; 
+                                }
+                            }
+                        }
+                    }
+
+                    .throw-line {
+                        //position: absolute;
+                        //width: 300%;
+                        //height: 1px;
+                        //background-color: @color-gray_extralight;
+                        //border: 0;
+                        //left: -50%;
+                        //bottom: 0;
+                        //margin: 0;
+                        display: none;
+                    }
+                }
+
+                .delivery-block {
+
+                    .phone {
+                        display: table;
+
+                        &__icon {
+                            display: table-cell;
+                            vertical-align: middle;
+                            line-height: 0;
+                            padding-right: 15px;
+                        }
+
+                        &__text {
+                            display: table-cell;
+                            vertical-align: middle;
+                            color: @color-gray_medium;
+
+                            &:hover,
+                            &:focus {
+                                color: @color-black; 
+                            }
+                        }
+                    }
+                }
+            }
+
+            .shop-reference-block {
+                position: relative;
+                height: ~"calc(100% + 100px)";
+                margin: -50px 0;
+                min-height: 500px;
+                border-radius: 3px 3px 3px 0px;
+                overflow: hidden;
+
+                &__wrapper {
+                    position: relative;
+                    z-index: 1000;
+                    color: @color-white;
+
+                    .announcement-block {
+                        font-size: 20px;
+                        line-height: 120%;
+                        padding: 10px 40px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    .schedule-block {
+                        padding: 30px 40px;
+                        border-left: 1px solid rgba(0, 0, 0, 0.15);
+
+                        .phone {
+                            display: table;
+                            margin-bottom: 20px;
+
+                            &__icon {
+                                display: table-cell;
+                                vertical-align: middle;
+                                line-height: 0;
+                            }
+
+                            &__text {
+                                display: table-cell;
+                                vertical-align: middle;
+                                padding-left: 15px;
+
+                                &:hover,
+                                &:focus {
+                                    color: @color-white_50;
+                                }
+                            }
+                        }
+
+                        .schedule {
+                            display: table;
+
+                            &__icon {
+                                display: table-cell;
+                                vertical-align: middle;
+                                line-height: 0;
+                            }
+
+                            &__text {
+                                display: table-cell;
+                                vertical-align: middle;
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+
+                &__map {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    height: 100%;
+                    border: 1px solid @color-gray_light;
+                    background-color: @color-gray_light;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1549px) {
+
+        &_map-contacts {
+
+            .section__body {
+
+                .info-block {
+
+                    .address-block,
+                    .service-block {
+
+                        .phone-email-wrapper {
+                            flex-direction: column;
+
+                            .email {
+                                margin-left: 0;
+                                margin-bottom: 20px;
+                                order: -1;
+                            }
+                        }
+                    }
+                }
+
+                .shop-reference-block {
+
+                    &__wrapper {
+                        color: @color-white;
+
+                        .announcement-block {
+                            padding: 10px 30px;
+                        }
+
+                        .schedule-block {
+                            padding: 30px;
+                        }
+                    }
+
+                    //&__map {
+                    //    height: 680px;
+                    //} 
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1199px) {
+
+        &_map-shops-inner {
+
+            .section__body {
+
+                .shop-reference-block {
+
+                    &__wrapper{
+
+                        .address-block {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.15);;
+                        }
+                        
+                        .schedule-block {
+                            border-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_map-contacts {
+
+            .section__body {
+
+                .info-block {
+                    padding-bottom: 0;
+                }
+
+                .shop-reference-block {
+                    height: ~"calc(100% + 40px)";
+                    margin: 0 0 -40px;
+                    min-height: 0;
+
+                    &__wrapper {
+
+                        .announcement-block {
+                            position: static;
+                            margin-top: 30px;
+                            transform: translateY(0%);
+                        }                    
+                    }
+
+                    &__map {
+                        position: relative;
+                        min-height: 0;
+                        height: 400px;
+                    } 
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 1024px) {
+
+        &_map-shops {
+    
+            .section__body {
+                .shop-reference-block {
+                    height: ~"calc(100% + 40px)";
+                    margin: 0 0 -40px;
+                    min-height: 0;
+
+                    .map-block {
+                        position: relative;
+                        min-height: 0;
+                        height: 400px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &_map-shops-inner {
+
+            .section__body {
+
+                .shop-reference-block {
+                    height: 100%;
+                    margin: 0;
+                    min-height: 0;
+                }     
+            }
+        }
+    }
+
+    @media(max-width: 767px) {
+
+        &_map-shops {
+    
+            .section__header {
+
+                .header-title {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 20px 0 30px;
+
+                    &__contacts {
+                        margin: 0;
+                    }
+
+                    &__add-text {
+                        display: block;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        &_map-shops-inner {
+   
+            .section__header {
+
+                .header-title {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 20px 0 30px;
+
+                    &__contacts {
+                        margin: 0;
+                    }
+
+                    &__add-text {
+                        display: block;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        &_map-contacts {
+   
+            .section__header {
+
+                .header-title {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 20px 0 30px;
+
+                    &__shops {
+                        margin: 0;
+                    }
+
+                    &__add-text {
+                        display: block;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 575px) {
+
+        &_map-shops {
+    
+            .section__body {
+    
+                .map-block {
+                    height: 400px;
+                    margin: 0 -20px;
+                    width: ~"calc(100% + 40px)";
+                }
+            }
+        }
+
+        &_map-shops-inner {
+
+            .section__body {
+
+                .shop-block {
+                    padding: 30px 0;
+
+                    &__slide {
+                        height: 160px;
+                    }
+    
+                    &__slide-thumbs {
+                        height: 40px;
+                    }
+                }
+
+                .shop-reference-block {
+                    margin-bottom: 0;
+                    height: 100%;
+                    border-radius: 0;
+                    overflow: visible;
+
+                    &__wrapper{
+                        margin: 0 -20px;
+                        width: ~"calc(100% + 40px)";
+
+                        .schedule-block {
+     
+                             &__text {
+     
+                                 .line {
+                                     margin-bottom: 5px;
+                                 }
+                             }
+                        }
+                    }
+
+                    &__map {
+                        height: 400px;
+                        margin: 0 -20px;
+                        width: ~"calc(100% + 40px)";
+                    }
+                }
+            }
+        }
+
+        &_map-contacts {
+
+            .section__body {
+
+                .shop-reference-block {
+                    margin-bottom: 0;
+                    height: 100%;
+                    border-radius: 0;
+                    overflow: visible;
+
+                    &__wrapper{
+                        margin: 0 -20px;
+                        width: ~"calc(100% + 40px)";
+                    }
+
+                    &__map {
+                        height: 400px;
+                        margin: 0 -20px;
+                        width: ~"calc(100% + 40px)";
+                    }
+                }
+            }
+        }
+    }
+}
+

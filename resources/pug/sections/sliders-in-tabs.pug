@@ -1,0 +1,2605 @@
+﻿mixin sliders-in-tabs(data)
+	if data.popular
+		section.section.section_sliders-in-tabs#sliders-in-tabs
+			.container
+				.row
+					.col-12.col-lg-10
+						.section__nav
+							.scrollbar-inner
+								ul.list.list_unstyled.nav.nav-tabs.section__nav-list.row.no-gutters.flex-nowrap(role="tablist")
+									li.col-auto.list__item
+										a.link.section__title.active.js-product-tab#popular-tab(href="#popular-products" data-toggle="tab" role="tab" aria-controls="popular-products" aria-selected="true")
+											h2 Популярные товары
+									li.col-auto.list__item
+										a.link.section__title.js-product-tab#viewed-tab(href="#viewed-products" data-toggle="tab" role="tab" aria-controls="viewed-products" aria-selected="false")
+											h2 Вы смотрели
+				.tab-content
+					.tab-pane.fade.show.active#popular-products(role="tabpanel" aria-labelledby="popular-tab")
+						.swiper-container.js-product-slider
+							.swiper-wrapper
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img.product-card__img_full(href="javascript: void(0);")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Смеситель для раковины
+												.product-card__price
+													span.old 1 345
+													span.cost.cost_new 867
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+						.section__controls
+							.section__controls-nav.swiper-nav
+								button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.tab-pane.fade#viewed-products(role="tabpanel" aria-labelledby="viewed-tab")
+						.swiper-container.js-product-slider
+							.swiper-wrapper
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+						.section__controls
+							.section__controls-nav.swiper-nav
+								button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+	if data.buy
+		section.section.section_slider-buy#slider-buy
+			.container
+				.row
+					.col-12.col-lg-10
+						.section__title.section__title_style4
+							h2 С этим товаром еще покупают
+				.slider-wrapper
+					.swiper-container.js-product-buy-slider
+						.swiper-wrapper
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Смеситель для раковины
+											.product-card__price
+												span.old 1 345
+												span.cost.cost_new 867
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.bg_blue Новинка
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+											.product-card__price
+												span.cost 175
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет в наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+											.product-card__price
+												span.cost 277
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+											.product-card__price
+												span.cost 1232
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.bg_blue Новинка
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+											.product-card__price
+												span.cost 819
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+											.product-card__price
+												span.cost 1232
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.bg_blue Новинка
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+											.product-card__price
+												span.cost 175
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет в наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+											.product-card__price
+												span.cost 277
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.bg_blue Новинка
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+											.product-card__price
+												span.cost 819
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+					.section__controls
+						.section__controls-nav.swiper-nav
+							button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+	if data.order
+		section.section.section_slider-order#slider-order
+			.container
+				.row
+					.col-12.col-lg-10
+						.section__title.section__title_style4
+							h2 Также рекомендуем
+				.slider-wrapper
+					.swiper-container.js-product-order-slider
+						.swiper-wrapper
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_order.btn_flex.js-to-order(type="button" aria-label="В избранное")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-add"></use></svg>
+													span.btn__text.section__title
+														| Добавить к заказу
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_order.btn_flex.js-to-order(type="button" aria-label="В избранное")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-add"></use></svg>
+													span.btn__text.section__title
+														| Добавить к заказу
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_order.btn_flex.js-to-order(type="button" aria-label="В избранное")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-add"></use></svg>
+													span.btn__text.section__title
+														| Добавить к заказу
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_order.btn_flex.js-to-order(type="button" aria-label="В избранное")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-add"></use></svg>
+													span.btn__text.section__title
+														| Добавить к заказу	
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_order.btn_flex.js-to-order(type="button" aria-label="В избранное")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-add"></use></svg>
+													span.btn__text.section__title
+														| Добавить к заказу	
+							.swiper-slide
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img.product-card__img_full(href="javascript: void(0);")
+												img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+												img(src="images/content/brands/brand-img-1.png" alt="Roca")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_red 25%
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.product-card__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability.product-card__availability_true В наличии
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_order.btn_flex.js-to-order(type="button" aria-label="В избранное")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-add"></use></svg>
+													span.btn__text.section__title
+														| Добавить к заказу					
+					.section__controls
+						.section__controls-nav.swiper-nav
+							button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+	if data.rec
+		section.section.section_sliders-in-tabs.section_sliders-in-tabs_rec#sliders-in-tabs
+			.container
+				.section__title.section__title_style6
+					h2 Рекомендуем для вас
+				.row
+					.col-12.col-lg-10
+						.section__nav
+							.scrollbar-inner
+								ul.list.list_unstyled.nav.nav-tabs.section__nav-list.row.no-gutters.flex-nowrap(role="tablist")
+									li.col-auto.list__item
+										a.link.section__title.active.js-product-tab#tile-tab(href="#tile-products" data-toggle="tab" role="tab" aria-controls="tile-products" aria-selected="true")
+											h2 Плитка
+									li.col-auto.list__item
+										a.link.section__title.js-product-tab#tap-tab(href="#tap-products" data-toggle="tab" role="tab" aria-controls="tap-products" aria-selected="false")
+											h2 Сантехника
+									li.col-auto.list__item
+										a.link.section__title.js-product-tab#bathroom-tab(href="#bathroom-products" data-toggle="tab" role="tab" aria-controls="bathroom-products" aria-selected="false")
+											h2 Мебель для ванной
+									li.col-auto.list__item
+										a.link.section__title.js-product-tab#radiator-tab(href="#radiator-products" data-toggle="tab" role="tab" aria-controls="radiator-products" aria-selected="false")
+											h2 Сантехника
+				.tab-content
+					.tab-pane.fade.show.active#tile-products(role="tabpanel" aria-labelledby="tile-tab")
+						.swiper-container.js-product-slider
+							.swiper-wrapper
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img.product-card__img_full(href="javascript: void(0);")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Смеситель для раковины
+												.product-card__price
+													span.old 1 345
+													span.cost.cost_new 867
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+						.section__controls
+							.section__controls-nav.swiper-nav
+								button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.tab-pane.fade#tap-products(role="tabpanel" aria-labelledby="tap-tab")
+						.swiper-container.js-product-slider
+							.swiper-wrapper
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+						.section__controls
+							.section__controls-nav.swiper-nav
+								button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.tab-pane.fade#bathroom-products(role="tabpanel" aria-labelledby="bathroom-tab")
+						.swiper-container.js-product-slider
+							.swiper-wrapper
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img.product-card__img_full(href="javascript: void(0);")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Смеситель для раковины
+												.product-card__price
+													span.old 1 345
+													span.cost.cost_new 867
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+					.tab-pane.fade#radiator-products(role="tabpanel" aria-labelledby="radiator-tab")
+						.swiper-container.js-product-slider
+							.swiper-wrapper
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img.product-card__img_full(href="javascript: void(0);")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Смеситель для раковины
+												.product-card__price
+													span.old 1 345
+													span.cost.cost_new 867
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.active.js-to-cart(type="button" aria-label="Добавлено в корзину. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.active.js-to-favorite(type="button" aria-label="Добавлено в избранное. Отменить добавление")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-default.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Щетка для унитаза 893
+												.product-card__price
+													span.cost 1232
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.product-card__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+													img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Мыльница 892
+												.product-card__price
+													span.cost 175
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability Нет в наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-1.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан для зубных щеток
+												.product-card__price
+													span.cost 277
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+								.swiper-slide
+									.product-card(tabindex="0")
+										.product-card__content
+											.product-card__header
+												a.product-card__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-4.jpg" alt="Изображение продукта")
+												a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+													img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												ul.list.list_unstyled.product-card__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.product-card__body
+												a.product-card__title(href="javascript: void(0);") Blome Стакан 891
+												.product-card__price
+													span.cost 819
+													span.currency лей / шт
+											.product-card__footer
+												.product-card__info
+													.product-card__availability.product-card__availability_true В наличии
+													.product-card__code Артикул: 90858
+												.product-card__controls
+													button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+													button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+														<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+														<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+	

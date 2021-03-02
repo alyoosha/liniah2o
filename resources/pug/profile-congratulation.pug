@@ -1,0 +1,28 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_profile.section_congratulation
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") личный кабинет
+				.section__title.section__title_style1
+					h1 Поздравляем!
+				.section__title.section__title_style5 Ваш заказ № 774-662 принят
+		.section__body
+			.container
+				.section__content.section__content_congratulation
+					.section__description
+						p Наш менеджер перезвонит Вам в ближайшее время и уточнит детали заказа.
+						p Статус вашего заказа всегда можно посмотреть по ссылке <a href="https://www.liniah2o.md/order123894">https://www.liniah2o.md/order123894</a>
+						p В случае каких-либо вопросов — позвоните нам <a class="link" href="tel:+37379410830"><span class="link__icon" aria-hidden="true"><svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-phone"></use></svg></span><span class="link__text">(+373) 79410830</span></a>
+					.btn-wrapper
+						a.btn.btn_default.btn_dark.btn_with-icon(href="/")
+							span.btn__icon(aria-hidden="true")
+								<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-home"></use></svg>
+							span.btn__text На главную
+	+sliders-in-tabs({"rec":"true"})

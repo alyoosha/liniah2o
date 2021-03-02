@@ -1,0 +1,1135 @@
+mixin header()
+	.preloader(aria-label="Загрузка...")
+		.preloader__icon(aria-hidden="true")
+	header.header#header
+		.header__top.bg_light.d-none.d-lg-block
+			.container
+				// если находимся на соответствующей странице - ссылке добавляем класс active
+				ul.list.list_unstyled.header__top-nav.row.align-items-center
+					li.col-auto.list__item
+						a.link(href="javascript: void(0);")
+							span.link__icon(aria-hidden="true")
+								<svg role="img" aria-hidden="true" width="18" height="18"><use xlink:href="#svg-icon-delivery"></use></svg>
+							span.link__text Оплата и доставка
+					li.col-auto.list__item
+						a.link(href="javascript: void(0);")
+							span.link__icon(aria-hidden="true")
+								<svg role="img" aria-hidden="true" width="18" height="18"><use xlink:href="#svg-icon-warranty"></use></svg>
+							span.link__text Гарантии и возврат
+					li.col-auto.list__item.list__item_has-child.dropdown
+						button.link.js-dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							span.link__icon(aria-hidden="true")
+								<svg role="img" aria-hidden="true" width="18" height="18"><use xlink:href="#svg-icon-global"></use></svg>
+							span.link__text Ru
+							span.link__control(aria-hidden="true")
+								<svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						ul.list.list_unstyled.header__top-sublist.bg_light.dropdown-menu(aria-label="Ru")
+							li.list__item
+								a.link.active(href="javascript: void(0);")
+									span.link__text Ru
+							li.list__item
+								a.link(href="javascript: void(0);")
+									span.link__text En
+		.header__desktop.bg_white.d-none.d-lg-block
+			.header__controls
+				.container
+					.controls__table
+						.controls__cell.controls__cell_logo
+							a.header__logo(href="/" aria-label="LiniaH2O")
+								<svg role="img" width="144" height="52"><use xlink:href="#svg-logo-black"></use></svg>
+						.controls__cell.controls__cell_search
+							desktop-search
+						.controls__cell.controls__cell_bonus
+							a.link.header__bonus(href="tel:022295420")
+								span.link__icon(aria-hidden="true")
+									<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-phone"></use></svg>
+								span.link__text (022) 295420
+						.controls__cell.controls__cell_nav.controls__cell_nav_small
+							ul.list.list_unstyled.header__controls-nav.row.justify-content-between
+								li.list__item.col-auto
+									a.link(href="javascript: void(0);" aria-label="Корзина")
+										span.link__icon
+											<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-shop"></use></svg>
+										span.link__counter 12
+			nav.header__main-nav
+				.container
+					// если находимся на соответствующей странице - ссылке добавляем класс active
+					ul.list.list_unstyled.header__nav-list
+						li.list__item
+							a.btn.btn_catalog.btn_dark.js-catalog-toggle(href="javascript: void(0);" aria-expanded="false" aria-controls="#catalog-dropdown")
+								span.btn__icon(aria-hidden="true")
+									<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+								span.btn__text Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Акции
+						li.list__item
+							a.link(href="javascript: void(0);") Бренды
+						li.list__item
+							a.link(href="javascript: void(0);") О нас
+						li.list__item
+							a.link(href="javascript: void(0);") Контакты
+					.header__catalog.catalog-dropdown.collapse#catalog-dropdown
+						.container
+							.catalog-dropdown__content.bg_white
+								.row.no-gutters
+									.col-4
+										.scrollbar-inner
+											ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl1(role="tablist")
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_brown(href="#h-tile" data-toggle="tab" role="tab" aria-controls="h-tile" aria-selected="true" aria-label="Плитка")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-1.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+														span.link__text Плитка
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_blue.active(href="#h-tap" data-toggle="tab" role="tab" aria-controls="h-tap" aria-selected="false" aria-label="Сантехника")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-2.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tap"></use></svg>
+														span.link__text Сантехника
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="#h-nightstand" data-toggle="tab" role="tab" aria-controls="h-nightstand" aria-selected="false" aria-label="Мебель для ванной комнаты")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-3.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-nightstand"></use></svg>
+														span.link__text Мебель для ванной комнаты
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="#h-radiator" data-toggle="tab" role="tab" aria-controls="h-radiator" aria-selected="false" aria-label="Водоснабжение и отопление")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-4.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+														span.link__text Водоснабжение и отопление
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="#h-drop" data-toggle="tab" role="tab" aria-controls="h-drop" aria-selected="false" aria-label="Вода и водоочистка")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-12.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop"></use></svg>
+														span.link__text Вода и водоочистка
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_brown(href="#h-kitchen" data-toggle="tab" role="tab" aria-controls="h-kitchen" aria-selected="false" aria-label="Мебель для кухни")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-5.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen"></use></svg>
+														span.link__text Мебель для кухни
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="#h-conditioner" data-toggle="tab" role="tab" aria-controls="h-conditioner" aria-selected="false" aria-label="Климат")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-6.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-conditioner"></use></svg>
+														span.link__text Климат
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="#h-electric" data-toggle="tab" role="tab" aria-controls="h-electric" aria-selected="false" aria-label="Освещение")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-7.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-electric"></use></svg>
+														span.link__text Освещение
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="#h-clining" data-toggle="tab" role="tab" aria-controls="h-clining" aria-selected="false" aria-label="Клининг")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-10.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-clining"></use></svg>
+														span.link__text Клининг
+												li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="#h-wrench" data-toggle="tab" role="tab" aria-controls="h-wrench" aria-selected="false" aria-label="Инструмент")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-11.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-wrench"></use></svg>
+														span.link__text Инструмент
+												//-li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="#h-doors" data-toggle="tab" role="tab" aria-controls="h-doors" aria-selected="false" aria-label="Двери")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-8.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-doors"></use></svg>
+														span.link__text Двери
+												//-li.list__item
+													a.link.catalog-link.catalog-link_main.catalog-link_main_brown(href="#h-parquet" data-toggle="tab" role="tab" aria-controls="h-parquet" aria-selected="false" aria-label="Напольные покрытия")
+														.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-9.png');")
+														span.link__icon(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-parquet"></use></svg>
+														span.link__text Напольные покрытия
+									.col-8
+										.tab-content
+											.tab-pane.fade#h-tile(role="tabpanel" aria-label="Плитка")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat1" data-toggle="tab" role="tab" aria-controls="h-cat1" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat1(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade.show.active#h-tap(role="tabpanel" aria-label="Сантехника")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-toilet" data-toggle="tab" role="tab" aria-controls="h-toilet" aria-selected="false" aria-label="Унитазы")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+																		span.link__text Унитазы
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-bidet" data-toggle="tab" role="tab" aria-controls="h-bidet" aria-selected="false" aria-label="Биде")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bidet"></use></svg>
+																		span.link__text Биде
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-urinal" data-toggle="tab" role="tab" aria-controls="h-urinal" aria-selected="false" aria-label="Писсуары")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-urinal"></use></svg>
+																		span.link__text Писсуары
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-sink" data-toggle="tab" role="tab" aria-controls="h-sink" aria-selected="false" aria-label="Умывальники")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink"></use></svg>
+																		span.link__text Умывальники
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-faucet" data-toggle="tab" role="tab" aria-controls="h-faucet" aria-selected="false" aria-label="Смесители")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-faucet"></use></svg>
+																		span.link__text Смесители
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-shower" data-toggle="tab" role="tab" aria-controls="h-shower" aria-selected="false" aria-label="Душевая программа")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower"></use></svg>
+																		span.link__text Душевая программа
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-pipe" data-toggle="tab" role="tab" aria-controls="h-pipe" aria-selected="false" aria-label="Сифоны")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe"></use></svg>
+																		span.link__text Сифоны
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-shower2" data-toggle="tab" role="tab" aria-controls="h-shower2" aria-selected="false" aria-label="Душевые кабины")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower2"></use></svg>
+																		span.link__text Душевые кабины
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-sink2" data-toggle="tab" role="tab" aria-controls="h-sink2" aria-selected="false" aria-label="Кухонные мойки")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink2"></use></svg>
+																		span.link__text Кухонные мойки
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-bathtub" data-toggle="tab" role="tab" aria-controls="h-bathtub" aria-selected="false" aria-label="Ванны")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bathtub"></use></svg>
+																		span.link__text Ванны
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi.active(href="#h-soap" data-toggle="tab" role="tab" aria-controls="h-soap" aria-selected="false" aria-label="Аксессуары для ванной комнаты")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-soap"></use></svg>
+																		span.link__text Аксессуары для ванной комнаты
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-radiator2" data-toggle="tab" role="tab" aria-controls="h-radiator2" aria-selected="false" aria-label="Полотенцесушители")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator2"></use></svg>
+																		span.link__text Полотенцесушители
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-installation" data-toggle="tab" role="tab" aria-controls="h-installation" aria-selected="false" aria-label="Инсталляционные системы")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-installation"></use></svg>
+																		span.link__text Инсталляционные системы
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-cooler" data-toggle="tab" role="tab" aria-controls="h-cooler" aria-selected="false" aria-label="Вентиляция")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-cooler"></use></svg>
+																		span.link__text Вентиляция
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-water-heater" data-toggle="tab" role="tab" aria-controls="h-hand-dryer" aria-selected="false" aria-label="Водонагреватели")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-water-heater"></use></svg>
+																		span.link__text Водонагреватели
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="#h-hand-dryer" data-toggle="tab" role="tab" aria-controls="h-hand-dryer" aria-selected="false" aria-label="Для общественных мест")
+																		span.link__icon(aria-hidden="true")
+																			<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-hand-dryer"></use></svg>
+																		span.link__text Для общественных мест
+													.col-6
+														.tab-content
+															.tab-pane.fade#h-toilet(role="tabpanel" aria-label="Унитазы")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.1
+															.tab-pane.fade#h-bidet(role="tabpanel" aria-label="Биде")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.2
+															.tab-pane.fade#h-urinal(role="tabpanel" aria-label="Писсуары")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.3
+															.tab-pane.fade#h-sink(role="tabpanel" aria-label="Умывальники")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.4
+															.tab-pane.fade#h-faucet(role="tabpanel" aria-label="Смесители")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.5
+															.tab-pane.fade#h-shower(role="tabpanel" aria-label="Душевая программа")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.6
+															.tab-pane.fade#h-pipe(role="tabpanel" aria-label="Сифоны")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.7
+															.tab-pane.fade#h-shower2(role="tabpanel" aria-label="Душевые кабины")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.8
+															.tab-pane.fade#h-sink2(role="tabpanel" aria-label="Кухонные мойки")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.9
+															.tab-pane.fade#h-bathtub(role="tabpanel" aria-label="Ванны")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.10
+															.tab-pane.fade.show.active#h-soap(role="tabpanel" aria-label="Аксессуары для ванной комнаты")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Коллекции
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Стакан для зубных щеток
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Стойки и ёршики туалетные
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Косметические зеркала
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Крючки для халатов и полотенец
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Держатель для полотенца
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Держатель для туалетной бумаги
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Дозаторы для жидкого мыла
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Мыльницы
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Коврики для ванной
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Контейнеры для мусора
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Этажерки и полки для ванной
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Шторки для ванной
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Корзины для белья
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Готовое решение
+															.tab-pane.fade#h-radiator2(role="tabpanel" aria-label="Полотенцесушители")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.12
+															.tab-pane.fade#h-installation(role="tabpanel" aria-label="Инсталляционные системы")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.13
+															.tab-pane.fade#h-cooler(role="tabpanel" aria-label="Вентиляция")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.14
+															.tab-pane.fade#h-water-heater(role="tabpanel" aria-label="Водонагреватели")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Бойлеры
+															.tab-pane.fade#h-hand-dryer(role="tabpanel" aria-label="Для общественных мест")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") 1.15
+											.tab-pane.fade#h-nightstand(role="tabpanel" aria-label="Мебель для ванной комнаты")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat3" data-toggle="tab" role="tab" aria-controls="h-cat3" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat3(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-radiator(role="tabpanel" aria-label="Водоснабжение и отопление")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat4" data-toggle="tab" role="tab" aria-controls="h-cat4" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat4(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-drop(role="tabpanel" aria-label="Вода и водоочистка")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat12" data-toggle="tab" role="tab" aria-controls="h-cat12" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat12(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-kitchen(role="tabpanel" aria-label="Мебель для кухни")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat5" data-toggle="tab" role="tab" aria-controls="h-cat5" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat5(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-conditioner(role="tabpanel" aria-label="Климат")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat6" data-toggle="tab" role="tab" aria-controls="h-cat6" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat6(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-electric(role="tabpanel" aria-label="Освещение")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat7" data-toggle="tab" role="tab" aria-controls="h-cat7" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat7(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-clining(role="tabpanel" aria-label="Клининг")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat10" data-toggle="tab" role="tab" aria-controls="h-cat10" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat10(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											.tab-pane.fade#h-wrench(role="tabpanel" aria-label="Инструмент")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat11" data-toggle="tab" role="tab" aria-controls="h-cat11" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat11(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											//-.tab-pane.fade#h-doors(role="tabpanel" aria-label="Двери")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat8" data-toggle="tab" role="tab" aria-controls="h-cat8" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat8(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											//-.tab-pane.fade#h-parquet(role="tabpanel" aria-label="Напольные покрытия")
+												.row.no-gutters
+													.col-6
+														.scrollbar-inner
+															ul.list.list_unstyled.nav.nav-tabs.catalog-dropdown__nav.catalog-dropdown__nav_lvl2(role="tablist")
+																li.list__item
+																	a.link.catalog-link.catalog-link_inner.active(href="#h-cat9" data-toggle="tab" role="tab" aria-controls="h-cat9" aria-selected="true" aria-label="Категория") Категория
+													.col-6
+														.tab-content
+															.tab-pane.fade.show.active#h-cat9(role="tabpanel" aria-label="Категория")
+																.scrollbar-inner
+																	ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3
+																		li.list__item
+																			a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+		.header__mobile.bg_white.d-block.d-lg-none
+			.container
+				.row.align-items-center
+					.col-auto
+						button.btn.btn_menu.js-menu-panel-opener(type="button" aria-label="Открыть меню")
+							<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-menu"></use></svg>
+					.col-auto.d-none.d-md-block
+						a.btn.btn_catalog.btn_dark.js-catalog-toggle(href="javascript: void(0);")
+							span.btn__icon(aria-hidden="true")
+								<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+							span.btn__text Каталог
+					.col-auto.header__logo-wrapper
+						a.header__logo(href="/" aria-label="LiniaH2O")
+							<svg role="img" width="144" height="52"><use xlink:href="#svg-logo-black"></use></svg>
+					.col-auto
+						ul.list.list_unstyled.header__controls-nav.row.justify-content-between
+							li.list__item.col-auto
+								button.link.js-search-panel-opener(type="button" aria-label="Открыть панель поиска")
+									span.link__icon
+										<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-searching"></use></svg>
+							li.list__item.col-auto
+								a.link(href="javascript: void(0);" aria-label="Корзина")
+									span.link__icon
+										<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-shop"></use></svg>
+									span.link__counter 12
+		.panel.panel_search.d-block.d-lg-none
+			.panel__header
+				.container
+					.row.align-items-center.justify-content-between
+						.col-auto
+							button.btn.btn_close.js-search-panel-closer(type="button" aria-label="Закрыть панель поиска")
+								<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+						.col-auto
+							ul.list.list_unstyled.header__controls-nav.row.justify-content-between
+								li.list__item.col-auto
+									a.link(href="javascript: void(0);" aria-label="Корзина")
+										span.link__icon
+											<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-shop"></use></svg>
+										span.link__counter 12
+			.panel__content
+				mobile-search
+		.panel.panel_menu.d-block.d-lg-none
+			.panel__header
+				.container
+					.row.align-items-center.justify-content-between
+						.col-auto
+							button.btn.btn_close.js-menu-panel-closer(type="button" aria-label="Закрыть меню")
+								<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+						.col-auto
+							ul.list.list_unstyled.header__controls-nav.row.justify-content-between
+								li.list__item.col-auto
+									button.link.js-search-panel-opener(type="button" aria-label="Открыть панель поиска")
+										span.link__icon
+											<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-searching"></use></svg>
+								li.list__item.col-auto
+									a.link(href="javascript: void(0);" aria-label="Корзина")
+										span.link__icon
+											<svg role="img" width="26" height="26"><use xlink:href="#svg-icon-shop"></use></svg>
+										span.link__counter 12
+			.panel__content
+				.panel__body.bg_white
+					nav.header__mobile-nav.mobile-nav
+						.drilldown
+							.drilldown-container
+								// если находимся на соответствующей странице - ссылке добавляем класс active
+								ul.list.list_unstyled.mobile-nav__catalog.drilldown-root
+									li.list__item.list__item_catalog
+										a.btn.btn_catalog.btn_dark(href="javascript: void(0);")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+											span.btn__text Каталог
+										ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl1.drilldown-sub
+											li.list__item.drilldown-back
+												a.link.link_back(href="javascript: void(0);")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+													span.link__text Закрыть каталог
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_brown(href="javascript: void(0);" aria-label="Плитка")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-1.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+													span.link__text Плитка
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="javascript: void(0);" aria-label="Сантехника")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-2.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tap"></use></svg>
+													span.link__text Сантехника
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Унитазы")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Унитазы
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Биде")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bidet"></use></svg>
+															span.link__text Биде
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Писсуары")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-urinal"></use></svg>
+															span.link__text Писсуары
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Умывальники")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink"></use></svg>
+															span.link__text Умывальники
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Смесители")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-faucet"></use></svg>
+															span.link__text Смесители
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Душевая программа")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower"></use></svg>
+															span.link__text Душевая программа
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Сифоны")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe"></use></svg>
+															span.link__text Сифоны
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Душевые кабины")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower2"></use></svg>
+															span.link__text Душевые кабины
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Кухонные мойки")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink2"></use></svg>
+															span.link__text Кухонные мойки
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Ванны")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bathtub"></use></svg>
+															span.link__text Ванны
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Аксессуары для ванной комнаты")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-soap"></use></svg>
+															span.link__text Аксессуары для ванной комнаты
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Коллекции
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Стакан для зубных щеток
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Стойки и ёршики туалетные
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Косметические зеркала
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Крючки для халатов и полотенец
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Держатель для полотенца
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Держатель для туалетной бумаги
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Дозаторы для жидкого мыла
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Мыльницы
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Коврики для ванной
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Контейнеры для мусора
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Этажерки и полки для ванной
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Шторки для ванной
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Корзины для белья
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Готовое решение
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Полотенцесушители")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator2"></use></svg>
+															span.link__text Полотенцесушители
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Инсталляционные системы")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-installation"></use></svg>
+															span.link__text Инсталляционные системы
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Вентиляция")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-cooler"></use></svg>
+															span.link__text Вентиляция
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Водонагреватели")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-water-heater"></use></svg>
+															span.link__text Водонагреватели
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Для общественных мест")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-hand-dryer"></use></svg>
+															span.link__text Для общественных мест
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="javascript: void(0);" aria-label="Мебель для ванной комнаты")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-3.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-nightstand"></use></svg>
+													span.link__text Мебель для ванной комнаты
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="javascript: void(0);" aria-label="Водоснабжение и отопление")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-4.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+													span.link__text Водоснабжение и отопление
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="javascript: void(0);" aria-label="Вода и водоочистка")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-12.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop"></use></svg>
+													span.link__text Вода и водоочистка
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_brown(href="javascript: void(0);" aria-label="Мебель для кухни")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-5.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen"></use></svg>
+													span.link__text Мебель для кухни
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="javascript: void(0);" aria-label="Климат")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-6.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-conditioner"></use></svg>
+													span.link__text Климат
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="javascript: void(0);" aria-label="Освещение")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-7.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-electric"></use></svg>
+													span.link__text Освещение
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="javascript: void(0);" aria-label="Клининг")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-10.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-clining"></use></svg>
+													span.link__text Клининг
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_dark(href="javascript: void(0);" aria-label="Инструмент")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-11.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-wrench"></use></svg>
+													span.link__text Инструмент
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											//-li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_blue(href="javascript: void(0);" aria-label="Двери")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-8.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-doors"></use></svg>
+													span.link__text Двери
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+											//-li.list__item
+												a.link.catalog-link.catalog-link_main.catalog-link_main_brown(href="javascript: void(0);" aria-label="Напольные покрытия")
+													.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-9.png');")
+													span.link__icon(aria-hidden="true")
+														<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-parquet"></use></svg>
+													span.link__text Напольные покрытия
+												ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl2.drilldown-sub
+													li.list__item.drilldown-back
+														a.link.link_back(href="javascript: void(0);")
+															span.link__icon.link__icon_arrow(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+															span.link__text Назад
+													li.list__item
+														a.link.catalog-link.catalog-link_inner.catalog-link_inner_wi(href="javascript: void(0);" aria-label="Категория")
+															span.link__icon(aria-hidden="true")
+																<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+															span.link__text Категория
+														ul.list.list_unstyled.catalog-dropdown__nav.catalog-dropdown__nav_lvl3.drilldown-sub
+															li.list__item.drilldown-back
+																a.link.link_back(href="javascript: void(0);")
+																	span.link__icon.link__icon_arrow(aria-hidden="true")
+																		<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+																	span.link__text Назад
+															li.list__item
+																a.link.catalog-link.catalog-link_inner(href="javascript: void(0);") Подкатегория
+						ul.list.list_unstyled.mobile-nav__list
+							li.list__item
+								a.link.link_main(href="javascript: void(0);") Акции
+							li.list__item
+								a.link.link_main(href="javascript: void(0);") Бренды
+							li.list__item
+								a.link.link_main(href="javascript: void(0);") О нас
+							li.list__item
+								a.link.link_main(href="javascript: void(0);") Контакты
+				.panel__footer
+					ul.list.list_unstyled.header__top-nav.row.align-items-center
+						li.col-auto.list__item
+							a.link(href="javascript: void(0);")
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="18" height="18"><use xlink:href="#svg-icon-delivery"></use></svg>
+								span.link__text Оплата и доставка
+						li.col-auto.list__item
+							a.link(href="javascript: void(0);")
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="18" height="18"><use xlink:href="#svg-icon-warranty"></use></svg>
+								span.link__text Гарантии и возврат
+						li.col-auto.list__item.list__item_has-child.dropdown
+							button.link.js-dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+								span.link__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="18" height="18"><use xlink:href="#svg-icon-global"></use></svg>
+								span.link__text Ru
+								span.link__control(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							ul.list.list_unstyled.header__top-sublist.bg_light.dropdown-menu(aria-label="Ru")
+								li.list__item
+									a.link.active(href="javascript: void(0);")
+										span.link__text Ru
+								li.list__item
+									a.link(href="javascript: void(0);")
+										span.link__text En

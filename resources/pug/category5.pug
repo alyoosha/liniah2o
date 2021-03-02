@@ -1,0 +1,329 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog.section_category
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link.active(href="javascript: void(0);") Вода и водочистка
+				.section__title.section__title_style1
+					h1 Вода и водочистка
+		.section__body
+			.container
+				.easy-nav.bg_white.d-block.d-xl-none
+					ul.list.list_unstyled.easy-nav__list
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop2" aria-label="Фильтры для питьевой воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop3" aria-label="Магистральные фильтры")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop3"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop4" aria-label="Картриджи для очистки воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop4"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop5" aria-label="Комплектующие к системам очистки воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop5"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop6" aria-label="Краны и cмесители для питьевой воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop6"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop7" aria-label="Кулеры для воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop7"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop8" aria-label="Фильтрационные системы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop8"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop9" aria-label="Фильтрующие загрузки и наполнители для очистки воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop9"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop10" aria-label="УФ-обеззараживатели воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop10"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop11" aria-label="Средства для очистки и дезинфекции")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop11"></use></svg>
+				.category-block.category-block_main#category-drop
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_dark(href="javascript: void(0);" aria-label="Вода и водоочистка")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-12.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop"></use></svg>
+									h2.link__text
+										span.line Вода 
+										span.line и водоочистка
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.section__subcategories
+				.container
+					.row
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-47.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop2"></use></svg>
+										h2.section__title.link__text
+											span.line Фильтры для 
+											span.line питьевой воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры обратного осмоса для очистки воды
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры под мойку / проточные
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры-кувшины для воды
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры настольные
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop3
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-48.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop3"></use></svg>
+										h2.section__title.link__text
+											span.line Магистральные 
+											span.line фильтры
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Картриджные фильтры
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры механической очистки / сетка
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры для умягчения воды
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры для стиральных машин
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры для бойлеров и котлов
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтры для душа / насадки на кран
+										li.list__item
+											a.link(href="javascript:void(0);") Магнитные фильтры
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop4
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-49.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop4"></use></svg>
+										h2.section__title.link__text
+											span.line Картриджи 
+											span.line для очистки воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Картриджи для фильтров обратного осмоса
+										li.list__item
+											a.link(href="javascript:void(0);") Картриджи для фильтров под мойку
+										li.list__item
+											a.link(href="javascript:void(0);") Картриджи для фильтров-кувшинов
+										li.list__item
+											a.link(href="javascript:void(0);") Картриджи для магистральных фильтров
+										li.list__item
+											a.link(href="javascript:void(0);") Комплекты картриджей для любых фильтров
+										li.list__item
+											a.link(href="javascript:void(0);") Минерализаторы
+										li.list__item
+											a.link(href="javascript:void(0);") Мембраны обратного осмоса
+										li.list__item
+											a.link(href="javascript:void(0);") Постфильтры
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop5
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-50.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop5"></use></svg>
+										h2.section__title.link__text
+											span.line Комплектующие 
+											span.line к системам 
+											span.line очистки воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Аксессуары и детали фильтров питьевой воды
+										li.list__item
+											a.link(href="javascript:void(0);") Насосы для повышения давления
+										li.list__item
+											a.link(href="javascript:void(0);") Датчики контроля протечки воды
+										li.list__item
+											a.link(href="javascript:void(0);") Индикаторы
+										li.list__item
+											a.link(href="javascript:void(0);") Приборы для измерения качества воды
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop6
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-51.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop6"></use></svg>
+										h2.section__title.link__text
+											span.line Краны и cмесители 
+											span.line для питьевой воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Краны для питьевой воды
+										li.list__item
+											a.link(href="javascript:void(0);") Смесители для кухни под фильтр
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop7
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-52.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop7"></use></svg>
+										h2.section__title.link__text
+											span.line Кулеры 
+											span.line для воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Кулеры
+										li.list__item
+											a.link(href="javascript:void(0);") Комплектующие для кулера
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop8
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-53.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop8"></use></svg>
+										h2.section__title.link__text
+											span.line Фильтрационные 
+											span.line системы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Системы очистки воды
+										li.list__item
+											a.link(href="javascript:void(0);") Фильтрующие материалы
+										li.list__item
+											a.link(href="javascript:void(0);") Аксессуары и детали фильтрационных систем
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop9
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-54.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop9"></use></svg>
+										h2.section__title.link__text
+											span.line Фильтрующие загрузки и наполнители для очистки воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Ионообменные смолы
+										li.list__item
+											a.link(href="javascript:void(0);") Активированный уголь
+										li.list__item
+											a.link(href="javascript:void(0);") Таблетированная соль
+										li.list__item
+											a.link(href="javascript:void(0);") Многокомпонентная смесь
+										li.list__item
+											a.link(href="javascript:void(0);") Полифосфат
+										li.list__item
+											a.link(href="javascript:void(0);") Силифос
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop10
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-55.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop10"></use></svg>
+										h2.section__title.link__text
+											span.line УФ-обеззараживатели воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") УФ-обеззараживатели воды
+										li.list__item
+											a.link(href="javascript:void(0);") Сменные элементы
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-drop11
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-56.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop11"></use></svg>
+										h2.section__title.link__text
+											span.line Средства 
+											span.line для очистки и дезинфекции
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Поглотители запаха
+										li.list__item
+											a.link(href="javascript:void(0);") Дезинфектанты
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

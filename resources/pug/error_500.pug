@@ -1,0 +1,28 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_error.section_error-500
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") 500
+				.section__title.section__title_style1.error-title
+					h1 500
+					span.add-text 
+						| ошибка сервера
+		.section__body
+			.error-description
+				.container
+					.error-description__title.section__title
+						h2
+							| Страница временно недоступна
+					button.reload-btn.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+						span.btn__icon(aria-hidden="true")
+							<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-refresh"></use></svg>
+						span.btn__text Перезагрузить страницу
+
+		

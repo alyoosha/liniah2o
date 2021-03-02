@@ -1,0 +1,421 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_product
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Плитка
+						li.list__item
+							a.link(href="javascript: void(0);") Напольная плитка
+						li.list__item
+							a.link(href="javascript: void(0);") Коллекции
+						li.list__item
+							a.link.active(href="javascript: void(0);") Стильный монохром
+		.section__body.product-block
+			.product-block__main.collection
+				.container
+					.row.no-gutters
+						.col-12
+							a.product-block__brand.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+								.brand-block__img(aria-hidden="true")
+									img(src="images/content/brands/brand-img-1.png" alt="Roca")
+								.brand-block__country Великобритания
+					.row
+						.col-12.col-lg-5
+							ul.list.list_unstyled.product-block__socials
+								li.list__item
+									button.btn.btn_to-favorite.js-to-favorite(type="button" aria-label="В избранное")
+										<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+										<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+								li.list__item.list__item_has-child.dropdown
+									button.btn.btn_share.js-share(type="button" aria-label="Поделиться" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+										<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-share"></use></svg>
+									ul.list.list_unstyled.dropdown-menu.bg_white(aria-label="Поделиться")
+										li.list__item
+											a.btn.btn_socials(href="javascript: void(0);" rel="noopener nofollow" aria-label="в Instagram")
+												<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-instagram"></use></svg>
+										li.list__item
+											a.btn.btn_socials(href="javascript: void(0);" rel="noopener nofollow" aria-label="в Facebook")
+												<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-facebook"></use></svg>
+							.product-block__slider
+								ul.list.list_unstyled.marks-list
+									li.list__item.bg_blue Новинка
+								.swiper-container.slider_main.js-product-slider-main
+									.swiper-wrapper
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/tile1.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/tile1.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/interer-komnata-vannaya-4500.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-komnata-vannaya-4500.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/interer-vannaia-komnata-stil.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-vannaia-komnata-stil.jpg" alt="Изображение продукта")
+								.swiper-container.slider_thumbs.js-product-slider-thumbs
+									.swiper-wrapper
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/tile1.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-komnata-vannaya-4500.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-vannaia-komnata-stil.jpg" alt="Изображение продукта")
+						.col-12.col-lg-7
+							.product-block__info
+								.product-block__title.section__title.collection-title
+									.collection-title__icon(aria-hidden="true")
+										<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-collection"></use></svg>
+									.collection-title__content
+										.collection-title__category
+											h2 Напольная плитка
+										.collection-title__label
+											h1 Стильный монохром
+								ul.list.list_unstyled.product-block__info-list.row.align-items-center
+									li.col-12.col-md-auto
+										.product-block__code
+											span.title Товаров в коллекции:
+											span.count.color_black 23
+								.product-block__price
+									span.text от
+									span.cost 3 567
+									span.currency лей/м<sup>2</sup>
+								.collection-previews
+									.swiper-container.js-collection-previews
+										.swiper-wrapper
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/product-img-14.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/tile3.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/tile3.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/tile3.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/product-img-14.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/tile3.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/tile3.jpg" alt="Babilonia Decor")
+											.swiper-slide
+												a.collection-previews-block(href="javascript: void(0);" aria-label="Babilonia Decor")
+													.collection-previews-block__img.background-img
+														img(src="images/content/products/tile3.jpg" alt="Babilonia Decor")
+									button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>	
+								.collection-description.section__description
+									p Лёгкий, едва заметный рельеф на глянцевой поверхности придаёт плитке деликатную выразительность, а сочетание оригинальных декоров создает много интересных возможностей для нетривиальных дизайнерских решений.
+								.collection-similar
+									ul.list.list_unstyled.collection-similar-list
+										li.list__item.collection-similar-item
+											.collection-similar-item__icon(aria-hidden="true")
+												<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-collection"></use></svg>
+											.collection-similar-item__content
+												.collection-similar-item__category Настенная плитка
+												a.collection-similar-item__label(href="javascript: void(0);") Стильный монохром
+			.product-block__collection#collection-block
+				.container
+					.collection-block
+						.collection-block__header
+							button.btn.collection-block__toggler(type="button" data-toggle="collapse" data-target="#collection1" aria-expanded="true" aria-controls="collection1")
+								span.btn__icon(aria-hidden="true")
+									<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-collection"></use></svg>
+								h2.btn__text
+									span.btn__category Коллекция напольной плитки
+									span.btn__title Стильный монохром
+								span.btn__arrow(aria-hidden="true")
+									<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.collection-block__body.collapse.show#collection1
+							.collection-block__content
+								.row.no-gutters
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/product-img-14.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/product-img-14.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+									.col-12.col-sm-6.col-lg-4.col-xl-3
+										.product-card(tabindex="0")
+											.product-card__content
+												.product-card__header
+													a.product-card__img(href="javascript: void(0);")
+														img(src="images/content/products/tile3.jpg" alt="Изображение продукта")
+													a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													ul.list.list_unstyled.product-card__marks.marks-list
+														li.list__item.list__item_num.bg_red 25%
+												.product-card__body
+													a.product-card__title(href="javascript: void(0);") Babilonia Decor
+													.product-card__price
+														span.cost 1232
+														span.currency лей / шт
+												.product-card__footer
+													.product-card__info
+														.product-card__availability.product-card__availability_true В наличии
+														.product-card__code Артикул: 90858
+													.product-card__controls
+														button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+														button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+															<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+															<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+	//-+odds
+	+sliders-in-tabs({"buy":"true"})
+	+sliders-in-tabs({"popular":"true"})

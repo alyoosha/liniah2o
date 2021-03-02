@@ -1,0 +1,282 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_error-404.section_error.section_checkout-mvp.section_checkout-states
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Корзина
+						li.list__item
+							a.link.active(href="javascript: void(0);") Оформление заказа
+				.header-title
+					.row
+						.col-12.col-md-6
+							.header-title__main.section__title.section__title_style1
+								h1
+									| Оформление заказа
+						.col-12.col-md-6.header-title__wrapper
+							.header-title__link
+								a(href="javascript: void(0);")
+									| Вернуться в корзину
+		.section__body
+			.container
+				.row
+					.col-12.col-xl-6
+						.checkout-states-block
+							.checkout-states-block__cart-button
+								button.cart-table__button.cart-table__button_states.js-profile-history1
+									| Товары в заказе
+							form(name="form-checkout-states-mvp" method="post" id="form-checkout-states-mvp").js-form-checkout-states-mvp
+								.row
+									.col-12.col-lg-6.col-xl-10
+										.checkout-states-block__table-wrapper
+											.checkout-states-block__payment
+												.params-block
+													.params-block__title
+														| Оплата
+													ul.list.list_unstyled.radio-list.params-block__list
+														li.list__item.radio
+															label.radio__label
+																input.radio__hidden(type="radio" id="checkout-payment-1" name="checkout-payment" value="В магазине" checked)
+																span.radio__custom(aria-hidden="true")
+																span.radio__text
+																	| В магазине
+														li.list__item.radio
+															label.radio__label
+																input.radio__hidden(type="radio" id="checkout-payment-2" name="checkout-payment" value="Курьеру")
+																span.radio__custom(aria-hidden="true")
+																span.radio__text
+																	| Курьеру
+											.checkout-states-block__methods
+												.params-block
+													.params-block__title
+														| Способ оплаты
+													ul.list.list_unstyled.radio-list.params-block__list_shop
+														li.list__item.radio
+															label.radio__label
+																input.radio__hidden(type="radio" id="checkout-method-shop-1" name="checkout-method-shop" value="Банковская карта" checked)
+																span.radio__custom(aria-hidden="true")
+																span.radio__text
+																	| Банковская карта
+														li.list__item.radio
+															label.radio__label
+																input.radio__hidden(type="radio" id="checkout-method-shop-2" name="checkout-method-shop" value="Наличными")
+																span.radio__custom(aria-hidden="true")
+																span.radio__text
+																	| Наличными
+													ul.list.list_unstyled.radio-list.params-block__list_courier
+														li.list__item.radio
+															label.radio__label
+																input.radio__hidden(type="radio" id="checkout-method-courier-1" name="checkout-method-courier" value="Банковская карта" checked)
+																span.radio__custom(aria-hidden="true")
+																span.radio__text
+																	| Банковская карта
+														li.list__item.radio
+															label.radio__label
+																input.radio__hidden(type="radio" id="checkout-method-courier-2" name="checkout-method-courier" value="Наличными")
+																span.radio__custom(aria-hidden="true")
+																span.radio__text
+																	| Наличными
+								.row
+									.col-12.col-lg-6.col-xl-8
+										.checkout-states-block__delivery
+											.params-block
+													.params-block__title
+														| Доставка
+													.row
+														.col-12.col-sm-6
+															ul.list.list_unstyled.radio-list.params-block__list_sait
+																li.list__item.radio
+																	label.radio__label
+																		input.radio__hidden(type="radio" id="checkout-delivery-1" name="checkout-delivery" value="Доставка курьером")
+																		span.radio__custom(aria-hidden="true")
+																		span.radio__text
+																			| Доставка курьером
+														.col-12.col-sm-6
+															ul.list.list_unstyled.radio-list.params-block__list_sait
+																li.list__item.radio.radio-margin-top
+																	label.radio__label
+																		input.radio__hidden(type="radio" id="checkout-delivery-2" name="checkout-delivery" value="Самовывоз" checked)
+																		span.radio__custom(aria-hidden="true")
+																		span.radio__text
+																			| Самовывоз
+											.delivery-form-block.delivery-form-block_courier
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-name") Имя
+													input.form-control(type="text" name="checkout-delivery-courier-name" id="checkout-delivery-courier-name" placeholder="Имя" required)
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-phone") Мобильный телефон
+													input.form-control(type="text" name="checkout-delivery-courier-phone" id="checkout-delivery-courier-phone" placeholder="Мобильный телефон" required)
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-email") E-mail
+													input.form-control(type="text" name="checkout-delivery-courier-email" id="checkout-delivery-courier-email" placeholder="E-mail" required)
+												//-.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-region") Регион
+													//input.form-control(type="text" name="checkout-delivery-courier-region" id="checkout-delivery-courier-region" placeholder="Регион" required autocomplete="off" list="region-list")
+													select.form-select.form-control.select2(name="checkout-delivery-courier-region" id="checkout-delivery-courier-region" required)
+														option(disabled hidden) Регион
+														option Регион 1
+														option Регион 2
+														option Регион 3
+														option Регион 4
+														option Регион 5
+														option Регион 6
+												//-.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-town") Населенный пункт
+													//input.form-control(type="text" name="checkout-delivery-courier-town" id="checkout-delivery-courier-town" placeholder="Населенный пункт" required autocomplete="off")
+													select.form-select.form-control.select2(name="checkout-delivery-courier-town" id="checkout-delivery-courier-town" required)
+														option(disabled hidden) Населенный пункт
+														option Населенный пункт 1
+														option Населенный пункт 2
+														option Населенный пункт 3
+														option Населенный пункт 4
+														option Населенный пункт 5
+														option Населенный пункт 6
+												.select-block.form-group
+													<svg role="img" width="16" height="16">
+														<use xlink:href="#svg-icon-down-arrow"></use>
+													</svg>
+													select.js-example-classic-single
+														option Регион 1
+														option 2
+														option 3
+												.select-block.form-group
+													<svg role="img" width="16" height="16">
+														<use xlink:href="#svg-icon-down-arrow"></use>
+													</svg>
+													select.js-example-classic-single
+														option Населенный пункт 1
+														option 2
+														option 3
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-street") Улица
+													input.form-control(type="text" name="checkout-delivery-courier-street" id="checkout-delivery-courier-street" placeholder="Улица" required)
+												.row
+													.col-12.col-md-6
+														.form-group
+															label.form-label.form-label_hidden(for="checkout-delivery-courier-house") Дом
+															input.form-control(type="text" name="checkout-delivery-courier-house" id="checkout-delivery-courier-house" placeholder="Дом" required)
+													.col-12.col-md-6
+														.form-group
+															label.form-label.form-label_hidden(for="checkout-delivery-courier-flat") Квартира
+															input.form-control(type="text" name="checkout-delivery-courier-flat" id="checkout-delivery-courier-flat" placeholder="Квартира" required)
+												.form-group.form-group_last
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-text") Комментарий
+													textarea.form-control(id="checkout-delivery-courier-text" placeholder="Комментарий")
+											.delivery-form-block.delivery-form-block_pickup
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-pickup-name") Имя
+													input.form-control(type="text" name="checkout-delivery-pickup-name" id="checkout-delivery-pickup-name" placeholder="Имя" required)
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-pickup-phone") Мобильный телефон
+													input.form-control(type="text" name="checkout-delivery-pickup-phone" id="checkout-delivery-pickup-phone" placeholder="Мобильный телефон" required)
+												.form-group
+													label.form-label.form-label_hidden(for="checkout-delivery-pickup-email") E-mail
+													input.form-control(type="text" name="checkout-delivery-pickup-email" id="checkout-delivery-pickup-email" placeholder="E-mail" required)
+												.select-block.form-group
+													<svg role="img" width="16" height="16">
+														<use xlink:href="#svg-icon-down-arrow"></use>
+													</svg>
+													select.js-example-classic-single
+														option г.Кишинев, ул.Алба Юлия, 6/3
+														option 2
+														option 3
+												.form-group.form-group_last
+													label.form-label.form-label_hidden(for="checkout-delivery-courier-pickup-text") Комментарий
+													textarea.form-control(id="checkout-delivery-courier-pickup-text" placeholder="Комментарий")
+					.col-12.col-xl-6
+						.checkout-cart-table.checkout-cart-table_states
+							.cart-table
+								.cart-table__row
+									.cart-table__cell.cart-table__cell_info
+										.cart-table__info
+											a.cart-table__img(href="javascript: void(0);" aria-label="Пенал с левым открыванием")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											.cart-table__content
+												a.cart-table__title.section__title(href="javascript: void(0);") Пенал с левым открыванием
+												.cart-table__descr.section__description Артикул: 90858
+											ul.list.list_unstyled.cart-table__params-list.row
+												li.col-auto.list__item
+													span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+													span.list__param-title Белый
+												li.col-auto.list__item
+													span.list__param-title 520 x 830 x 440 мм.
+									.cart-table__cell.cart-table__cell_price
+										ul.list.list_unstyled.cart-table__marks.marks-list
+											li.list__item.list__item_num.bg_orange + 20&nbsp;
+												span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+											li.list__item.list__item_num.bg_red 25%
+										.cart-table__price
+											span.old 8 345
+											span.cost.cost_new 3 567
+											span.currency лей / шт
+								.cart-table__row
+									.cart-table__cell.cart-table__cell_info
+										.cart-table__info
+											a.cart-table__img(href="javascript: void(0);" aria-label="Пенал с левым открыванием")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											.cart-table__content
+												a.cart-table__title.section__title(href="javascript: void(0);") Пенал с левым открыванием
+												.cart-table__descr.section__description Артикул: 90858
+											ul.list.list_unstyled.cart-table__params-list.row
+												li.col-auto.list__item
+													span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+													span.list__param-title Белый
+												li.col-auto.list__item
+													span.list__param-title 520 x 830 x 440 мм
+													li.col-auto.list__item
+														span.list__param-title 1 шт.
+									.cart-table__cell.cart-table__cell_price
+										ul.list.list_unstyled.cart-table__marks.marks-list
+											li.list__item.list__item_num.bg_orange + 20&nbsp;
+												span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+											li.list__item.list__item_num.bg_red 25%
+										.cart-table__price
+											span.old 8 345
+											span.cost.cost_new 3 567
+											span.currency лей / шт
+								.cart-table__row
+									.cart-table__cell.cart-table__cell_info
+										.cart-table__info
+											a.cart-table__img(href="javascript: void(0);" aria-label="Пенал с левым открыванием")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											.cart-table__content
+												a.cart-table__title.section__title(href="javascript: void(0);") Пенал с левым открыванием
+												.cart-table__descr.section__description Артикул: 90858
+											ul.list.list_unstyled.cart-table__params-list.row
+												li.col-auto.list__item
+													span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+													span.list__param-title Белый
+												li.col-auto.list__item
+													span.list__param-title 520 x 830 x 440 мм
+													li.col-auto.list__item
+														span.list__param-title 1 шт.
+									.cart-table__cell.cart-table__cell_price
+										ul.list.list_unstyled.cart-table__marks.marks-list
+											li.list__item.list__item_num.bg_orange + 20&nbsp;
+												span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+											li.list__item.list__item_num.bg_red 25%
+										.cart-table__price
+											span.old 8 345
+											span.cost.cost_new 3 567
+											span.currency лей / шт
+					.col-12.col-xl-6.offset-xl-6
+						.checkout-total.checkout-total_states
+								.checkout-total__th
+									.checkout-total__title.section__title.section__title_style1
+										| Итого:
+								.checkout-total__value
+									.checkout-total__number
+										| 21 787
+										span.checkout-total__add-text
+											| лей
+								button.checkout-total__states-button.btn.btn_default.btn_shadow.btn_dark.btn_with-icon(type="submit" form="form-checkout-states-mvp")
+									span.btn__icon(aria-hidden="true")
+										<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-verified"></use></svg>
+									span.btn__text Оформить заказ
+			+odds
+			+sliders-in-tabs({"popular":"true"})

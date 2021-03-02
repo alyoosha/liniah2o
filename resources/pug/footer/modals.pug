@@ -1,0 +1,453 @@
+﻿mixin modals()
+	// Модальное окно с положением о доставке
+	.modal.modal-delivery-clause.fade#modal-delivery-clause(tabindex="-1" role="dialog" aria-labeledby="modal-delivery-clause-title" aria-hidden="true")
+		.modal-dialog.modal-lg.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-delivery-clause-title
+						| Положение о доставке
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.scrollbar-inner
+						.delivery-clause-content
+							p
+								|  Qui duis labore ipsum officia incididunt qui pariatur. Ex culpa adipisicing est commodo ex ut nostrud pariatur nulla quis eiusmod sint. Ut dolore et minim id exercitation do ipsum. Ipsum sunt velit dolore dolor consectetur ad. Cillum cupidatat esse laboris anim nostrud laboris. Est nostrud id aliquip ut veniam aliqua eiusmod.
+							p
+								|  Pariatur amet laborum fugiat est laboris adipisicing. Commodo magna non anim anim elit ut sit officia cillum consectetur nostrud elit fugiat. Et consequat incididunt sit velit fugiat laborum reprehenderit mollit commodo ad deserunt.
+							p
+								| Adipisicing tempor exercitation Lorem culpa minim magna aute reprehenderit nisi. Minim dolor duis culpa nulla. Anim anim elit et occaecat reprehenderit minim sint laborum consectetur. Laborum adipisicing Lorem sint et ad ipsum ad cupidatat et dolor anim quis. Reprehenderit eiusmod dolore anim velit qui pariatur consectetur sunt.
+							p
+								| Laborum id mollit dolor mollit aliqua irure nostrud ullamco. Officia laborum sint duis ex. Lorem proident ad enim officia. Dolore velit laborum duis non cupidatat dolor esse. Ex dolore culpa incididunt officia esse.
+							p
+								| Tempor sint anim id cillum ex consequat. Incididunt aliqua est ipsum aute cupidatat magna eiusmod dolor. Laborum reprehenderit mollit non elit duis laboris non. Eu est nisi officia elit reprehenderit velit cillum aliquip dolor occaecat adipisicing. Pariatur ad deserunt commodo laboris incididunt in tempor. Qui duis labore ipsum officia incididunt qui pariatur. Ex culpa adipisicing est commodo ex ut nostrud pariatur nulla quis eiusmod sint. Ut dolore et minim id exercitation do ipsum. Ipsum sunt velit dolore dolor consectetur ad. Cillum cupidatat esse laboris anim nostrud laboris. Est nostrud id aliquip ut veniam aliqua eiusmod.
+							p
+								| Laborum id mollit dolor mollit aliqua irure nostrud ullamco. Officia laborum sint duis ex. Lorem
+							p
+								| Tempor sint anim id cillum ex consequat. Incididunt aliqua est ipsum aute cupidatat magna eiusmod dolor. Laborum reprehenderit mollit non elit duis laboris non. Eu est nisi officia elit reprehenderit velit cillum aliquip dolor occaecat adipisicing. Pariatur ad deserunt commodo laboris incididunt in tempor. Qui duis labore ipsum officia incididunt qui pariatur. Ex culpa adipisicing est commodo ex ut nostrud pariatur nulla quis eiusmod sint.
+
+	// Модальное окно с сообщением, что товар добавлен в корзину
+	.modal.modal-added-to-cart.fade#modal-added-to-cart(tabindex="-1" role="dialog" aria-labelledby="modal-added-to-cart-title" aria-hidden="true")
+		.modal-dialog.modal-lg.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-added-to-cart-title Товар добавлен в корзину
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.cart-table
+						.cart-table__row
+							.cart-table__cell.cart-table__cell_info
+								.cart-table__info
+									a.cart-table__img(href="javascript: void(0);" aria-label="Пенал с левым открыванием")
+										img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+									.cart-table__content
+										a.cart-table__title.section__title(href="javascript: void(0);") Пенал с левым открыванием
+										.cart-table__descr.section__description Артикул: 90858
+									ul.list.list_unstyled.cart-table__params-list.row
+										li.col-auto.list__item
+											span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+											span.list__param-title Белый
+										li.col-auto.list__item
+											span.list__param-title 520 x 830 x 440 мм
+										li.col-auto.list__item
+											span.list__param-title 1 шт.
+							.cart-table__cell.cart-table__cell_price
+								ul.list.list_unstyled.cart-table__marks.marks-list
+									li.list__item.list__item_num.bg_orange + 20&nbsp;
+										span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+									li.list__item.list__item_num.bg_red 25%
+								.cart-table__price
+									span.old 8 345
+									span.cost.cost_new 3 567
+									span.currency лей / шт
+				.modal-footer
+					.row.justify-content-end
+						.col-12.col-md-auto
+							a.btn.btn_default.btn_with-icon.btn_light.btn_to-cart(href="javascript: void(0);")
+								span.btn__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+								span.btn__text перейти в корзину
+						.col-12.col-md-auto
+							button.btn.btn_default.btn_with-icon.btn_dark(type="button" data-dismiss="modal")
+								span.btn__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shop2"></use></svg>
+								span.btn__text продолжить покупки
+	// Модальное окно с товарами в заказе
+	.modal.modal-profile-history1.fade#modal-profile-history1(tabindex="-1" role="dialog" aria-labelledby="modal-profile-history-title1" aria-hidden="true")
+		.modal-dialog.modal-sm.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-profile-history-title1 Товары в заказе
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.booking-block__content
+						.row.no-gutters
+							.col-12
+								.cart-table-modal
+									.cart-table-modal__row
+										.cart-table-modal__cell.cart-table-modal__cell_info
+											.cart-table-modal__info
+												a.cart-table-modal__img(href="javascript: void(0);" aria-label="Пенал с левым открыванием")
+													img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+												.cart-table-modal__content
+													a.cart-table-modal__title.section__title(href="javascript: void(0);") Пенал с левым открыванием
+													.cart-table-modal__descr.section__description Артикул: 90858
+												ul.list.list_unstyled.cart-table-modal__params-list.row
+													li.col-auto.list__item
+														span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+														span.list__param-title Белый
+													li.col-auto.list__item
+														span.list__param-title 520 x 830 x 440 мм
+													li.col-auto.list__item
+														span.list__param-title 1 шт.
+										//-.cart-table-modal__cell.cart-table-modal__cell_middle.cart-table-modal__cell_middle-light
+											| 122 345
+										.cart-table-modal__cell.cart-table-modal__cell_price
+											ul.list.list_unstyled.cart-table-modal__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+											.cart-table-modal__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+									.cart-table-modal__row
+										.cart-table-modal__cell.cart-table-modal__cell_info
+											.cart-table-modal__info
+												a.cart-table-modal__img(href="javascript: void(0);" aria-label="Пенал с левым открыванием")
+													img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+												.cart-table-modal__content
+													a.cart-table-modal__title.section__title(href="javascript: void(0);") Пенал с левым открыванием
+													.cart-table-modal__descr.section__description Артикул: 90858
+												ul.list.list_unstyled.cart-table-modal__params-list.row
+													li.col-auto.list__item
+														span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+														span.list__param-title Белый
+													li.col-auto.list__item
+														span.list__param-title 520 x 830 x 440 мм
+													li.col-auto.list__item
+														span.list__param-title 1 шт.
+										//-.cart-table-modal__cell.cart-table-modal__cell_middle.cart-table-modal__cell_middle-light
+											| 12
+										.cart-table-modal__cell.cart-table-modal__cell_price
+											ul.list.list_unstyled.cart-table-modal__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+											.cart-table-modal__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+	//-// Модальное окно "Увидели дешевле?"
+	//-.modal.modal-cheaper.fade#modal-cheaper(tabindex="-1" role="dialog" aria-labelledby="modal-cheaper-title" aria-hidden="true")
+		.modal-dialog.modal-xl.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-cheaper-title Увидели дешевле?
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.modal-form
+						form(name="form-cheaper" method="post")
+							.modal-form__body
+								.row.align-items-center
+									.col-12.col-md-6.order-last.order-md-first
+										.section__title.section__title_style5 Контактная информация
+									.col-12.col-md-6.order-first.order-md-last.text-right
+										.note * - Поля обязательны к заполнению
+								.row
+									.col-12.col-md-6
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-user"></use></svg>
+											label.form-label.form-label_hidden(for="mch-user-full-name") ФИО*
+											input.form-control(type="text" name="mch-user-full-name" id="mch-user-full-name" placeholder="ФИО*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-phone"></use></svg>
+											label.form-label.form-label_hidden(for="mch-user-full-phone") Телефон*
+											input.form-control(type="tel" name="mch-user-full-phone" id="mch-user-full-phone" placeholder="Телефон*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-email"></use></svg>
+											label.form-label.form-label_hidden(for="mch-user-email") E-mail*
+											input.form-control(type="email" name="mch-user-email" id="mch-user-email" placeholder="E-mail*" required)
+									.col-12.col-md-6
+										.form-group
+											label.form-label.form-label_hidden(for="mch-user-message") Комментарий
+											textarea.form-control(name="mch-user-message" id="mch-user-message" placeholder="Комментарий")
+							.modal-form__footer
+								.row.justify-content-end.align-items-end
+									.col-12.col-md-6
+										.section__title.section__title_style5 Информация о товаре
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-hyperlink"></use></svg>
+											label.form-label.form-label_hidden(for="mch-product-link") Ссылка на товар*
+											input.form-control(type="url" name="mch-product-link" id="mch-product-link" placeholder="Ссылка на товар*" required)
+										.row.align-items-center.justify-content-between.modal-form__add-file
+											.col-12.col-lg-auto
+												.section__title.section__title_style9 Скриншот товара
+											.col-12.col-lg-auto
+												.form-group.form-group_file
+													label.form-label.form-label_hidden(for="mch-file") прикрепить файл со скриншотом товара
+													input.form-control.form-control_file(type="file" name="mch-file" id="mch-file")
+													.btn.btn_bordered.btn_add-file(aria-hidden="true")
+														span.btn__icon
+															<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-add"></use></svg>
+														span.btn__text прикрепить файл
+									.col-12.col-md-6.text-right
+										button.btn.btn_default.btn_with-icon.btn_dark.modal-form__btn(type="submit")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-order2"></use></svg>
+											span.btn__text заказать
+	//-// Модальное окно "Предзаказ"
+	//-.modal.modal-preorder.fade#modal-preorder(tabindex="-1" role="dialog" aria-labelledby="modal-preorder-title" aria-hidden="true")
+		.modal-dialog.modal-xl.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-preorder-title Предзаказ 20.02.2019
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.modal-form
+						form(name="form-preorder" method="post")
+							.modal-form__body
+								.row.align-items-center
+									.col-12.col-md-6.order-last.order-md-first
+										.section__title.section__title_style5 Контактная информация
+									.col-12.col-md-6.order-first.order-md-last.text-right
+										.note * - Поля обязательны к заполнению
+								.row
+									.col-12.col-md-6
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-user"></use></svg>
+											label.form-label.form-label_hidden(for="preorder-user-full-name") ФИО*
+											input.form-control(type="text" name="preorder-user-full-name" id="preorder-user-full-name" placeholder="ФИО*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-phone"></use></svg>
+											label.form-label.form-label_hidden(for="preorder-user-full-phone") Телефон*
+											input.form-control(type="tel" name="preorder-user-full-phone" id="preorder-user-full-phone" placeholder="Телефон*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-email"></use></svg>
+											label.form-label.form-label_hidden(for="preorder-user-email") E-mail*
+											input.form-control(type="email" name="preorder-user-email" id="preorder-user-email" placeholder="E-mail*" required)
+									.col-12.col-md-6
+										.form-group
+											label.form-label.form-label_hidden(for="preorder-user-message") Комментарий
+											textarea.form-control(name="preorder-user-message" id="preorder-user-message" placeholder="Комментарий")
+							.modal-form__footer
+								.row.justify-content-end.align-items-end
+									.col-12.col-md-6.text-right
+										button.btn.btn_default.btn_with-icon.btn_dark.modal-form__btn(type="submit")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-order"></use></svg>
+											span.btn__text заказать
+	//-// Модальное окно "Уведомить"
+	//-.modal.modal-notify.fade#modal-notify(tabindex="-1" role="dialog" aria-labelledby="modal-notify-title" aria-hidden="true")
+		.modal-dialog.modal-xl.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-notify-title Уведомить о появлении товара
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.modal-form
+						form(name="form-notify" method="post")
+							.modal-form__body
+								.row.align-items-center
+									.col-12.col-md-6.order-last.order-md-first
+										.section__title.section__title_style5 Контактная информация
+									.col-12.col-md-6.order-first.order-md-last.text-right
+										.note * - Поля обязательны к заполнению
+								.row
+									.col-12.col-md-6
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-user"></use></svg>
+											label.form-label.form-label_hidden(for="notify-user-full-name") ФИО*
+											input.form-control(type="text" name="notify-user-full-name" id="notify-user-full-name" placeholder="ФИО*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-phone"></use></svg>
+											label.form-label.form-label_hidden(for="notify-user-full-phone") Телефон*
+											input.form-control(type="tel" name="notify-user-full-phone" id="notify-user-full-phone" placeholder="Телефон*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-email"></use></svg>
+											label.form-label.form-label_hidden(for="notify-user-email") E-mail*
+											input.form-control(type="email" name="notify-user-email" id="notify-user-email" placeholder="E-mail*" required)
+									.col-12.col-md-6
+										.form-group
+											label.form-label.form-label_hidden(for="notify-user-full-message") Комментарий
+											textarea.form-control(name="notify-user-full-message" id="notify-user-full-message" placeholder="Комментарий")
+							.modal-form__footer
+								.row.justify-content-end.align-items-end
+									.col-12.col-md-6.text-right
+										button.btn.btn_default.btn_with-icon.btn_dark.modal-form__btn(type="submit")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-email"></use></svg>
+											span.btn__text Отправить
+	//-// Модальное окно "Заявка на рекламацию"
+	//-.modal.modal-reclaim.fade#modal-reclaim(tabindex="-1" role="dialog" aria-labelledby="modal-reclaim-title" aria-hidden="true")
+		.modal-dialog.modal-xl.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-reclaim-title Заявка на рекламацию
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.modal-form
+						form(name="form-reclaim" method="post")
+							.modal-form__body
+								.row.align-items-center
+									.col-12.col-md-6.order-last.order-md-first
+										.section__title.section__title_style5 Информация о товаре
+									.col-12.col-md-6.order-first.order-md-last.text-right
+										.note * - Поля обязательны к заполнению
+								.row
+									.col-12.col-md-6
+										.form-group
+											label.form-label.form-label_hidden(for="mrc-user-product-name") Наименование товара*
+											input.form-control(type="email" name="mrc-user-product-name" id="mrc-user-product-name" placeholder="Наименование товара*")
+										.form-group
+											.select-block
+												.select-wrapper.select-wrapper_modal
+													<svg role="img" width="16" height="16">
+														<use xlink:href="#svg-icon-down-arrow"></use>
+													</svg>
+													select.modal.js-example-classic-single(data-placeholder="Место покупки*")
+														option(selected disabled) Место покупки*
+														option 1
+														option 2
+														option 3
+										.row.align-items-center.justify-content-between.modal-form__add-file
+											.col-12.col-lg-auto
+												.section__title.section__title_style9 Фото чека*
+											.col-12.col-lg-auto
+												.form-group.form-group_file
+													label.form-label.form-label_hidden(for="mrc-file-receipt") прикрепить файл c фото чека*
+													input.form-control.form-control_file(type="file" name="mrc-file-receipt" id="mrc-file-receipt" required)
+													.btn.btn_bordered.btn_add-file(aria-hidden="true")
+														span.btn__icon
+															<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-add"></use></svg>
+														span.btn__text прикрепить файл
+										.row.align-items-center.justify-content-between.modal-form__add-file
+											.col-12.col-lg-auto
+												.section__title.section__title_style9 Фото/видео проблемы*
+											.col-12.col-lg-auto
+												.form-group.form-group_file
+													label.form-label.form-label_hidden(for="mrc-file-problem") прикрепить файл c фото/видео проблемы*
+													input.form-control.form-control_file(type="file" name="mrc-file-problem" id="mrc-file-problem" required)
+													.btn.btn_bordered.btn_add-file(aria-hidden="true")
+														span.btn__icon
+															<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-add"></use></svg>
+														span.btn__text прикрепить файл
+									.col-12.col-md-6
+										.form-group
+											label.form-label.form-label_hidden(for="mrc-user-product-code") Код товара
+											input.form-control(type="email" name="mrc-user-product-code" id="mrc-user-product-code" placeholder="Код товара")
+										.form-group
+											label.form-label.form-label_hidden(for="mrc-user-message") Опишите проблему
+											textarea.form-control(name="mrc-user-message" id="mrc-user-message" placeholder="Опишите проблему")
+							.modal-form__footer
+								.row.justify-content-end.align-items-end
+									.col-12.col-md-6
+										.section__title.section__title_style5 Контактная информация
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-user"></use></svg>
+											label.form-label.form-label_hidden(for="mrc-user-full-name") ФИО*
+											input.form-control(type="text" name="mrc-user-full-name" id="mrc-user-full-name" placeholder="ФИО*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-phone"></use></svg>
+											label.form-label.form-label_hidden(for="mrc-user-full-phone") Телефон*
+											input.form-control(type="tel" name="mrc-user-full-phone" id="mrc-user-full-phone" placeholder="Телефон*" required)
+									.col-12.col-md-6
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-skycraper"></use></svg>
+											label.form-label.form-label_hidden(for="mrc-user-company") Название компании
+											input.form-control(type="email" name="mrc-user-company" id="mrc-user-company" placeholder="Название компании")
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-email"></use></svg>
+											label.form-label.form-label_hidden(for="mrc-user-email") E-mail
+											input.form-control(type="email" name="mrc-user-email" id="mrc-user-email" placeholder="E-mail")
+									.col-12.col-md-6.text-right
+										button.btn.btn_default.btn_with-icon.btn_dark.modal-form__btn(type="submit")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-order2"></use></svg>
+											span.btn__text Отправить
+	// Модальное окно "Успех". Запускается через js стандартными методами Bootstrap 4 (https://bootstrap-4.ru/docs/4.3.1/components/modal/#modalshow)
+	.modal.modal-success.fade#modal-success(tabindex="-1" role="dialog" aria-labeledby="modal-success-title" aria-hidden="true")
+		.modal-dialog.modal-sm.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-body.modal-message
+					.modal-message__icon.color_green
+						<svg role="img" aria-hidden="true" width="150" height="150"><use xlink:href="#svg-icon-verified"></use></svg>
+					.section__title.section__title_style5.modal-message__title#modal-success-title
+						span.line Заявка на рекламацию успешно отправлена
+					button.btn.btn_default.btn_with-icon.btn_dark.modal-message__btn(type="button" data-dismiss="modal" aria-label="Закрыть")
+						span.btn__icon(aria-hidden="true")
+							<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-verified"></use></svg>
+						span.btn__text Ок
+	// Модальное окно "Ошибка". Запускается через js стандартными методами Bootstrap 4 (https://bootstrap-4.ru/docs/4.3.1/components/modal/#modalshow)
+	.modal.modal-error.fade#modal-error(tabindex="-1" role="dialog" aria-labeledby="modal-error-title" aria-hidden="true")
+		.modal-dialog.modal-sm.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-body.modal-message
+					.modal-message__icon.color_red
+						<svg role="img" aria-hidden="true" width="150" height="150"><use xlink:href="#svg-icon-error"></use></svg>
+					.section__title.section__title_style5.modal-message__title#modal-error-title
+						span.line произошла ошибка
+						span.line попробуйте еще раз
+					button.btn.btn_default.btn_with-icon.btn_dark.modal-message__btn(type="button" data-dismiss="modal" aria-label="Закрыть")
+						span.btn__icon(aria-hidden="true")
+							<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-verified"></use></svg>
+						span.btn__text Ок
+	// Модальное окно "Заказать консультацию"
+	.modal.modal-consultation.fade#modal-consultation(tabindex="-1" role="dialog" aria-labelledby="modal-consultation-title" aria-hidden="true")
+		.modal-dialog.modal-md.modal-dialog-centered(role="document")
+			.modal-content
+				.modal-header
+					.section__title.modal-title#modal-consultation-title Заказать консультацию
+					button.modal-close(type="button" data-dismiss="modal" aria-label="Закрыть")
+						<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.modal-body
+					.modal-form
+						form(name="form-consultation" method="post")
+							.modal-form__body
+								.section__title.section__title_style5 Контактная информация
+								.row
+									.col-12
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-user"></use></svg>
+											label.form-label.form-label_hidden(for="consultation-user-full-name") ФИО*
+											input.form-control(type="text" name="consultation-user-full-name" id="consultation-user-full-name" placeholder="ФИО*" required)
+										.form-group.form-group_with-icon
+											.form-group__icon(aria-hidden="true")
+												<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-phone"></use></svg>
+											label.form-label.form-label_hidden(for="consultation-user-phone") Телефон*
+											input.form-control(type="tel" name="consultation-user-phone" id="consultation-user-phone" placeholder="Телефон*" required)
+								.row.align-items-center.justify-content-between
+									.col-12.col-sm-auto
+										.section__title.section__title_style9 Удобное время для звонка:
+									.col-12.col-sm-auto
+										.form-group
+											label.form-label.form-label_hidden(for="consultation-user-time") Удобное время для звонка
+											input.form-control.form-control_time(type="time" name="consultation-user-time" id="consultation-user-time" placeholder="--:--" required)
+							.modal-form__footer
+								.row.justify-content-end.align-items-end
+									.col-12.col-md-6.text-right
+										button.btn.btn_default.btn_with-icon.btn_dark.modal-form__btn(type="submit")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-order2"></use></svg>
+											span.btn__text заказать

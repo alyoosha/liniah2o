@@ -1,0 +1,162 @@
+.cart-table-modal {
+    width: 100%;
+    
+	&__row {
+
+		&+.cart-table-modal__row {
+            border-top: 1px solid @color-gray_extralight;
+		}
+	}
+
+	&__cell {
+        position: relative;
+        padding: 20px;
+		width:100%;
+		
+		&_middle-light {
+			color: @color-gray_medium;
+		}
+
+		&_price {
+            width: 100%;
+		}
+
+
+		&_info {
+			&>div+div {
+				margin-top: 15px;
+			}
+		}
+
+		& + .cart-table-modal__cell {
+			padding-top: 0;
+		}
+	}
+
+	&__info {
+        position: relative;
+        padding-left: 0;
+        min-height: 0;
+	}
+
+	&__img {
+		position: absolute;
+		display: block;
+        top: -10px;
+        left: -10px;
+        width: 80px;
+        max-height: 80px;
+
+		img {
+            max-height: 80px;
+		}
+
+		&:hover,
+		&:focus {
+			opacity: .5;
+		}
+	}
+
+	&__title {
+		display: block;
+		font-weight: normal;
+        line-height: 120%;
+        margin-bottom: 8px;
+		font-size: 16px;
+
+		&:hover,
+		&:focus {
+			color: @color-gray;
+		}
+	}
+
+	&__descr {
+		color: @color-gray_medium;
+        font-size: 12px;
+		line-height: 14px;
+	}
+
+	&__content {
+        margin-bottom: 20px;
+        padding-left: 80px;
+        min-height: 60px;
+	}
+
+	&__params-list {
+		.list__item {
+			margin-bottom: 5px;
+			max-width:100%;
+			line-height: 18px;
+		}
+
+		.list__param-color {
+			margin-right: 10px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid @color-white_dark;
+			border-radius: 3px;
+			vertical-align: middle;
+			line-height: 18px;
+		}
+
+		.list__param-title {
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
+
+	&__marks {
+		position: relative;
+		top: 0;
+		right: 0;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		.list__item {
+			margin-top: 0;
+			margin-bottom:5px;
+			margin-right: 5px;
+
+			&+.list__item {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__price {
+		color: @color-gray_medium;
+		font-size: 16px;
+
+		.old {
+			margin-right: 15px;
+			display: inline-block;
+			vertical-align: baseline;
+			line-height: 1.4;
+			text-decoration-line: line-through;
+		}
+
+		.cost {
+			margin-right: 5px;
+			color: @color-black;
+			font-weight: 800;
+			font-size: 20px;
+			white-space: nowrap;
+			display: inline-block;
+			vertical-align: baseline;
+			line-height: 1.4;
+
+			&_new {
+				color: @color-red;
+			}
+		}
+
+		.currency {
+			display: inline-block;
+			vertical-align: baseline;
+			line-height: 1.4;
+			white-space: nowrap;
+		}
+	}
+}

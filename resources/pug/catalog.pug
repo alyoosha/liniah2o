@@ -1,0 +1,923 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") Каталог
+				.section__title.section__title_style1
+					h1 Каталог
+		.section__body
+			.container
+				.easy-nav.bg_white
+					ul.list.list_unstyled.easy-nav__list
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile" aria-label="Плитка")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tap" aria-label="Сантехника")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tap"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-nightstand" aria-label="Мебель для ванной комнаты")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-nightstand"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator" aria-label="Водоснабжение и отопление")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-drop" aria-label="Вода и водоочистка")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-kitchen" aria-label="Мебель для кухни")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-conditioner" aria-label="Кондиционирование")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-conditioner"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-electric" aria-label="Освещение")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-electric"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-clining" aria-label="Клининг")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-clining"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-wrench" aria-label="Инструмент")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-wrench"></use></svg>
+						//-li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-doors" aria-label="Двери")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-doors"></use></svg>
+						//-li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-parquet" aria-label="Напольные покрытия")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-parquet"></use></svg>
+				.category-block.category-block_main#category-tile
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_brown(href="javascript: void(0);" aria-label="Плитка")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-1.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+									h2.link__text
+										span.line Плитка
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-tap
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Сантехника")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-2.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tap"></use></svg>
+									h2.link__text
+										span.line Сантехника
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-nightstand
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_dark(href="javascript: void(0);" aria-label="Мебель для ванной комнаты")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-3.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-nightstand"></use></svg>
+									h2.link__text
+										span.line Мебель для 
+										span.line ванной комнаты
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-radiator
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Водоснабжение и отопление")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-4.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+									h2.link__text
+										span.line Водоснабжение и
+										span.line отопление
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-drop
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_dark(href="javascript: void(0);" aria-label="Вода и водоочистка")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-12.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-drop"></use></svg>
+									h2.link__text
+										span.line Вода 
+										span.line и водоочистка
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-kitchen
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_brown(href="javascript: void(0);" aria-label="Мебель для кухни")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-5.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen"></use></svg>
+									h2.link__text
+										span.line Кухни
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.rec-block__price
+													span.cost 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Прямая кухня 1500-2700
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-conditioner
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Климат")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-6.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-conditioner"></use></svg>
+									h2.link__text
+										span.line Климат
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-electric
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_dark(href="javascript: void(0);" aria-label="Освещение")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-7.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-electric"></use></svg>
+									h2.link__text
+										span.line Освещение
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-clining
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Клининг")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-10.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-clining"></use></svg>
+									h2.link__text
+										span.line Клининг
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				.category-block.category-block_main#category-wrench
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_dark(href="javascript: void(0);" aria-label="Инструмент")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-11.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-wrench"></use></svg>
+									h2.link__text
+										span.line Инструмент
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				//-.category-block.category-block_main#category-doors
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Двери")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-8.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-doors"></use></svg>
+									h2.link__text
+										span.line Двери
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+				//-.category-block.category-block_main#category-parquet
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_brown(href="javascript: void(0);" aria-label="Напольные покрытия")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-9.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-parquet"></use></svg>
+									h2.link__text
+										span.line Напольные
+										span.line покрытия
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

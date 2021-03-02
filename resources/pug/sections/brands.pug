@@ -1,0 +1,46 @@
+﻿mixin brands(data)
+	section.section.section_brands#brands
+		.container
+			.row.align-items-end
+				.col-12.col-md-8.col-xl-7
+					.section__header.bg_gray-dark.color_white
+						.section__title.section__title_style1
+							h2 Мировые бренды
+						.section__description
+							p Предлагаем большой выбор продукции от проверенных торговых марок
+				.col-12.col-md-4.col-xl-5
+					.section__controls
+						.section__controls-all
+							a(href="javascript: void(0);") Смотреть все
+						.section__controls-nav.swiper-nav
+							button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+		.section__content.bg_white
+			.container
+				.swiper-container.js-brands-slider
+					.swiper-wrapper
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+								img.brand-block__img(src="images/content/brands/brand-img-1.png" alt="Roca")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+								img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+								img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Cersanit")
+								img.brand-block__img(src="images/content/brands/brand-img-4.png" alt="Cersanit")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+								img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду AlcaPlast")
+								img.brand-block__img(src="images/content/brands/brand-img-5.png" alt="AlcaPlast")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+								img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+						.swiper-slide
+							a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Cersanit")
+								img.brand-block__img(src="images/content/brands/brand-img-4.png" alt="Cersanit")
+							

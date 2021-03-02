@@ -1,0 +1,197 @@
+﻿mixin package(data)
+	section.section.section_product.section_package#package
+		.container
+			.section__title.section__title_style4
+				h2 Пакетное предложение
+			.package-block.product-block
+				.package-block__header.d-none.d-xl-flex
+					.package-block__cell.package-block__cell_th.package-block__cell_product
+						.package-block__title.section__title Ваш товар
+					.package-block__cell.package-block__cell_th.package-block__cell_package
+						.package-block__title.section__title Товары из предложения
+					.package-block__cell.package-block__cell_th.package-block__cell_sum
+						.package-block__title.section__title Цена пакетного предложения
+				.package-block__content
+					.package-block__cell.package-block__cell_td.package-block__cell_product
+						.package-block__title.section__title.d-block.d-xl-none Ваш товар
+						.product-card(tabindex="0")
+							.product-card__content
+								.product-card__header
+									a.product-card__img(href="javascript: void(0);")
+										img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+									a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+										img(src="images/content/brands/brand-img-1.png" alt="Roca")
+									ul.list.list_unstyled.product-card__marks.marks-list
+										li.list__item.list__item_num.bg_red 25%
+								.product-card__body
+									a.product-card__title(href="javascript: void(0);") Ancora Унитаз компакт 3/6л
+									.product-card__price
+										span.old 8 345
+										span.cost.cost_new 3 875
+										span.currency лей / шт
+								.product-card__footer
+									.product-card__info
+										.product-card__availability.product-card__availability_true В наличии
+										.product-card__code Артикул: 90858
+									.product-card__controls
+										button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+											<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+											<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+										button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+											<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+											<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+						.package-block__icon.package-block__icon_right(aria-label="+")
+							<svg role="img" width="50" height="50"><use xlink:href="#svg-icon-add"></use></svg>
+					.package-block__cell.package-block__cell_td.package-block__cell_package
+						.package-block__title.section__title.d-block.d-xl-none Товары из предложения
+						.slider-group
+							.row
+								.col-12.col-sm-6
+									.slider-block
+										.swiper-container.js-slider-attached-product
+											.swiper-wrapper
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-6.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Ancora Унитаз компакт 3/6л
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-7.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Carina Слим Clean On 3/5л с нижней подводкой дюропласт...
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+										.swiper-nav.swiper-nav_vertical
+											button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-sm-6
+									.slider-block
+										.swiper-container.js-slider-attached-product
+											.swiper-wrapper
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-6.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Ancora Унитаз компакт 3/6л
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-7.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Carina Слим Clean On 3/5л с нижней подводкой дюропласт...
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+										.swiper-nav.swiper-nav_vertical
+											button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-sm-6
+									.slider-block
+										.swiper-container.js-slider-attached-product
+											.swiper-wrapper
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-6.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Ancora Унитаз компакт 3/6л
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-7.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Carina Слим Clean On 3/5л с нижней подводкой дюропласт...
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+										.swiper-nav.swiper-nav_vertical
+											button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-sm-6
+									.slider-block
+										.swiper-container.js-slider-attached-product
+											.swiper-wrapper
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-6.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Ancora Унитаз компакт 3/6л
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+												.swiper-slide
+													a.package-item(href="javascript: void(0);")
+														.package-item__content
+															.package-item__header
+																.package-item__img
+																	img(src="images/content/products/product-img-7.jpg" alt="Изображение продукта")
+															.package-item__body
+																.package-item__title Carina Слим Clean On 3/5л с нижней подводкой дюропласт...
+																.package-item__price
+																	span.cost 3 875
+																	span.currency лей / шт
+										.swiper-nav.swiper-nav_vertical
+											button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					.package-block__cell.package-block__cell_td.package-block__cell_sum
+						.package-block__icon.package-block__icon_left(aria-label="=")
+							<svg role="img" width="50" height="50"><use xlink:href="#svg-icon-equal"></use></svg>
+						.package-block__title.section__title.d-block.d-xl-none Цена пакетного предложения
+						.package-block__buy
+							.package-block__price.product-block__price
+								span.old 8 345
+								span.cost.cost_new 3 567
+								span.currency лей / шт
+							.package-block__extra.product-block__extra
+								.bonus-block
+									.bonus-block__icon
+										<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-credit-card"></use></svg>
+									.bonus-block__content
+										span.bonus-block__title Бонус:
+										span.bonus-block__points
+											<span class="counter">+ 20 баллов</span>
+											button.btn.btn_popover.bonus-block__popover(data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.")
+												<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-popover"></use></svg>
+							.package-block__quantity.product-block__quantity
+								.section__title.product-block__subtitle Количество
+								.form-group.form-group_inline
+									button.btn.btn_minus.js-btn-minus(type="button" aria-label="Меньше")
+										<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-minimize"></use></svg>
+									label.form-label.form-label_hidden(for="package-count") Количество пар
+									input.form-control( type="number" id="package-count" name="package-count" min="1" step="1" value="1")
+									button.btn.btn_plus.js-btn-plus(type="button" aria-label="Больше")
+										<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-add"></use></svg>
+							.btn-group
+								button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+									span.btn__icon(aria-hidden="true")
+										<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+									span.btn__text В корзину

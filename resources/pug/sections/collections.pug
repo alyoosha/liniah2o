@@ -1,0 +1,49 @@
+﻿mixin collections(data)
+	section.section.section_collections#collections
+		.section__img(aria-hidden="true")
+			.background-img
+				img(src="images/backgrounds/blog-bg.jpg" alt="Фоновое изображение")
+		.container
+			.row.align-items-end
+				.col-12.col-md-8.col-xl-9
+					.section__title.section__title_style1.color_white
+						h2
+							span.line Коллекции 
+							span.line и тренды оформления интерьеров
+				.col-12.col-md-4.col-xl-3
+					.section__controls
+						.section__controls-all
+							a(href="javascript: void(0);") Смотреть все
+						.section__controls-nav.swiper-nav
+							button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.swiper-container.js-collections-slider
+				.swiper-wrapper
+					.swiper-slide
+						a.collections-block(href="javascript: void(0);")
+							.collections-block__img
+								.background-img
+									img(src="images/content/collections/collections-img-1.jpg" alt="Лаконичная элегантность")
+							.collections-block__title
+								h3 Лаконичная элегантность
+					.swiper-slide
+						a.collections-block(href="javascript: void(0);")
+							.collections-block__img
+								.background-img
+									img(src="images/content/collections/collections-img-2.jpg" alt="Роскошный акцент")
+							.collections-block__title
+								h3 Роскошный акцент
+					.swiper-slide
+						a.collections-block(href="javascript: void(0);")
+							.collections-block__img
+								.background-img
+									img(src="images/content/collections/collections-img-3.jpg" alt="Стильный монохром")
+							.collections-block__title
+								h3 Стильный монохром
+					.swiper-slide
+						a.collections-block(href="javascript: void(0);")
+							.collections-block__img
+								.background-img
+									img(src="images/content/collections/collections-img-4.jpg" alt="Морской бриз")
+							.collections-block__title
+								h3 Морской бриз

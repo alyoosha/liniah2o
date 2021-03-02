@@ -1,0 +1,50 @@
+﻿mixin blog(data)
+	section.section.section_blog#blog
+		.section__img(aria-hidden="true")
+			.background-img
+				img(src="images/backgrounds/blog-bg.jpg" alt="Фоновое изображение")
+		.container
+			.row.align-items-end
+				.col-12.col-md-8.col-xl-9
+					.section__title.section__title_style1
+						h2= data.title
+					if data.text
+						.section__description.color_gray-medium
+							p= data.text
+				.col-12.col-md-4.col-xl-3
+					.section__controls
+						.section__controls-all
+							a(href="javascript: void(0);") Смотреть все
+						.section__controls-nav.swiper-nav
+							button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.swiper-container.js-blog-slider
+				.swiper-wrapper
+					.swiper-slide
+						a.blog-block(href="javascript: void(0);")
+							.blog-block__img
+								.background-img
+									img(src="images/content/blog/blog-img-1.jpg" alt="Новинка - Коллекция Niro White Leviglass!")
+							ul.list.list_unstyled.blog-block__marks.marks-list
+								li.list__item.bg_blue Новинка
+								li.list__item.bg_green Рекомендации
+							.blog-block__title
+								h3 Новинка - Коллекция Niro White Leviglass!
+					.swiper-slide
+						a.blog-block(href="javascript: void(0);")
+							.blog-block__img
+								.background-img
+									img(src="images/content/blog/blog-img-2.jpg" alt="Фаянсовые изделия - установка и правила ухода")
+							ul.list.list_unstyled.blog-block__marks.marks-list
+								li.list__item.bg_blue Новинка
+							.blog-block__title
+								h3 Фаянсовые изделия - установка и правила ухода
+					.swiper-slide
+						a.blog-block(href="javascript: void(0);")
+							.blog-block__img
+								.background-img
+									img(src="images/content/blog/blog-img-3.jpg" alt="Тренинг по продажам в LiniaH2O")
+							ul.list.list_unstyled.blog-block__marks.marks-list
+								li.list__item.bg_green Рекомендации
+							.blog-block__title
+								h3 Тренинг по продажам в LiniaH2O

@@ -1,0 +1,98 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_payment-delivery
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") Оплата и доставка
+				.section__title.section__title_style1
+					h1 
+						| Оплата и доставка
+		.section__body
+			.section__payment-header
+				.container
+					.payment-title.section__title.section__title_style6
+						h2
+							| Оплата
+					//-span.add-text
+						| Вы можете оплатить товары любым удобным способом:
+			.section__payment-body
+				.container
+					.row
+						.col-lg-4
+							.tab-controls.section__title_style8
+								ul.list.list_unstyled.nav.nav-tabs.tab-controls__nav(role="tablist")
+									li.list__item
+										a.link.active(href="#cash" data-toggle="tab" role="tab" aria-controls="cash" aria-selected="false" aria-label="Наличные")
+											.link__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-wallet"></use></svg>
+											.link__text Вы можете оплатить товары наличными или банковской картой при получении
+						.col-lg-6
+							.tab-content
+								.tab-pane.fade.fade.show.active#cash(role="tabpanel" aria-labelledby="cash-tab")
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+			.section__delivery-header
+				.container.wrapper
+					.section__title.section__title_style6
+						h2
+							| Доставка
+					.add-text.js-delivery-clause
+						a(href="javascript: void(0);")
+							| Положение о доставке
+			.section__delivery-body
+				.container
+					.row
+						.col-lg-7
+							.section__title.section__title_style7.delivery-title
+								h3
+									| Условия доставки
+							ol.list
+								li.list__item
+									p
+										| Доставка оформляется в момент покупки, только на крупногабаритный товар.
+								li.list__item
+									p
+										| Доставка осуществляется в черте города Кишинев, до подъезда либо до ворот (при отсутствии возможности подачи машины до подъезда дома), без поднятия на этаж.
+								li.list__item
+									p
+										| Клиент обязан обеспечить свободный проезд к месту разгрузки машины грузоподъемностью 3,5 тонны и выше. А также, обеспечить оперативную выгрузку и прием товара в месте разгрузки.
+								li.list__item
+									p
+										| В случае если клиент не отвечает на указанные в доставке номера телефонов, не может принять товар в условленное время, либо не соблюдает условия предоставления доставки, наша компания оставляет за собой право отказать в повторной доставке товара.
+								li.list__item
+									p
+										| Клиент обязан проверить качество, количество и комплектацию принимаемого товара при получении, после чего обязан подписать Акт приёма товара.
+								li.list__item
+									p
+										| После получения товара не принимаются рекламации по механическим повреждениям, количеству и комплектации товара.
+
+							.section__title.section__title_style7.delivery-title
+								h3
+									| Условия доставки
+							ol.list
+								li.list__item
+									p
+										| Доставка оформляется в момент покупки, только на крупногабаритный товар.
+								li.list__item
+									p
+										| Доставка осуществляется в черте города Кишинев, до подъезда либо до ворот (при отсутствии возможности подачи машины до подъезда дома), без поднятия на этаж.
+								li.list__item
+									p
+										| Клиент обязан обеспечить свободный проезд к месту разгрузки машины грузоподъемностью 3,5 тонны и выше. А также, обеспечить оперативную выгрузку и прием товара в месте разгрузки.
+								li.list__item
+									p
+										| В случае если клиент не отвечает на указанные в доставке номера телефонов, не может принять товар в условленное время, либо не соблюдает условия предоставления доставки, наша компания оставляет за собой право отказать в повторной доставке товара.
+								li.list__item
+									p
+										| Клиент обязан проверить качество, количество и комплектацию принимаемого товара при получении, после чего обязан подписать Акт приёма товара.
+								li.list__item
+									p
+										| После получения товара не принимаются рекламации по механическим повреждениям, количеству и комплектации товара.
+			
+
+				

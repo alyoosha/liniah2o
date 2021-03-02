@@ -1,0 +1,48 @@
+﻿mixin subscribe()
+	section.section.section_subscribe#subscribe
+		.container
+			.row
+				.col-12.col-md-8.col-lg-7.col-xl-5.ml-auto
+					.section__description.bg_gray-dark.color_white
+						p Voluptate non irure aliqua nisi eu commodo irure eiusmod ea. Nulla laborum aliqua magna et ea est laborum amet non cillum officia. Non ex cupidatat labore enim non nulla sunt. Qui do exercitation enim ea et laboris laboris aliqua aliquip do commodo. Cupidatat esse officia aliqua cillum enim reprehenderit nisi adipisicing.
+						p Quis enim proident qui dolor eu in velit cupidatat ullamco velit consequat dolore cillum dolore. Aliqua mollit in officia non adipisicing do laboris pariatur anim aute tempor esse do ex. Velit aliqua qui nulla voluptate cupidatat elit deserunt magna. Nisi sunt occaecat officia fugiat sunt sit excepteur laboris.
+			.section__img(aria-hidden="true")
+				.background-img
+					img(src="images/backgrounds/subscribe-bg.jpg" alt="Фоновое изображение")
+			.row.justify-content-center
+				.col-12.col-lg-8
+					.section__content
+						.section__title.section__title_style1
+							h2
+								span.line Узнавайте первыми 
+								span.line о скидках и обновлениях
+						.section__form
+							form(name="subscribe-form" method="post")
+								.row
+									.col-12.col-md-auto
+										.form-group
+											label.form-label.form-label_hidden(for="subscribe-email") Введите свой E-mail
+											input.form-control(type="email" id="subscribe-email" name="subscribe-email" placeholder="Введите свой E-mail")
+											.form-validator.form-validator_error Некорректный e-mail
+											.form-validator.form-validator_success
+												.form-validator__icon(aria-hidden="true")
+													<svg role="img" width="24" height="24"><use xlink:href="#svg-icon-verified"></use></svg>
+												.form-validator__text Вы успешно подписались на рассылку
+									.col-12.col-md-auto
+										button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-email"></use></svg>
+											span.btn__text Подписаться
+						ul.list.list_unstyled.socials-list
+							li.list__item
+								a.link(href="javascipt: void(0);" target="_blanck" rel="nofollow noopener" aria-label="Мы в Facebook")
+									<svg role="img" width="40" height="40"><use xlink:href="#svg-icon-facebook"></use></svg>
+							li.list__item
+								a.link(href="javascipt: void(0);" target="_blanck" rel="nofollow noopener" aria-label="Мы в Twitter")
+									<svg role="img" width="40" height="40"><use xlink:href="#svg-icon-twitter"></use></svg>
+							li.list__item
+								a.link(href="javascipt: void(0);" target="_blanck" rel="nofollow noopener" aria-label="Мы в Instagram")
+									<svg role="img" width="40" height="40"><use xlink:href="#svg-icon-instagram"></use></svg>
+							li.list__item
+								a.link(href="javascipt: void(0);" target="_blanck" rel="nofollow noopener" aria-label="Мы в Youtube")
+									<svg role="img" width="40" height="40"><use xlink:href="#svg-icon-youtube"></use></svg>

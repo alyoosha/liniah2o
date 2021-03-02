@@ -1,0 +1,143 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog.section_category
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link.active(href="javascript: void(0);") Кухни
+				.section__title.section__title_style1
+					h1 Кухни
+		.section__body
+			.container
+				.easy-nav.bg_white.d-block.d-xl-none
+					ul.list.list_unstyled.easy-nav__list
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-kitchen2" aria-label="Прямая кухня")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-kitchen3" aria-label="Угловая кухня")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen3"></use></svg>
+				.category-block.category-block_main#category-kitchen
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_brown(href="javascript: void(0);" aria-label="Мебель для кухни")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-5.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen"></use></svg>
+									h2.link__text
+										span.line Кухни
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Угловая кухня 1500-2700
+												.rec-block__price
+													span.cost 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-15.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Прямая кухня 1500-2700
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.section__subcategories
+				.container
+					.row
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-kitchen2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-60.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen2"></use></svg>
+										h2.section__title.link__text
+											span.line Прямая 
+											span.line кухня
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") 2 100 мм
+										li.list__item
+											a.link(href="javascript:void(0);") 2 400 мм
+										li.list__item
+											a.link(href="javascript:void(0);") 2 700 мм
+										li.list__item
+											a.link(href="javascript:void(0);") 3 000 мм
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-kitchen3
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-61.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-kitchen3"></use></svg>
+										h2.section__title.link__text
+											span.line Угловая 
+											span.line кухня
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") 1 600 мм х 2 200 мм
+										li.list__item
+											a.link(href="javascript:void(0);") 1 600 мм х 2 700 мм
+										li.list__item
+											a.link(href="javascript:void(0);") 1 800 мм х 2 800 мм
+										li.list__item
+											a.link(href="javascript:void(0);") 2 000 мм х 2 000 мм
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

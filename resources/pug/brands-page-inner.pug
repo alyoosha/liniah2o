@@ -1,0 +1,94 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_brands-page-inner
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") cersanit 
+				.section__title.section__title_style1.header-title
+					h1 
+						| cersanit 
+		.section__body
+			.brand-description.bg_gray-medium
+				.container
+					.row
+						.col-lg-8.order-lg-first.order-last
+							.brand-description__text
+								p
+									| Описание бренда ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. 
+						.col-lg-3.offset-lg-1.order-lg-last.order-first
+							.brand-description__logo
+								.brand-block
+									img.brand-block__img(src="images/content/brands/brand-img-1.png" alt="Roca") 
+								.brand-block__country
+									span Великобритания
+			.brand-info.section_catalog
+				.container
+					.category-block.category-block_main#category-tile
+							.row.no-gutters
+								.col-12.col-lg-5
+									a.link.category-block__header.category-block__header_brown(href="javascript: void(0);" aria-label="Плитка")
+										.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-1.png');")
+										.link__content
+											span.link__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+											h2.link__text Плитка
+											span.link__control(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-lg-7
+									.row.no-gutters
+										.col-12.col-md-4
+											.rec-block.rec-block_new
+												.rec-block__content.d-none.d-md-block
+													.rec-block__header
+														a.rec-block__img(href="javascript: void(0);")
+															img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+														ul.list.list_unstyled.rec-block__marks.marks-list
+															li.list__item.bg_blue Новинка
+													.rec-block__body
+														a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+														.rec-block__price
+															span.cost 567
+															span.currency лей / шт
+												.rec-block__footer
+													a.link.rec-block__link(href="javascript:void(0);")
+														span.link__text Новинки
+														span.link__control(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.col-12.col-md-4
+											.rec-block.rec-block_sale
+												.rec-block__content.d-none.d-md-block
+													.rec-block__header
+														a.rec-block__img(href="javascript: void(0);")
+															img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+														ul.list.list_unstyled.rec-block__marks.marks-list
+															li.list__item.list__item_num.bg_red 25%
+													.rec-block__body
+														a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+														.rec-block__price
+															span.old 8 345
+															span.cost.cost_new 3 567
+															span.currency лей / шт
+												.rec-block__footer
+													a.link.rec-block__link(href="javascript:void(0);")
+														span.link__text Акции
+														span.link__control(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.col-12.col-md-4
+											.rec-block.rec-block_brand
+												.rec-block__content.d-none.d-md-block
+													a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+														img(src="images/content/brands/brand-img-1.png" alt="Roca")
+												.rec-block__footer
+													a.link.rec-block__link(href="javascript:void(0);")
+														span.link__text Бренды
+														span.link__control(aria-hidden="true")
+															<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			+sliders-in-tabs({"buy":"true"})

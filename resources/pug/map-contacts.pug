@@ -1,0 +1,126 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_map-contacts
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") Магазины
+				.header-title
+					.header-title__main.section__title.section__title_style1
+						h1 
+							| Магазины
+							span.header-title__add-text.section__title
+								| LiniaH2O
+					.header-title__shops
+						a.link(href="javascript: void(0);")
+							.link__icon
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pin"></use></svg>
+							.link__text.section__title
+								| Контакты LiniaH2O
+		.section__body.bg_white
+			.container
+				.row
+					.col-xl-5
+						.info-block
+							.info-content.address-block
+								.title.section__title
+									h3
+										| Aдрес
+								address.address
+									.address__icon
+										<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-pin"></use></svg>
+									a.address__text.js-pin.js-zoom-map(href="javascript: void(0);" data-lat="47.040665" data-lng="28.829008")
+										| г.Кишинев, ул.Михай Витязул, 21/1
+								.phone-email-wrapper
+									.phone
+										.phone__icon
+											<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-phone"></use></svg>
+										.phone__text
+											a.line(href="tel:+37322410125")
+												| (+373 22) 410 125
+											a.line(href="tel:+37360775566")
+												| (+373) 60775566
+									.email
+										.email__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-email"></use></svg>
+										a.email__text(href="mailto:service@liniah2o.md")
+											| service@liniah2o.md
+							.info-content.service-block
+								.title.section__title
+									h3
+										| Сервисный центр
+								address.address
+									.address__icon
+										<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-pin"></use></svg>
+									a.address__text.js-pin.js-zoom-map(href="javascript: void(0);" data-lat="46.998107" data-lng="28.897251")
+										| г.Кишинэу, ул.Узинелор 165
+								.phone-email-wrapper
+									.phone
+										.phone__icon
+											<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-phone"></use></svg>
+										.phone__text
+											a.line(href="tel:+37322410125")
+												| (+373 22) 410 125
+											a.line(href="tel:+37360775566")
+												| (+373) 60775566
+									.email
+										.email__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-email"></use></svg>
+										a.email__text(href="mailto:service@liniah2o.md")
+											| service@liniah2o.md
+							.info-content.delivery-block
+								.title.section__title
+									h3
+										| Отдел доставки
+								.phone
+									.phone__icon
+										<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-phone"></use></svg>
+									.phone__text
+										a.line(href="tel:+37379007764")
+											| (+373) 79007764
+							.info-content.service-block
+								.title.section__title
+									h3
+										| Реквизиты
+								address.address
+									.address__icon
+										<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-pin"></use></svg>
+									a.address__text.js-pin.js-zoom-map(href="javascript: void(0);" data-lat="47.040665" data-lng="28.829008")
+										| VITASANMAX SRL mun. Chişinău, str. Mihai Viteazul, 21/1
+								.phone-email-wrapper
+									.phone
+										.phone__icon
+											<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-order2"></use></svg>
+										.phone__text
+											.line 1003600005654
+					.col-xl-7
+						.shop-reference-block
+							.shop-reference-block__wrapper.bg_gray-dark
+								.row.no-gutters
+									.col-xl-7
+										.announcement-block
+											.section__title
+												h3
+													.line
+														| У вас есть вопросы / предложения?
+													.line
+														| Свяжитесь с нами!
+									.col-xl-5
+										.schedule-block
+											.phone
+												.phone__icon
+													<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-phone"></use></svg>
+												.phone__text
+													a.line(href="tel:+37379410830")
+														| (+373) 79410830
+											.schedule
+												.schedule__icon
+													<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-wall-clock"></use></svg>
+												.schedule__text
+													| Пн - Вс: 09.00 - 18.00
+							.shop-reference-block__map.js-map#js-map3(data-map-lat="47.024597" data-map-lng="28.845868")

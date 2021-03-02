@@ -1,0 +1,353 @@
+﻿mixin complect(data)
+	section.section.section_product.section_complect.section_complect_main#complect
+		.container
+			.section__title.section__title_style4.section__title_main
+				h2 Участвует в комплекте
+		.swiper-container.js-complect-slider
+			.container
+				.swiper-nav.js-complect-slider-nav
+					button.swiper-button-prev.swiper-button-white(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+					button.swiper-button-next.swiper-button-white(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.swiper-wrapper
+				.swiper-slide
+					.complect-block
+						.complect-block__header
+							.container
+								.row
+									.col-12.col-lg-4
+										.complect-block__img
+											.background-img(aria-hidden="true")
+												img(src="images/content/complects/complect-img-1.jpg" alt="Фото комплекта")
+									.col-12.col-lg-8
+										.complect-block__content
+											.section__title.section__title_style7.complect-block__title.color_white.bg_gray-medium
+												h2 Мебель для ванны Albina Bamboo стандарт, угловая, белая
+											.complect-block__info.bg_white
+												.complect-block__contains.section__title.section__title_style7 Комплект содержит: 3 позиции
+												.complect-block__descr Данный комплект можно купить по частям
+						.complect-block__body
+							form(name="complect-form" method="post")
+								.container
+									.complect-block__controls
+										.row.align-items-center
+											.col-7.col-sm-auto
+												.checkbox
+													label.checkbox__label(for="checked-all")
+														input.checkbox__hidden(type="checkbox" id="checked-all" name="checked-all" value="Выбрать все")
+														span.checkbox__custom(aria-hidden="true")
+														span.checkbox__text Выбрать все
+											.col-5.col-sm-auto
+												.controls-quantity
+													span.controls-quantity__title Выбрано:
+													span.controls-quantity__text 2 позиции
+									.row.justify-content-between
+										.col-12.col-lg-8.col-xl-9
+											.complect-block__items.complect-block__items_merge
+												.checkbox.checkbox_merge
+													label.checkbox__label(for="checked-merge-products")
+														input.checkbox__hidden(type="checkbox" id="checked-merge-products" name="checked-merge-products" value="Выбрать все")
+														span.checkbox__custom(aria-label="Пенал с левым открыванием")
+												.complect-block__item.complect-block__item_no-slider
+													.complect-product
+														.complect-product__cell.complect-product__cell_check
+														.complect-product__cell.complect-product__cell_img
+															.complect-product__img
+																img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+														.complect-product__cell.complect-product__cell_content
+															.complect-product__title Пенал с левым открыванием
+															.complect-product__code Артикул: 90858
+															ul.list.list_unstyled.complect-product__params-list
+																li.list__item
+																	.list__param-title Цвет:
+																	.list__param-value
+																		span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																		span.list__param-descr Белый
+																li.list__item
+																	.list__param-title Размер:
+																	.list__param-value
+																		span.list__param-descr 520 x 830 x 440 мм.
+														.complect-product__cell.complect-product__cell_price
+															.complect-product__price
+																span.old 1 345
+																span.cost.cost_new 967
+																span.currency лей / шт
+												.complect-block__item.complect-block__item_no-slider
+													.complect-product
+														.complect-product__cell.complect-product__cell_check
+														.complect-product__cell.complect-product__cell_img
+															.complect-product__img
+																img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+														.complect-product__cell.complect-product__cell_content
+															.complect-product__title Пенал с левым открыванием
+															.complect-product__code Артикул: 90858
+															ul.list.list_unstyled.complect-product__params-list
+																li.list__item
+																	.list__param-title Цвет:
+																	.list__param-value
+																		span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																		span.list__param-descr Белый
+																li.list__item
+																	.list__param-title Размер:
+																	.list__param-value
+																		span.list__param-descr 520 x 830 x 440 мм.
+														.complect-product__cell.complect-product__cell_price
+															.complect-product__price
+																span.old 1 345
+																span.cost.cost_new 967
+																span.currency лей / шт
+											.complect-block__items
+												.complect-block__item
+													.swiper-container.js-complect-inner-slider
+														.swiper-wrapper
+															.swiper-slide
+																.complect-product
+																	.complect-product__cell.complect-product__cell_check
+																		.checkbox
+																			label.checkbox__label(for="checked-product-3")
+																				input.checkbox__hidden(type="checkbox" id="checked-product-3" name="checked-product-3" value="Выбрать")
+																				span.checkbox__custom(aria-label="Пенал с левым открыванием")
+																	.complect-product__cell.complect-product__cell_img
+																		.complect-product__img
+																			img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																	.complect-product__cell.complect-product__cell_content
+																		.complect-product__title Пенал с левым открыванием
+																		.complect-product__code Артикул: 90858
+																		ul.list.list_unstyled.complect-product__params-list
+																			li.list__item
+																				.list__param-title Цвет:
+																				.list__param-value
+																					span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																					span.list__param-descr Белый
+																			li.list__item
+																				.list__param-title Размер:
+																				.list__param-value
+																					span.list__param-descr 520 x 830 x 440 мм.
+																	.complect-product__cell.complect-product__cell_price
+																		.complect-product__price
+																			span.old 1 345
+																			span.cost.cost_new 967
+																			span.currency лей / шт
+															.swiper-slide
+																.complect-product
+																	.complect-product__cell.complect-product__cell_check
+																		.checkbox
+																			label.checkbox__label(for="checked-product-4")
+																				input.checkbox__hidden(type="checkbox" id="checked-product-4" name="checked-product-4" value="Выбрать")
+																				span.checkbox__custom(aria-label="Пенал с левым открыванием 2")
+																	.complect-product__cell.complect-product__cell_img
+																		.complect-product__img
+																			img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																	.complect-product__cell.complect-product__cell_content
+																		.complect-product__title Пенал с левым открыванием 2
+																		.complect-product__code Артикул: 90858
+																		ul.list.list_unstyled.complect-product__params-list
+																			li.list__item
+																				.list__param-title Цвет:
+																				.list__param-value
+																					span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																					span.list__param-descr Белый
+																			li.list__item
+																				.list__param-title Размер:
+																				.list__param-value
+																					span.list__param-descr 520 x 830 x 440 мм.
+																	.complect-product__cell.complect-product__cell_price
+																		.complect-product__price
+																			span.old 1 345
+																			span.cost.cost_new 967
+																			span.currency лей / шт
+															.swiper-slide
+																.complect-product
+																	.complect-product__cell.complect-product__cell_check
+																		.checkbox
+																			label.checkbox__label(for="checked-product-5")
+																				input.checkbox__hidden(type="checkbox" id="checked-product-5" name="checked-product-5" value="Выбрать")
+																				span.checkbox__custom(aria-label="Пенал с левым открыванием 3")
+																	.complect-product__cell.complect-product__cell_img
+																		.complect-product__img
+																			img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																	.complect-product__cell.complect-product__cell_content
+																		.complect-product__title Пенал с левым открыванием 3
+																		.complect-product__code Артикул: 90858
+																		ul.list.list_unstyled.complect-product__params-list
+																			li.list__item
+																				.list__param-title Цвет:
+																				.list__param-value
+																					span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																					span.list__param-descr Белый
+																			li.list__item
+																				.list__param-title Размер:
+																				.list__param-value
+																					span.list__param-descr 520 x 830 x 440 мм.
+																	.complect-product__cell.complect-product__cell_price
+																		.complect-product__price
+																			span.old 1 345
+																			span.cost.cost_new 967
+																			span.currency лей / шт
+													.swiper-nav
+														button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+														button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.col-12.col-lg-4.col-xl-3
+											.complect-block__buy
+												.complect-block__price.product-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+												.complect-block__quantity.product-block__quantity
+													.section__title.product-block__subtitle Количество
+													.form-group.form-group_inline
+														button.btn.btn_minus.js-btn-minus(type="button" aria-label="Меньше")
+															<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-minimize"></use></svg>
+														label.form-label.form-label_hidden(for="complect-count") Количество комплектов
+														input.form-control( type="number" id="complect-count" name="complect-count" min="1" step="1" value="1")
+														button.btn.btn_plus.js-btn-plus(type="button" aria-label="Больше")
+															<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-add"></use></svg>
+												.btn-group
+													button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+														span.btn__icon(aria-hidden="true")
+															<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+														span.btn__text В корзину
+				.swiper-slide
+					.complect-block
+						.complect-block__header
+							.container
+								.row
+									.col-12.col-lg-4
+										.complect-block__img
+											.background-img(aria-hidden="true")
+												img(src="images/content/complects/complect-img-2.jpg" alt="Фото комплекта")
+									.col-12.col-lg-8
+										.complect-block__content
+											.section__title.section__title_style7.complect-block__title.color_white.bg_gray-medium
+												h2 Мебель для ванны Albina
+											.complect-block__info.bg_white
+												.complect-block__contains.section__title.section__title_style7 Комплект содержит: 1 позицию
+												.complect-block__descr Данный комплект нельзя купить по частям
+						.complect-block__body
+							form(name="complect-form-2" method="post")
+								.container
+									.complect-block__controls
+										.row.align-items-center
+											.col-7.col-sm-auto
+												.checkbox
+													label.checkbox__label(for="checked-all-2")
+														input.checkbox__hidden(type="checkbox" id="checked-all-2" name="checked-all-2" value="Выбрать все")
+														span.checkbox__custom(aria-hidden="true")
+														span.checkbox__text Выбрать все
+											.col-5.col-sm-auto
+												.controls-quantity
+													span.controls-quantity__title Выбрано:
+													span.controls-quantity__text 1 позиция
+									.row.justify-content-between
+										.col-12.col-lg-8.col-xl-9
+											.complect-block__items
+												.complect-block__item
+													.swiper-container.js-complect-inner-slider
+														.swiper-wrapper
+															.swiper-slide
+																.complect-product
+																	.complect-product__cell.complect-product__cell_check
+																		.checkbox
+																			label.checkbox__label(for="checked-product-6")
+																				input.checkbox__hidden(type="checkbox" id="checked-product-6" name="checked-product-6" value="Выбрать")
+																				span.checkbox__custom(aria-label="Пенал с левым открыванием")
+																	.complect-product__cell.complect-product__cell_img
+																		.complect-product__img
+																			img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																	.complect-product__cell.complect-product__cell_content
+																		.complect-product__title Пенал с левым открыванием
+																		.complect-product__code Артикул: 90858
+																		ul.list.list_unstyled.complect-product__params-list
+																			li.list__item
+																				.list__param-title Цвет:
+																				.list__param-value
+																					span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																					span.list__param-descr Белый
+																			li.list__item
+																				.list__param-title Размер:
+																				.list__param-value
+																					span.list__param-descr 520 x 830 x 440 мм.
+																	.complect-product__cell.complect-product__cell_price
+																		.complect-product__price
+																			span.old 1 345
+																			span.cost.cost_new 967
+																			span.currency лей / шт
+															.swiper-slide
+																.complect-product
+																	.complect-product__cell.complect-product__cell_check
+																		.checkbox
+																			label.checkbox__label(for="checked-product-7")
+																				input.checkbox__hidden(type="checkbox" id="checked-product-7" name="checked-product-7" value="Выбрать")
+																				span.checkbox__custom(aria-label="Пенал с левым открыванием 2")
+																	.complect-product__cell.complect-product__cell_img
+																		.complect-product__img
+																			img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																	.complect-product__cell.complect-product__cell_content
+																		.complect-product__title Пенал с левым открыванием 2
+																		.complect-product__code Артикул: 90858
+																		ul.list.list_unstyled.complect-product__params-list
+																			li.list__item
+																				.list__param-title Цвет:
+																				.list__param-value
+																					span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																					span.list__param-descr Белый
+																			li.list__item
+																				.list__param-title Размер:
+																				.list__param-value
+																					span.list__param-descr 520 x 830 x 440 мм.
+																	.complect-product__cell.complect-product__cell_price
+																		.complect-product__price
+																			span.old 1 345
+																			span.cost.cost_new 967
+																			span.currency лей / шт
+															.swiper-slide
+																.complect-product
+																	.complect-product__cell.complect-product__cell_check
+																		.checkbox
+																			label.checkbox__label(for="checked-product-8")
+																				input.checkbox__hidden(type="checkbox" id="checked-product-8" name="checked-product-8" value="Выбрать")
+																				span.checkbox__custom(aria-label="Пенал с левым открыванием 3")
+																	.complect-product__cell.complect-product__cell_img
+																		.complect-product__img
+																			img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																	.complect-product__cell.complect-product__cell_content
+																		.complect-product__title Пенал с левым открыванием 3
+																		.complect-product__code Артикул: 90858
+																		ul.list.list_unstyled.complect-product__params-list
+																			li.list__item
+																				.list__param-title Цвет:
+																				.list__param-value
+																					span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																					span.list__param-descr Белый
+																			li.list__item
+																				.list__param-title Размер:
+																				.list__param-value
+																					span.list__param-descr 520 x 830 x 440 мм.
+																	.complect-product__cell.complect-product__cell_price
+																		.complect-product__price
+																			span.old 1 345
+																			span.cost.cost_new 967
+																			span.currency лей / шт
+													.swiper-nav
+														button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+														button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.col-12.col-lg-4.col-xl-3
+											.complect-block__buy
+												.complect-block__price.product-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+												.complect-block__quantity.product-block__quantity
+													.section__title.product-block__subtitle Количество
+													.form-group.form-group_inline
+														button.btn.btn_minus.js-btn-minus(type="button" aria-label="Меньше")
+															<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-minimize"></use></svg>
+														label.form-label.form-label_hidden(for="complect-count-2") Количество комплектов
+														input.form-control( type="number" id="complect-count-2" name="complect-count-2" min="1" step="1" value="1")
+														button.btn.btn_plus.js-btn-plus(type="button" aria-label="Больше")
+															<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-add"></use></svg>
+												.btn-group
+													button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+														span.btn__icon(aria-hidden="true")
+															<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+														span.btn__text В корзину
+			

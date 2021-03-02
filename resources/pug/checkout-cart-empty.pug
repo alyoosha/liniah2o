@@ -1,0 +1,39 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_error-404.section_error.section_checkout
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Сантехника
+						li.list__item
+							a.link(href="javascript: void(0);") Унитазы
+						li.list__item
+							a.link(href="javascript: void(0);") Happy Smart Компакт 3/4.5л с нижней подводкой дюропласт микролифт
+						li.list__item
+							a.link.active(href="javascript: void(0);") Корзина
+				.section__title.section__title_style1.header-title
+					h1
+						| Корзина
+		.section__body
+			.checkout-cart-empty__wrapper.bg_white
+				.container
+					.checkout-cart-empty
+						.checkout-cart-empty__title.section__title.section__title_style7
+							h2
+								| Корзина пуста
+						.checkout-cart-empty__text
+							| Перейдите в каталог товаров, где среди разнообразия товаров вы , наверняка найдете то, что подойдет вашей ванной комнате.
+						button.btn.btn_default.btn_dark.btn_with-icon.btn_shadow(type="submit")
+							span.btn__icon(aria-hidden="true")
+								<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop2"></use></svg>
+							span.btn__text
+								| Каталог товаров
+			+odds
+			+sliders-in-tabs({"popular":"true"})

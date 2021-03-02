@@ -1,0 +1,425 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_product.section_product_complect
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Сантехника
+						li.list__item
+							a.link(href="javascript: void(0);") Унитазы
+						li.list__item
+							a.link.active(href="javascript: void(0);") Мебель для ванны Albina Bamboo стандарт, угловая, белая
+		.section__body.product-block
+			.product-block__main
+				.container
+					.row.no-gutters
+						.col-12
+							a.product-block__brand.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+								.brand-block__img(aria-hidden="true")
+									img(src="images/content/brands/brand-img-1.png" alt="Roca")
+								.brand-block__country Великобритания
+					.row
+						.col-12.col-lg-5
+							ul.list.list_unstyled.product-block__socials
+								li.list__item
+									button.btn.btn_to-favorite.js-to-favorite(type="button" aria-label="В избранное")
+										<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+										<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+								li.list__item.list__item_has-child.dropdown
+									button.btn.btn_share.js-share(type="button" aria-label="Поделиться" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+										<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-share"></use></svg>
+									ul.list.list_unstyled.dropdown-menu.bg_white(aria-label="Поделиться")
+										li.list__item
+											a.btn.btn_socials(href="javascript: void(0);" rel="noopener nofollow" aria-label="в Instagram")
+												<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-instagram"></use></svg>
+										li.list__item
+											a.btn.btn_socials(href="javascript: void(0);" rel="noopener nofollow" aria-label="в Facebook")
+												<svg class="btn__icon" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-facebook"></use></svg>
+							.product-block__slider
+								ul.list.list_unstyled.marks-list
+									li.list__item.bg_blue Новинка
+									li.list__item.list__item_num.bg_red 25%
+								.swiper-container.slider_main.js-product-slider-main
+									.swiper-wrapper
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-11.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/interer-komnata-vannaya-4500.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-komnata-vannaya-4500.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/interer-vannaia-komnata-stil.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-vannaia-komnata-stil.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-13.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-12.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-13.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-13.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-11.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+										.swiper-slide
+											a.product-block__slide.js-lightbox-gallery(href="images/content/products/product-img-12.jpg" data-rel="lightcase:product:slideshow" title="Изображение продукта" aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+								.swiper-container.slider_thumbs.js-product-slider-thumbs
+									.swiper-wrapper
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-komnata-vannaya-4500.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/interer-vannaia-komnata-stil.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-11.jpg" alt="Изображение продукта")
+										.swiper-slide
+											.product-block__slide(aria-label="Изображение продукта")
+												.background-img(aria-hidden="true")
+													img(src="images/content/products/product-img-12.jpg" alt="Изображение продукта")
+						.col-12.col-lg-7
+							.product-block__info
+								.product-block__title.section__title
+									h1 Мебель для ванны Albina Bamboo стандарт, угловая, белая
+								.product-block__price
+									span.old 8 345
+									span.cost.cost_new 3 567
+									span.currency лей / шт
+								.product-block__cheaper.cheaper-block
+									.row.align-items-center
+										.col-auto
+											.cheaper-block__title Увидели дешевле?
+										.col-auto
+											button.btn.cheaper-block__btn.js-find-cheaper(type="button") Сообщите
+										.col-auto
+											button.btn.btn_popover(data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.")
+												<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-popover"></use></svg>
+								.product-block__form
+									.row
+										.col-12.col-sm-6.col-md-auto.col-lg-12.col-xl-auto
+											.params-block
+												.params-block__title Размер
+												ul.list.list_unstyled.radio-list.radio-list_params.radio-list_params_two-col
+													li.list__item.radio
+														label.radio__label
+															input.radio__hidden(type="radio" id="product-size-1" name="product-size" value="2.50x25" checked)
+															span.radio__custom(aria-hidden="true")
+															span.radio__text 2.50x25
+													li.list__item.radio
+														label.radio__label
+															input.radio__hidden(type="radio" id="product-size-3" name="product-size" value="3x40")
+															span.radio__custom(aria-hidden="true")
+															span.radio__text 3x40
+										.col-12.col-sm-6.col-md-auto.col-lg-12.col-xl-auto
+											.params-block
+												.row.no-gutters.align-items-center
+													.col-auto
+														.params-block__title Цвет
+													.col-auto
+														.params-block__current Белый
+												ul.list.list_unstyled.radio-list.radio-list_color.row
+													li.list__item.radio.radio_color
+														label.radio__label
+															input.radio__hidden(type="radio" id="product-color-1" name="product-color" value="Белый" checked)
+															span.radio__custom(aria-label="Белый" style="background-color: #ffffff;")
+													li.list__item.radio.radio_color
+														label.radio__label
+															input.radio__hidden(type="radio" id="product-color-4" name="product-color" value="Темно-серый")
+															span.radio__custom(aria-label="Темно-серый" style="background-color: #6D7281;")
+									.product-block__quantity
+										.section__title.product-block__subtitle Количество
+										.form-group.form-group_inline
+											button.btn.btn_minus.js-btn-minus(type="button" aria-label="Меньше")
+												<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-minimize"></use></svg>
+											label.form-label.form-label_hidden(for="product-count") Количество товара
+											input.form-control( type="number" id="product-count" name="product-count" min="1" step="1" value="1")
+											button.btn.btn_plus.js-btn-plus(type="button" aria-label="Больше")
+												<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-add"></use></svg>
+									.btn-group
+										.row
+											.col-12.col-sm-auto
+												button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+													span.btn__text В корзину
+											.col-12.col-sm-auto
+												button.btn.btn_default.btn_transparent.btn_flex.js-to-cart(type="button")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop3"></use></svg>
+													span.btn__text Купить в 1 клик
+			.product-block__complect.section_complect.section_complect_inner
+				.complect-block
+					.complect-block__header
+						.container
+							.complect-block__info.bg_white
+								.complect-block__contains.section__title.section__title_style7 Комплект содержит: 3 позиции
+								.complect-block__descr Данный комплект можно купить по частям
+					.complect-block__body
+						form(name="complect-form" method="post")
+							.container
+								.complect-block__controls
+									.row.align-items-center
+										.col-7.col-sm-auto
+											.checkbox
+												label.checkbox__label(for="checked-all")
+													input.checkbox__hidden(type="checkbox" id="checked-all" name="checked-all" value="Выбрать все")
+													span.checkbox__custom(aria-hidden="true")
+													span.checkbox__text Выбрать все
+										.col-5.col-sm-auto
+											.controls-quantity
+												span.controls-quantity__title Выбрано:
+												span.controls-quantity__text 2 позиции
+								.row.justify-content-between
+									.col-12.col-lg-8.col-xl-9
+										.complect-block__items.complect-block__items_merge
+											.checkbox.checkbox_merge
+												label.checkbox__label(for="checked-merge-products")
+													input.checkbox__hidden(type="checkbox" id="checked-merge-products" name="checked-merge-products" value="Выбрать все")
+													span.checkbox__custom(aria-label="Пенал с левым открыванием")
+											.complect-block__item.complect-block__item_no-slider
+												.complect-product
+													.complect-product__cell.complect-product__cell_check
+													.complect-product__cell.complect-product__cell_img
+														.complect-product__img
+															img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+													.complect-product__cell.complect-product__cell_content
+														.complect-product__title Пенал с левым открыванием
+														.complect-product__code Артикул: 90858
+														ul.list.list_unstyled.complect-product__params-list
+															li.list__item
+																.list__param-title Цвет:
+																.list__param-value
+																	span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																	span.list__param-descr Белый
+															li.list__item
+																.list__param-title Размер:
+																.list__param-value
+																	span.list__param-descr 520 x 830 x 440 мм.
+													.complect-product__cell.complect-product__cell_price
+														.complect-product__price
+															span.old 1 345
+															span.cost.cost_new 967
+															span.currency лей / шт
+											.complect-block__item.complect-block__item_no-slider
+												.complect-product
+													.complect-product__cell.complect-product__cell_check
+													.complect-product__cell.complect-product__cell_img
+														.complect-product__img
+															img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+													.complect-product__cell.complect-product__cell_content
+														.complect-product__title Пенал с левым открыванием
+														.complect-product__code Артикул: 90858
+														ul.list.list_unstyled.complect-product__params-list
+															li.list__item
+																.list__param-title Цвет:
+																.list__param-value
+																	span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																	span.list__param-descr Белый
+															li.list__item
+																.list__param-title Размер:
+																.list__param-value
+																	span.list__param-descr 520 x 830 x 440 мм.
+													.complect-product__cell.complect-product__cell_price
+														.complect-product__price
+															span.old 1 345
+															span.cost.cost_new 967
+															span.currency лей / шт
+										.complect-block__items
+											.complect-block__item
+												.swiper-container.js-complect-inner-slider
+													.swiper-wrapper
+														.swiper-slide
+															.complect-product
+																.complect-product__cell.complect-product__cell_check
+																	.checkbox
+																		label.checkbox__label(for="checked-product-3")
+																			input.checkbox__hidden(type="checkbox" id="checked-product-3" name="checked-product-3" value="Выбрать")
+																			span.checkbox__custom(aria-label="Пенал с левым открыванием")
+																.complect-product__cell.complect-product__cell_img
+																	.complect-product__img
+																		img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																.complect-product__cell.complect-product__cell_content
+																	.complect-product__title Пенал с левым открыванием
+																	.complect-product__code Артикул: 90858
+																	ul.list.list_unstyled.complect-product__params-list
+																		li.list__item
+																			.list__param-title Цвет:
+																			.list__param-value
+																				span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																				span.list__param-descr Белый
+																		li.list__item
+																			.list__param-title Размер:
+																			.list__param-value
+																				span.list__param-descr 520 x 830 x 440 мм.
+																.complect-product__cell.complect-product__cell_price
+																	.complect-product__price
+																		span.old 1 345
+																		span.cost.cost_new 967
+																		span.currency лей / шт
+														.swiper-slide
+															.complect-product
+																.complect-product__cell.complect-product__cell_check
+																	.checkbox
+																		label.checkbox__label(for="checked-product-4")
+																			input.checkbox__hidden(type="checkbox" id="checked-product-4" name="checked-product-4" value="Выбрать")
+																			span.checkbox__custom(aria-label="Пенал с левым открыванием 2")
+																.complect-product__cell.complect-product__cell_img
+																	.complect-product__img
+																		img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																.complect-product__cell.complect-product__cell_content
+																	.complect-product__title Пенал с левым открыванием 2
+																	.complect-product__code Артикул: 90858
+																	ul.list.list_unstyled.complect-product__params-list
+																		li.list__item
+																			.list__param-title Цвет:
+																			.list__param-value
+																				span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																				span.list__param-descr Белый
+																		li.list__item
+																			.list__param-title Размер:
+																			.list__param-value
+																				span.list__param-descr 520 x 830 x 440 мм.
+																.complect-product__cell.complect-product__cell_price
+																	.complect-product__price
+																		span.old 1 345
+																		span.cost.cost_new 967
+																		span.currency лей / шт
+														.swiper-slide
+															.complect-product
+																.complect-product__cell.complect-product__cell_check
+																	.checkbox
+																		label.checkbox__label(for="checked-product-5")
+																			input.checkbox__hidden(type="checkbox" id="checked-product-5" name="checked-product-5" value="Выбрать")
+																			span.checkbox__custom(aria-label="Пенал с левым открыванием 3")
+																.complect-product__cell.complect-product__cell_img
+																	.complect-product__img
+																		img(src="images/content/products/product-img-13.jpg" alt="Изображение продукта")
+																.complect-product__cell.complect-product__cell_content
+																	.complect-product__title Пенал с левым открыванием 3
+																	.complect-product__code Артикул: 90858
+																	ul.list.list_unstyled.complect-product__params-list
+																		li.list__item
+																			.list__param-title Цвет:
+																			.list__param-value
+																				span.list__param-color(aria-hidden="true" style="background-color: #ffffff;")
+																				span.list__param-descr Белый
+																		li.list__item
+																			.list__param-title Размер:
+																			.list__param-value
+																				span.list__param-descr 520 x 830 x 440 мм.
+																.complect-product__cell.complect-product__cell_price
+																	.complect-product__price
+																		span.old 1 345
+																		span.cost.cost_new 967
+																		span.currency лей / шт
+												.swiper-nav
+													button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+													button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									.col-12.col-lg-4.col-xl-3
+										.complect-block__buy
+											.complect-block__price.product-block__price
+												span.old 8 345
+												span.cost.cost_new 3 567
+												span.currency лей / шт
+											.complect-block__quantity.product-block__quantity
+												.section__title.product-block__subtitle Количество
+												.form-group.form-group_inline
+													button.btn.btn_minus.js-btn-minus(type="button" aria-label="Меньше")
+														<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-minimize"></use></svg>
+													label.form-label.form-label_hidden(for="complect-count") Количество комплектов
+													input.form-control( type="number" id="complect-count" name="complect-count" min="1" step="1" value="1")
+													button.btn.btn_plus.js-btn-plus(type="button" aria-label="Больше")
+														<svg role="img" width="25" height="25"><use xlink:href="#svg-icon-add"></use></svg>
+											.btn-group
+												button.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+													span.btn__icon(aria-hidden="true")
+														<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop"></use></svg>
+													span.btn__text В корзину
+			.product-block__descr.bg_white
+				.container
+					.row.align-items-end
+						.col-12.col-md-6.col-lg-7.col-xl-8
+							.section__title.section__title_style4
+								h3 Описание
+							.section__description
+								p Voluptate non irure aliqua nisi eu commodo irure eiusmod ea. Nulla laborum aliqua magna et ea est laborum amet non cillum officia. Non ex cupidatat labore enim non nulla sunt. Qui do exercitation enim ea et laboris laboris aliqua aliquip do commodo.
+						.col-12.col-md-6.col-lg-5.col-xl-4
+							a.link.link_img(href="javascript: void(0);" style="background-image: url('images/content/interiors/interior-img-1.jpg');")
+								span.link__icon(aria-hidden="true")
+									<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-interior-design"></use></svg>
+								span.link__text Смотреть в интерьере
+			.product-block__params
+				.container
+					.section__title.section__title_style4
+						h3 Характеристики
+					.row
+						.col-12.col-md-6.col-xl-4
+							ul.list.list_unstyled.params-list
+								li.list__item
+									.params-list__th
+										span.params-list__title Ширина:
+									.params-list__value 90 cm
+								li.list__item
+									.params-list__th
+										span.params-list__title Высота:
+									.params-list__value 70 cm
+								li.list__item
+									.params-list__th
+										span.params-list__title Страна:
+									.params-list__value Китай
+								li.list__item
+									.params-list__th
+										span.params-list__title Производитель:
+									.params-list__value Biaodi
+								li.list__item
+									.params-list__th
+										span.params-list__title Гарантия, лет:
+									.params-list__value 1
+	+odds
+	+sliders-in-tabs({"buy":"true"})
+	+sliders-in-tabs({"popular":"true"})

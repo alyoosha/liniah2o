@@ -1,0 +1,288 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog.section_category
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link.active(href="javascript: void(0);") Водоснабжение и отопление
+				.section__title.section__title_style1
+					h1 Водоснабжение и отопление
+		.section__body
+			.container
+				.easy-nav.bg_white.d-block.d-xl-none
+					ul.list.list_unstyled.easy-nav__list
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator2" aria-label="Трубы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator3" aria-label="Запорная арматура")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-valve"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator4" aria-label="Фитинги")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-joint"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator5" aria-label="Арматура для радиаторов")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator6" aria-label="Шланги для воды")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe3"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator7" aria-label="Радиаторы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator8" aria-label="Конвекторы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-heater"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator9" aria-label="Котлы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-water-heater2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator10" aria-label="Расширительные баки")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-storage-tank"></use></svg>
+				.category-block.category-block_main#category-radiator
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Водоснабжение и отопление")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-4.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+									h2.link__text
+										span.line Водоснабжение и
+										span.line отопление
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.section__subcategories
+				.container
+					.row
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-38.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe"></use></svg>
+										h2.section__title.link__text
+											span.line Трубы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Водоснабжения и отопления
+										li.list__item
+											a.link(href="javascript:void(0);") Канализационные
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator3
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-39.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-valve"></use></svg>
+										h2.section__title.link__text
+											span.line Запорная 
+											span.line арматура
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Шаровые краны
+										li.list__item
+											a.link(href="javascript:void(0);") Запорные вентили
+										li.list__item
+											a.link(href="javascript:void(0);") Редукторы давления
+										li.list__item
+											a.link(href="javascript:void(0);") Коллекторы
+										li.list__item
+											a.link(href="javascript:void(0);") Обратные клапана
+										li.list__item
+											a.link(href="javascript:void(0);") Предохранительные клапаны
+										li.list__item
+											a.link(href="javascript:void(0);") Воздухоотводчики
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator4
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-40.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-joint"></use></svg>
+										h2.section__title.link__text
+											span.line Фитинги
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") PPR (полипропилен)
+										li.list__item
+											a.link(href="javascript:void(0);") Пресс
+										li.list__item
+											a.link(href="javascript:void(0);") Канализация
+										li.list__item
+											a.link(href="javascript:void(0);") Разборные
+										li.list__item
+											a.link(href="javascript:void(0);") Неразборные
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator5
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-41.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-joint"></use></svg>
+										h2.section__title.link__text
+											span.line Арматура 
+											span.line для радиаторов
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Термоголовки
+										li.list__item
+											a.link(href="javascript:void(0);") Вентили термостатические
+										li.list__item
+											a.link(href="javascript:void(0);") Вентили для радиаторов
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator6
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-42.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe2"></use></svg>
+										h2.section__title.link__text
+											span.line Шланги 
+											span.line для воды
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Из нержавеющей стали
+										li.list__item
+											a.link(href="javascript:void(0);") Антикоррозийные
+										li.list__item
+											a.link(href="javascript:void(0);") Трубки для 
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator7
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-43.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator"></use></svg>
+										h2.section__title.link__text
+											span.line Радиаторы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Биметаллические
+										li.list__item
+											a.link(href="javascript:void(0);") Стальные
+										li.list__item
+											a.link(href="javascript:void(0);") Алюминиевые
+										li.list__item
+											a.link(href="javascript:void(0);") Панельные
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator8
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-44.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-heater"></use></svg>
+										h2.section__title.link__text
+											span.line Конвекторы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Водяные внутрипольные
+										li.list__item
+											a.link(href="javascript:void(0);") Электрические
+										li.list__item
+											a.link(href="javascript:void(0);") Газовые
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator9
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-45.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-water-heater2"></use></svg>
+										h2.section__title.link__text
+											span.line Котлы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Газовые
+										li.list__item
+											a.link(href="javascript:void(0);") Электрические
+										li.list__item
+											a.link(href="javascript:void(0);") Твердотопливные
+										li.list__item
+											a.link(href="javascript:void(0);") Дизельные
+										li.list__item
+											a.link(href="javascript:void(0);") Дымоходы
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-radiator10
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-46.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-storage-tank"></use></svg>
+										h2.section__title.link__text
+											span.line Расширительные баки
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

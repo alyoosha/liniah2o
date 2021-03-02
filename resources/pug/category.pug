@@ -1,0 +1,221 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog.section_category
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link.active(href="javascript: void(0);") Плитка
+				.section__title.section__title_style1
+					h1 Плитка
+		.section__body
+			.container
+				.easy-nav.bg_white.d-block.d-xl-none
+					ul.list.list_unstyled.easy-nav__list
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile2" aria-label="Плитка для ванной комнаты")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile3" aria-label="Плитка для кухни")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile3"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile4" aria-label="Плитка напольная")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile4"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile5" aria-label="Плитка фасадная")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile5"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile6" aria-label="Клинкер")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile6"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile7" aria-label="Мозаика")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile7"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile8" aria-label="Декор")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile8"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-tile9" aria-label="Сопутствующие товары")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-link"></use></svg>
+				.category-block.category-block_main#category-tap
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_brown(href="javascript: void(0);" aria-label="Плитка")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-1.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile"></use></svg>
+									h2.link__text
+										span.line Плитка
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.section__subcategories
+				.container
+					.row
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-16.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile2"></use></svg>
+										h2.section__title.link__text
+											span.line Плитка для 
+											span.line ванной комнаты
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile3
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-17.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile3"></use></svg>
+										h2.section__title.link__text
+											span.line Плитка 
+											span.line для кухни
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile4
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-18.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile4"></use></svg>
+										h2.section__title.link__text
+											span.line Плитка 
+											span.line напольная
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile5
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-19.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile5"></use></svg>
+										h2.section__title.link__text
+											span.line Плитка 
+											span.line фасадная
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile6
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-20.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile6"></use></svg>
+										h2.section__title.link__text
+											span.line Клинкер
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile7
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-21.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile7"></use></svg>
+										h2.section__title.link__text
+											span.line Мозаика
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-tile8
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-22.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tile8"></use></svg>
+										h2.section__title.link__text
+											span.line Декор
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-tile9
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-37.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-link"></use></svg>
+										h2.section__title.link__text
+											span.line Сопутствующие 
+											span.line товары
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Грунтовки
+										li.list__item
+											a.link(href="javascript:void(0);") Гидроизоляция
+										li.list__item
+											a.link(href="javascript:void(0);") Затирки
+										li.list__item
+											a.link(href="javascript:void(0);") Клеевые смеси
+										li.list__item
+											a.link(href="javascript:void(0);") Крестики
+										li.list__item
+											a.link(href="javascript:void(0);") Санитарный силикон
+										li.list__item
+											a.link(href="javascript:void(0);") Профили
+										li.list__item
+											a.link(href="javascript:void(0);") Средства для ухода
+										li.list__item
+											a.link(href="javascript:void(0);") Система выравнивания плитки
+										li.list__item
+											a.link(href="javascript:void(0);") Ревизионные люки, дверцы
+	//-+odds
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

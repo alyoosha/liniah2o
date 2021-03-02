@@ -1,0 +1,96 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link(href="javascript: void(0);") Сантехника
+						li.list__item
+							a.link.active(href="javascript: void(0);") Унитазы
+				.section__title.section__title_style1
+					h1 Унитазы
+		.section__body.section__body_products
+			.container
+				.row
+					.col-12.aside-column
+						.filter-controls.d-block.d-lg-none
+							.row.justify-content-between
+								.col-auto
+								.col-auto
+									button.btn.btn_gray.btn_icon.btn_menu.js-categories-panel-opener(type="button" aria-label="Меню" aria-controls="categories-menu")
+										<svg role="img" aria-hidden="true" width="25" height="25"><use xlink:href="#svg-icon-menu"></use></svg>
+									.categories-menu.collapse#categories-menu
+										button.btn.categories-menu__control.js-categories-panel-closer(type="button" aria-controls="categories-menu")
+											span.btn__text.section__title Категории
+											span.btn__icon(aria-hidden="true")
+												<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+										.categories-block
+											a.categories-block__header(href="javascript: void(0);")
+												.categories-block__icon(aria-hidden="true")
+													<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+												.categories-block__title.section__title Все категории каталога
+											.categories-block__body
+												ul.list.list_unstyled.categories-block__list
+													li.list__item
+														// если находимся на соответствующей странице - ссылке добавляем класс active
+														a.link(href="javascript:void(0);") Компакты
+													li.list__item
+														a.link(href="javascript:void(0);") Подвесные
+													li.list__item
+														a.link(href="javascript:void(0);") Напольные
+													li.list__item
+														a.link(href="javascript:void(0);") Приставные
+													li.list__item
+														a.link(href="javascript:void(0);") Бачки
+													li.list__item
+														a.link(href="javascript:void(0);") Сиденья для унитазов
+													li.list__item
+														a.link(href="javascript:void(0);") Сопутствующие товары
+													li.list__item
+														a.link(href="javascript:void(0);") Готовые решения
+						aside.filter-panel
+							.filter-panel__header.d-block.d-lg-none
+								button.btn.btn_close.js-filter-panel-closer(type="button")
+									span.btn__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+									span.btn__text Закрыть фильтр
+							.filter-panel__content
+								.filter-panel__group.d-none.d-lg-block
+									.categories-block
+										a.categories-block__header(href="javascript: void(0);")
+											.categories-block__icon(aria-hidden="true")
+												<svg role="img" width="20" height="20"><use xlink:href="#svg-icon-menu"></use></svg>
+											.categories-block__title.section__title Все категории каталога
+										.categories-block__body
+											ul.list.list_unstyled.categories-block__list
+												li.list__item
+													// если находимся на соответствующей странице - ссылке добавляем класс active
+													a.link(href="javascript:void(0);") Компакты
+												li.list__item
+													a.link(href="javascript:void(0);") Подвесные
+												li.list__item
+													a.link(href="javascript:void(0);") Напольные
+												li.list__item
+													a.link(href="javascript:void(0);") Приставные
+												li.list__item
+													a.link(href="javascript:void(0);") Бачки
+												li.list__item
+													a.link(href="javascript:void(0);") Сиденья для унитазов
+												li.list__item
+													a.link(href="javascript:void(0);") Сопутствующие товары
+												li.list__item
+													a.link(href="javascript:void(0);") Готовые решения
+					.col-12.content-column
+						.catalog-empty
+							.catalog-empty__icon(aria-hidden="true")
+								<svg role="img" width="100" height="100"><use xlink:href="#svg-icon-box"></use></svg>
+							.section__title.catalog-empty__text каталог пуст
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

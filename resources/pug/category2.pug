@@ -1,0 +1,552 @@
+﻿extends template
+
+block content
+	section.section.section_inner-page.section_catalog.section_category
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link(href="javascript: void(0);") Каталог
+						li.list__item
+							a.link.active(href="javascript: void(0);") Сантехника
+				.section__title.section__title_style1
+					h1 Сантехника
+		.section__body
+			.container
+				.easy-nav.bg_white.d-block.d-xl-none
+					ul.list.list_unstyled.easy-nav__list
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-toilet" aria-label="Унитазы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-bidet" aria-label="Биде")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bidet"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-urinal" aria-label="Писсуары")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-urinal"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-sink" aria-label="Умывальники")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-faucet" aria-label="Смесители")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-faucet"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-shower" aria-label="Душевая программа")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-pipe" aria-label="Сифоны")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-shower2" aria-label="Душевые кабины")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-sink2" aria-label="Кухонные мойки")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-bathtub" aria-label="Ванны")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bathtub"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-soap" aria-label="Аксессуары для ванной комнаты")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-soap"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-radiator2" aria-label="Полотенцесушители")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator2"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-installation" aria-label="Инсталляционные системы")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-installation"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-cooler" aria-label="Вентиляция")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-cooler"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-water-heater" aria-label="Водонагреватели")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-water-heater"></use></svg>
+						li.list__item
+							a.btn.btn_light.link.js-scroll-link(href="#category-hand-dryer" aria-label="Для общественных мест")
+								<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-hand-dryer"></use></svg>
+				.category-block.category-block_main#category-tap
+					.row.no-gutters
+						.col-12.col-lg-5
+							a.link.category-block__header.category-block__header_blue(href="javascript: void(0);" aria-label="Сантехника")
+								.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/category-img-2.png');")
+								.link__content
+									span.link__icon(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-tap"></use></svg>
+									h2.section__title.link__text
+										span.line Сантехника
+									span.link__control(aria-hidden="true")
+										<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+						.col-12.col-lg-7
+							.row.no-gutters
+								.col-12.col-md-4
+									.rec-block.rec-block_new
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-2.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.bg_blue Новинка
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.cost 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Новинки
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_sale
+										.rec-block__content.d-none.d-md-block
+											.rec-block__header
+												a.rec-block__img(href="javascript: void(0);")
+													img(src="images/content/products/product-img-3.jpg" alt="Изображение продукта")
+												ul.list.list_unstyled.rec-block__marks.marks-list
+													li.list__item.list__item_num.bg_red 25%
+											.rec-block__body
+												a.rec-block__title(href="javascript: void(0);") Blome Дозатор для жидкого мыла 889
+												.rec-block__price
+													span.old 8 345
+													span.cost.cost_new 3 567
+													span.currency лей / шт
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Акции
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.col-12.col-md-4
+									.rec-block.rec-block_brand
+										.rec-block__content.d-none.d-md-block
+											.swiper-container.js-slider-attached-product
+												.swiper-wrapper
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+															img(src="images/content/brands/brand-img-1.png" alt="Roca")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+															img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+													.swiper-slide
+														a.rec-block__brand(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+															img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+												button.swiper-button-prev(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+												button.swiper-button-next(type="button") <svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.rec-block__footer
+											a.link.rec-block__link(href="javascript:void(0);")
+												span.link__text Бренды
+												span.link__control(aria-hidden="true")
+													<svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+			.section__subcategories
+				.container
+					.row
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-toilet
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-1.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-toilet"></use></svg>
+										h2.section__title.link__text
+											span.line Унитазы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Компакты
+										li.list__item
+											a.link(href="javascript:void(0);") Подвесные
+										li.list__item
+											a.link(href="javascript:void(0);") Приставные
+										li.list__item
+											a.link(href="javascript:void(0);") Бачки
+										li.list__item
+											a.link(href="javascript:void(0);") Сиденья для унитазов
+										li.list__item
+											a.link(href="javascript:void(0);") Сопутствующие товары
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-bidet
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-2.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bidet"></use></svg>
+										h2.section__title.link__text
+											span.line Биде
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Подвесные
+										li.list__item
+											a.link(href="javascript:void(0);") Напольные
+										li.list__item
+											a.link(href="javascript:void(0);") Сиденья для биде
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-urinal
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-3.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-urinal"></use></svg>
+										h2.section__title.link__text
+											span.line Писсуары
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Подвесные
+										li.list__item
+											a.link(href="javascript:void(0);") Напольные
+										li.list__item
+											a.link(href="javascript:void(0);") Сенсорные
+										li.list__item
+											a.link(href="javascript:void(0);") Керамические
+										//-li.list__item
+											a.link(href="javascript:void(0);") Из нержавеющей стали
+										//-li.list__item
+											a.link(href="javascript:void(0);") Готовые решения
+										li.list__item
+											a.link(href="javascript:void(0);") Сопутствующие товары
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-sink
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-4.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink"></use></svg>
+										h2.section__title.link__text
+											span.line Умывальники
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Подвесные
+										li.list__item
+											a.link(href="javascript:void(0);") Накладные
+										li.list__item
+											a.link(href="javascript:void(0);") С пьедесталом
+										li.list__item
+											a.link(href="javascript:void(0);") С полупьедесталом
+										li.list__item
+											a.link(href="javascript:void(0);") Встраиваемые
+										li.list__item
+											a.link(href="javascript:void(0);") Угловые
+										li.list__item
+											a.link(href="javascript:void(0);") Каменные
+										li.list__item
+											a.link(href="javascript:void(0);") Стеклянные
+										li.list__item
+											a.link(href="javascript:void(0);") Двойные
+										li.list__item
+											a.link(href="javascript:void(0);") Сопутствующие товары
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-faucet
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-5.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-faucet"></use></svg>
+										h2.section__title.link__text
+											span.line Смесители
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Для умывальника
+										li.list__item
+											a.link(href="javascript:void(0);") Для ванны
+										li.list__item
+											a.link(href="javascript:void(0);") Для душа
+										li.list__item
+											a.link(href="javascript:void(0);") Для кухонной мойки
+										li.list__item
+											a.link(href="javascript:void(0);") Для биде
+										li.list__item
+											a.link(href="javascript:void(0);") С гигиеническим душем
+										li.list__item
+											a.link(href="javascript:void(0);") Для писсуара
+										li.list__item
+											a.link(href="javascript:void(0);") Встраиваемые
+										li.list__item
+											a.link(href="javascript:void(0);") Сенсорные
+										li.list__item
+											a.link(href="javascript:void(0);") Термостатические
+										li.list__item
+											a.link(href="javascript:void(0);") Готовое решение
+										li.list__item
+											a.link(href="javascript:void(0);") Комплектующие
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-shower
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-6.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower"></use></svg>
+										h2.section__title.link__text
+											span.line Душевая 
+											span.line программа
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Душевые системы
+										li.list__item
+											a.link(href="javascript:void(0);") Душевые колонны
+										li.list__item
+											a.link(href="javascript:void(0);") Душевые гарнитуры
+										li.list__item
+											a.link(href="javascript:void(0);") Душевые лейки и шланги
+										li.list__item
+											a.link(href="javascript:void(0);") Гигиенический душ
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-pipe
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-7.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-pipe"></use></svg>
+										h2.section__title.link__text
+											span.line Сифоны
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Для умывальника
+										li.list__item
+											a.link(href="javascript:void(0);") Для ванны
+										li.list__item
+											a.link(href="javascript:void(0);") Для поддона
+										li.list__item
+											a.link(href="javascript:void(0);") Для писсуара
+										li.list__item
+											a.link(href="javascript:void(0);") Для унитаза
+										li.list__item
+											a.link(href="javascript:void(0);") Для биде
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-shower2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-8.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-shower2"></use></svg>
+										h2.section__title.link__text
+											span.line Душевые 
+											span.line кабины
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") 80х80 см
+										li.list__item
+											a.link(href="javascript:void(0);") 90х90 см
+										li.list__item
+											a.link(href="javascript:void(0);") 100х100 см
+										li.list__item
+											a.link(href="javascript:void(0);") Прямоугольные
+										li.list__item
+											a.link(href="javascript:void(0);") Гидромассажные
+										li.list__item
+											a.link(href="javascript:void(0);") Душевые ограждения
+										li.list__item
+											a.link(href="javascript:void(0);") Поддоны
+										li.list__item
+											a.link(href="javascript:void(0);") Водоотводящие желоба
+										li.list__item
+											a.link(href="javascript:void(0);") Трапы
+										li.list__item
+											a.link(href="javascript:void(0);") Сифоны
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-sink2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-9.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-sink2"></use></svg>
+										h2.section__title.link__text
+											span.line Кухонные 
+											span.line мойки
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Из нержавеющей стали
+										li.list__item
+											a.link(href="javascript:void(0);") Из искусственого камня
+										li.list__item
+											a.link(href="javascript:void(0);") Сопутствующие товары
+										li.list__item
+											a.link(href="javascript:void(0);") Сифоны
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-bathtub
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-10.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-bathtub"></use></svg>
+										h2.section__title.link__tex
+											span.line Ванны
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Длина до 150 см
+										li.list__item
+											a.link(href="javascript:void(0);") Длина 150 см
+										li.list__item
+											a.link(href="javascript:void(0);") Длина 160 см
+										li.list__item
+											a.link(href="javascript:void(0);") Длина 170 см
+										li.list__item
+											a.link(href="javascript:void(0);") Длина больше 180 см
+										li.list__item
+											a.link(href="javascript:void(0);") С гидромассажем
+										li.list__item
+											a.link(href="javascript:void(0);") Прямоугольные
+										li.list__item
+											a.link(href="javascript:void(0);") Встраиваемые
+										li.list__item
+											a.link(href="javascript:void(0);") Асимметричные
+										li.list__item
+											a.link(href="javascript:void(0);") Овальные
+										li.list__item
+											a.link(href="javascript:void(0);") Симметричные
+										li.list__item
+											a.link(href="javascript:void(0);") Гидромассажные системы
+										li.list__item
+											a.link(href="javascript:void(0);") Сифоны
+										li.list__item
+											a.link(href="javascript:void(0);") Комплектующие
+										li.list__item
+											a.link(href="javascript:void(0);") Свободностоящие
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-soap
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-11.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-soap"></use></svg>
+										h2.section__title.link__text
+											span.line Аксессуары 
+											span.line для ванной 
+											span.line комнаты
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Коллекции
+										li.list__item
+											a.link(href="javascript:void(0);") Стакан для зубных щеток
+										li.list__item
+											a.link(href="javascript:void(0);") Стойки и ёршики туалетные
+										li.list__item
+											a.link(href="javascript:void(0);") Косметические зеркала
+										li.list__item
+											a.link(href="javascript:void(0);") Крючки для халатов и полотенец
+										li.list__item
+											a.link(href="javascript:void(0);") Держатель для полотенца
+										li.list__item
+											a.link(href="javascript:void(0);") Держатель для туалетной бумаги
+										li.list__item
+											a.link(href="javascript:void(0);") Дозаторы для жидкого мыла
+										li.list__item
+											a.link(href="javascript:void(0);") Мыльницы
+										li.list__item
+											a.link(href="javascript:void(0);") Коврики для ванной
+										li.list__item
+											a.link(href="javascript:void(0);") Этажерки и полки для ванной
+										li.list__item
+											a.link(href="javascript:void(0);") Шторки для ванной
+										li.list__item
+											a.link(href="javascript:void(0);") Корзины для белья
+										li.list__item
+											a.link(href="javascript:void(0);") Готовое решение
+										li.list__item
+											a.link(href="javascript:void(0);") Контейнеры для мусора
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-radiator2
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-12.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-radiator2"></use></svg>
+										h2.section__title.link__text
+											span.line Полотенцесушители
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Водяные
+										li.list__item
+											a.link(href="javascript:void(0);") Электрические
+										li.list__item
+											a.link(href="javascript:void(0);") Дизайнерские
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-installation
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-13.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-installation"></use></svg>
+										h2.section__title.link__text
+											span.line Инсталляционные 
+											span.line системы
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Для унитаза
+										li.list__item
+											a.link(href="javascript:void(0);") ДДля умывальника
+										li.list__item
+											a.link(href="javascript:void(0);") Для биде
+										li.list__item
+											a.link(href="javascript:void(0);") Для писсуара
+										li.list__item
+											a.link(href="javascript:void(0);") Кнопки управления
+										li.list__item
+											a.link(href="javascript:void(0);") Готовые решения
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-cooler
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-14.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-cooler"></use></svg>
+										h2.section__title.link__text
+											span.line Вентиляция
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Решетки
+										li.list__item
+											a.link(href="javascript:void(0);") Вентиляторы
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner#category-water-heater
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-36.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-water-heater"></use></svg>
+										h2.section__title.link__text
+											span.line Водонагреватели
+								.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Бойлеры
+						.col-12.col-md-6.col-lg-4.col-xl-3
+							.category-block.category-block_inner.category-block_empty#category-hand-dryer
+								a.link.category-block__header(href="javascript: void(0);")
+									.link__bg(aria-hidden="true" style="background-image: url('images/content/categories/subcategory-img-15.png');")
+									.link__content
+										span.link__icon(aria-hidden="true")
+											<svg role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-hand-dryer"></use></svg>
+										h2.section__title.link__text
+											span.line Для общественных 
+											span.line мест
+								//-.category-block__content
+									ul.list.list_unstyled.category-block__subcategories-list
+										li.list__item
+											a.link(href="javascript:void(0);") Чаша "Генуя"
+										li.list__item
+											a.link(href="javascript:void(0);") Сушилки для рук, электрополотенца
+										li.list__item
+											a.link(href="javascript:void(0);") Диспенсеры для бумаги, полотенец
+										li.list__item
+											a.link(href="javascript:void(0);") Дозаторы для мыла
+										li.list__item
+											a.link(href="javascript:void(0);") Освежители воздуха
+										li.list__item
+											a.link(href="javascript:void(0);") Расходные материалы
+										li.list__item
+											a.link(href="javascript:void(0);") Сушилки для волос, фены
+	//-+odds
+	//-+sliders-in-tabs({"popular":"true"})

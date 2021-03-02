@@ -1,0 +1,528 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_brands-page
+		.section__header
+			.container
+				.section__breadcrumbs
+					ul.list.list_unstyled.breadcrumbs-list
+						li.list__item
+							a.link(href="javascript: void(0);") Главная
+						li.list__item
+							a.link.active(href="javascript: void(0);") Бренды
+				.section__title.section__title_style1.header-title
+					h1 
+						| Бренды
+		.section__body
+			.container
+				.body-tab-nav.js-body-tab-nav
+					.scrollbar-inner
+						ul.list.list_unstyled.section__title.nav.nav-tabs
+							li.list__item.col-auto.js-body-tab-item.active-item
+								a.link.active(id="categories-tab" data-toggle="tab" href="#categories" role="tab" aria-controls="categories" aria-selected="true")
+									| Все категории
+							li.list__item.col-auto.js-body-tab-item
+								a.link(id="tile-tab" data-toggle="tab" href="#tile" role="tab" aria-controls="tile" aria-selected="false")
+									| Плитка
+							li.list__item.col-auto.js-body-tab-item
+								a.link(id="plumbing-tab" data-toggle="tab" href="#plumbing" role="tab" aria-controls="plumbing" aria-selected="false")
+									| Сантехника
+							li.list__item.col-auto.js-body-tab-item
+								a.link(id="furniture-tab" data-toggle="tab" href="#furniture" role="tab" aria-controls="furniture" aria-selected="false")
+									| Мебель для ванной комнаты
+							li.list__item.col-auto.js-body-tab-item
+								a.link(id="heating-tab" data-toggle="tab" href="#heating" role="tab" aria-controls="heating" aria-selected="false")
+									| Водоснабжение и отопление
+				.alphabet-block.bg_white
+					.alphabet-block__language-nav.js-pagination-alphabet-nav
+						ul.list.list_unstyled.section__title.nav.nav-tabs
+							li.list__item
+								a.link.active(id="english-tab" data-toggle="tab" href="#english" role="tab" aria-controls="english" aria-selected="true")
+									| a-z
+							li.list__item
+								a.link(id="russian-tab" data-toggle="tab" href="#russian" role="tab" aria-controls="russian" aria-selected="false")
+									| а-я
+					.alphabet-block__language-content
+						.tab-content
+							.tab-pane-english.tab-pane.fade.show.active#english(role="tabpanel" aria-labelledby="english-tab")
+								ul.list.list_unstyled.section__title.letters-list
+									li.list__item
+										a.link.active(href="javascript: void(0);")
+											| a
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| b
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| c
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| d
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| e
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| f
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| g
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| h
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| i
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| j
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| k
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| l
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| m
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| n
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| o
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| p
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| q
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| r
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| s
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| t
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| u
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| v
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| w
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| x
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| y
+									li.list__item
+										a.link(href="javascript: void(0);")
+											| z
+								.alphabet-block__pagination
+									.pagination
+										.pagination__current
+											button.btn.pagination__current-btn.btn_bordered.js-pagination-alphabet-opener(type="button" aria-label="Сменить страницу")
+												span.btn__text A
+												span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										.pagination__block
+											.pagination__content
+												.scrollbar-inner
+													ul.list.list_unstyled.pagination__list
+														li.list__item
+															a.link.active(href="javascript: void(0);")
+																| a
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| b
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| c
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| d
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| e
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| f
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| g
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| h
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| i
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| j
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| k
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| l
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| m
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| n
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| o
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| p
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| q
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| r
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| s
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| t
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| u
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| v
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| w
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| x
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| y
+														li.list__item
+															a.link(href="javascript: void(0);")
+																| z
+											.pagination__control
+												button.btn.pagination__control-btn.js-pagination-alphabet-closer(type="button" aria-label="Закрыть")
+													span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+							.tab-pane-russian.tab-pane.fade#russian(role="tabpanel" aria-labelledby="russian-tab")
+									ul.list.list_unstyled.section__title.letters-list
+										li.list__item
+											a.link.active(href="javascript: void(0);")
+												| а
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| б
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| в
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| г
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| д
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| е
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| ж
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| з
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| и
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| й
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| к
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| л
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| м
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| н
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| о
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| п
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| р
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| с
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| т
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| у
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| ф
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| х
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| ц
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| ч
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| ш
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| щ
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| э
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| ю
+										li.list__item
+											a.link(href="javascript: void(0);")
+												| я
+									.alphabet-block__pagination
+										.pagination
+											.pagination__current
+												button.btn.pagination__current-btn.btn_bordered.js-pagination-alphabet-opener(type="button" aria-label="Сменить страницу")
+													span.btn__text A
+													span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+											.pagination__block
+												.pagination__content
+													.scrollbar-inner
+														ul.list.list_unstyled.pagination__list
+															li.list__item
+																a.link.active(href="javascript: void(0);")
+																	| а
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| б
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| в
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| г
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| д
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| е
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| ж
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| з
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| и
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| й
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| к
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| л
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| м
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| н
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| о
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| п
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| р
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| с
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| т
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| у
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| ф
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| х
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| ц
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| ч
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| ш
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| щ
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| э
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| ю
+															li.list__item
+																a.link(href="javascript: void(0);")
+																	| я
+												.pagination__control
+													button.btn.pagination__control-btn.js-pagination-alphabet-closer(type="button" aria-label="Закрыть")
+														span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>
+				.inner-brands-block.bg_white
+					.tab-content
+							.tab-pane-categories.tab-pane.fade.show.active#categories(role="tabpanel" aria-labelledby="categories-tab")
+								.row.no-gutters
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-1.png" alt="Roca")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Cersanit")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-4.png" alt="Cersanit")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду AlcaPlast")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-5.png" alt="AlcaPlast")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду AlcaPlast")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-5.png" alt="AlcaPlast")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-1.png" alt="Roca")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Cersanit")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-4.png" alt="Cersanit")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Roca")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-1.png" alt="Roca")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду AlcaPlast")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-5.png" alt="AlcaPlast")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Cersanit")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-4.png" alt="Cersanit")
+									.col-6.col-md-4.col-lg-3.col-xl-2
+										a.brand-block(href="javascript: void(0);" aria-label="Перейти к бренду Hansgrohe")
+											.brand-block__img-wrapper
+												img.brand-block__img(src="images/content/brands/brand-img-3.png" alt="Hansgrohe")
+							.tab-pane-tile.tab-pane.fade#tile(role="tabpanel" aria-labelledby="tile-tab")
+								| 2
+							.tab-pane-plumbing.tab-pane.fade#plumbing(role="tabpanel" aria-labelledby="plumbing-tab")
+								| 3
+							.tab-pane-furniture.tab-pane.fade#furniture(role="tabpanel" aria-labelledby="furniture-tab")
+								| 4
+							.tab-pane-heating.tab-pane.fade#heating(role="tabpanel" aria-labelledby="heating-tab")
+								| 5
+				.brands-pagination-block.pagination-block
+					.row
+						.show-more
+							//все кнопки с классом btn_loader при добавлении класса .btn_loader_show меняют иконку на прелоадер
+							button.btn.btn_show-more.btn_bordered.btn_loader.js-show-more(type="button")
+								span.btn__text Показать еще
+								span.btn__icon(aria-hidden="true")
+									<svg class="default-icon" role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+									<svg class="loader-icon" role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-loader"></use></svg>
+						.pagination
+							.pagination__current
+								button.btn.pagination__current-btn.btn_bordered.js-pagination-opener(type="button" aria-label="Сменить страницу")
+									span.btn__text 1
+									span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+							.pagination__block
+								.pagination__content
+									.scrollbar-inner
+										ul.list.list_unstyled.pagination__list
+											.list__item
+												a.link.btn.active.js-pagination-link(href="javascript: void(0);" aria-label="Страница 1") 1
+											.list__item
+												a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 2") 2
+											.list__item
+												a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 3") 3
+											.list__item
+												a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 4") 4
+											.list__item
+												a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 5") 5
+											.list__item
+												a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 6") 6
+											.list__item
+												a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 7") 7
+								.pagination__control
+									button.btn.pagination__control-btn.js-pagination-closer(type="button" aria-label="Закрыть")
+										span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>					
+				+sliders-in-tabs({"popular":"true"})
+							
+								

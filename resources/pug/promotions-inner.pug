@@ -1,0 +1,439 @@
+extends template
+
+block content
+	section.section.section_inner-page.section_promotions-inner
+		.section__header
+			.container
+				.row.no-gutters
+					.col-xl-5
+						.section__breadcrumbs
+							ul.list.list_unstyled.breadcrumbs-list
+								li.list__item
+									a.link(href="javascript: void(0);") Главная
+								li.list__item
+									a.link.active(href="javascript: void(0);") Акции
+					.col-xl-5.offset-xl-1
+						.section__title.section__title_style6.header-title
+							h2 
+								| Скидки на все прямоугольные ванные до -15%
+		.section__body
+			.promotion-info.bg_gray-dark
+				.container
+					.row.no-gutters
+						.col-md-5
+							.promotion-img
+								.background-img
+									img(src="./images/content/promotions-inner/promotions-inner-img-1.jpg" alt="Фоновое изображение")
+						.col-md-5.offset-md-1
+							p.main-text
+								| Описание акции Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							p.add-text
+								span 
+									| Период проведения акции:
+								| c 08 января по 28 февраля 2019 года
+							.stock-block
+								.stock-block__text До конца акции:
+								.stock-block__timer
+									.timer#timer2(data-finish="1591407875000")
+										.timer__item
+											.timer__count.timer__days <span class="days_1">0</span><span class="days_2">0</span>
+											.timer__text дни
+										.timer__item
+											.timer__count.timer__hours  <span class="hours_1">0</span><span class="hours_2">0</span>
+											.timer__text часы
+										.timer__item
+											.timer__count.timer__minutes <span class="minutes_1">0</span><span class="minutes_2">0</span>
+											.timer__text мин
+			.promotion-products
+				.container
+					.select-block-title.section__title
+						h2
+							| Товары, которые участвуют в акции:
+					.select-block
+						.select-wrapper.select-wrapper_brand
+							<svg role="img" width="16" height="16">
+								<use xlink:href="#svg-icon-down-arrow"></use>
+							</svg>
+							select.brand.js-example-classic-single(data-placeholder="Бренд")
+								option(selected disabled) 
+								option 1
+								option 2
+								option 3
+						.categories-wrapper
+							.select-wrapper.select-wrapper_category
+								<svg role="img" width="16" height="16">
+									<use xlink:href="#svg-icon-down-arrow"></use>
+								</svg>
+								select.category.js-example-classic-single(data-placeholder="Категория")
+									option(selected disabled) 
+									option 1
+									option 2
+									option 3
+							.select-wrapper.select-wrapper_category_1
+								<svg role="img" width="16" height="16">
+									<use xlink:href="#svg-icon-down-arrow"></use>
+								</svg>
+								select.category_1.js-example-classic-single(data-placeholder="" disabled=true)
+									option(selected disabled) 
+									option 1
+									option 2
+									option 3
+							.select-wrapper.select-wrapper_category_2
+								<svg role="img" width="16" height="16">
+									<use xlink:href="#svg-icon-down-arrow"></use>
+								</svg>
+								select.category_2.js-example-classic-single(data-placeholder="" disabled=true)
+									option 
+									option 1
+									option 2
+									option 3
+						.btn-wrapper
+							button.choose-btn.btn.btn_default.btn_dark.btn_with-icon(type="submit")
+									span.btn__icon(aria-hidden="true")
+										<svg role="img" width="30" height="30"><use xlink:href="#svg-filter"></use></svg>
+									span.btn__text Подобрать
+					.not-results-found
+						.section__title.section__title_style7.not-results-found__title Ничего не найдено
+						.section__description.not-results-found__descr
+							p Перейдите в каталог товаров, где среди разнообразия товаров вы , наверняка найдете то, что подойдет вашей ванной комнате.
+						a.catalog-btn.btn.btn_default.btn_dark.btn_with-icon(href="javascript: void(0);")
+							span.btn__icon(aria-hidden="true")
+								<svg role="img" width="30" height="30"><use xlink:href="#svg-icon-shop2"></use></svg>
+							span.btn__text Каталог товаров
+					.promotion-catalog.catalog-products
+						.row.no-gutters
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+							.col-12.col-sm-6.col-xl-3
+								.product-card(tabindex="0")
+									.product-card__content
+										.product-card__header
+											a.product-card__img(href="javascript: void(0);")
+												img(src="images/content/products/product-img-5.jpg" alt="Изображение продукта")
+											a.product-card__brand(href="javascript: void(0);" aria-label="Перейти к бренду Geberit")
+												img(src="images/content/brands/brand-img-2.png" alt="Geberit")
+											ul.list.list_unstyled.product-card__marks.marks-list
+												li.list__item.list__item_num.bg_orange + 20&nbsp;
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-credit-card"></use></svg>
+												li.list__item.list__item_num.bg_red 25%
+												li.list__item.bg_green
+													span.marks-list__icon <svg role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-gift"></use></svg>
+										.product-card__body
+											a.product-card__title(href="javascript: void(0);") Akcent clasic Standard 1 Унитаз Compact 6л/Stop (нижняя 
+											.product-card__price
+												span.cost 1 460
+												span.currency лей / шт
+										.product-card__footer
+											.product-card__info
+												.product-card__availability Нет на складе
+												.product-card__code Артикул: 90858
+											.product-card__controls
+												button.btn.product-card__btn.product-card__btn_favorite.js-to-favorite(type="button" aria-label="В избранное")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+												button.btn.product-card__btn.product-card__btn_cart.js-to-cart(type="button" aria-label="В корзину")
+													<svg class="btn__icon btn__icon_default" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop"></use></svg>
+													<svg class="btn__icon btn__icon_active" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-shop-added"></use></svg>
+					.promotion-pagination.pagination-block
+						.row
+							.show-more
+								//все кнопки с классом btn_loader при добавлении класса .btn_loader_show меняют иконку на прелоадер
+								button.btn.btn_show-more.btn_bordered.btn_loader.js-show-more(type="button")
+									span.btn__text Показать еще
+									span.btn__icon(aria-hidden="true")
+										<svg class="default-icon" role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+										<svg class="loader-icon" role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-loader"></use></svg>
+							.pagination
+								.pagination__current
+									button.btn.pagination__current-btn.btn_bordered.js-pagination-opener(type="button" aria-label="Сменить страницу")
+										span.btn__text 1
+										span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="10" height="10"><use xlink:href="#svg-icon-down-arrow"></use></svg>
+								.pagination__block
+									.pagination__content
+										.scrollbar-inner
+											ul.list.list_unstyled.pagination__list
+												.list__item
+													a.link.btn.active.js-pagination-link(href="javascript: void(0);" aria-label="Страница 1") 1
+												.list__item
+													a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 2") 2
+												.list__item
+													a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 3") 3
+												.list__item
+													a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 4") 4
+												.list__item
+													a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 5") 5
+												.list__item
+													a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 6") 6
+												.list__item
+													a.link.btn.js-pagination-link(href="javascript: void(0);" aria-label="Страница 7") 7
+									.pagination__control
+										button.btn.pagination__control-btn.js-pagination-closer(type="button" aria-label="Закрыть")
+											span.btn__icon(aria-hidden="true") <svg role="img" aria-hidden="true" width="20" height="20"><use xlink:href="#svg-icon-cancel"></use></svg>

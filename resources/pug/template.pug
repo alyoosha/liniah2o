@@ -1,0 +1,60 @@
+﻿include head/head
+include header/header
+include footer/footer
+include footer/modals
+include footer/svg
+
+include sections/subscribe
+include sections/blog
+include sections/brands
+include sections/collections
+include sections/odds
+include sections/sliders-in-tabs
+include sections/slider-related
+include sections/complect
+include sections/together
+include sections/package
+
+doctype html
+html(lang="ru")
+
+	block head
+		head
+			+head({
+				"title": "LiniaH2O",
+				"description": "LiniaH2O"
+			})
+			
+		body.preloader-show
+			#app
+				block header
+					+header
+
+				main.main-content#main-content
+					block content
+					//-block subscribe
+						+subscribe
+
+				block footer
+					+footer
+				.cookies-banner
+					.container
+						.cookies-banner__control
+							button.btn(type="button" aria-label="Закрыть")
+								span.btn__icon(aria-hidden="true")
+									<svg role="img" aria-hidden="true" width="26" height="26"><use xlink:href="#svg-icon-cancel"></use></svg>
+						.cookies-banner__text Мы используем файлы cookie для улучшения функциональности сайта. Используя этот сайт, вы даете согласие на использование файлов cookie.
+				+modals
+				+svg
+					
+				
+			//-block vendors
+				script( src="js/jquery-3.3.1.min.js")
+				script( src="js/core-dist.js")
+				script( src="js/plugins/select2.min.js")
+			//-block scripts
+				script( src="js/main.js")
+				script( defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsq4WafTF6GmiZvsnq7FWgEoiAfrYU1cs")
+			block scripts
+				script( src="js/app.js")
+				script( id="google-map-script" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsq4WafTF6GmiZvsnq7FWgEoiAfrYU1cs")
